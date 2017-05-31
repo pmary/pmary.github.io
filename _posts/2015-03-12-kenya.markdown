@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Kenya"
+title:  "Kenya Yolo"
 date:   2015-03-12 13:46:40
 categories: travel update
 ---
