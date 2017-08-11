@@ -3,6 +3,7 @@ layout: post
 title:  "Approache to MongoDB internationalisation (i18n) with Meteor"
 date:   2015-02-12 13:46:40
 categories: meteor i18n
+comments: true
 ---
 In my Meteor application Mapker, I needed to create a publication that is capable of serving objects with strings in more than one language.
 I could have used the popular Meteor package tap-i18n-db but I prefer avoid to add one more dependency and keep full control over my data architecture.

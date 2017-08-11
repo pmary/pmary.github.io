@@ -2,6 +2,7 @@
 layout: page
 title: The Developer Reading List
 permalink: /the-developer-reading-list/
+comments: true
 ---
 
 Everyday, I read several tech blog posts. While the majority are not that

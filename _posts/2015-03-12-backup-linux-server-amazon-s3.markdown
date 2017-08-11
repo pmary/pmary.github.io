@@ -3,6 +3,7 @@ layout: post
 title:  "Backup your Linux server to Amazon S3"
 date:   2015-03-12 13:46:40
 categories: amazon linux
+comments: true
 ---
 I needed to backup some databases and web files from my Ubuntu server.  
 
