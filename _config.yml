@@ -1,6 +1,6 @@
 # Site settings
 title: Complexity made simple
-email: 
+email:
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://pierremary.com" # the base hostname & protocol for your site
@@ -9,3 +9,8 @@ github_username:  pmary
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
