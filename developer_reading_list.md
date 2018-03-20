@@ -5,18 +5,14 @@ permalink: /the-developer-reading-list/
 comments: true
 ---
 
-Everyday, I read several tech blog posts. While the majority are not that
-memorable, some really stand-out. Some has even been eye-opener about my
-developer condition, the reality of our industry or the way all of this technical
-stuff become what we know today. Here I will share with you this gold nugget,
-hoping that it can help you to gain professional maturity as it does for me.
+I share with you my best tech readings to get a better understanding of the tech industry and think about your career path.
 
 # State of the industry
 
- - [Stack Overflow Developer Survey 2017](https://insights.stackoverflow.com/survey/2017)
+ - [Stack Overflow Developer Survey 2018](https://insights.stackoverflow.com/survey/2018)
  - [The State of JavaScript 2017](http://stateofjs.com)
  - [The Ultimate Guide to JavaScript Fatigue: Realities of our industry](http://lucasfcosta.com/2017/07/17/The-Ultimate-Guide-to-JavaScript-Fatigue.html)
- - [July 2017 Hacker News Hiring Trends](https://www.hntrends.com/2017/july.html)
+ - [Hacker News Hiring Trends](https://www.hntrends.com/)
 
 # Project Management
 
@@ -24,6 +20,7 @@ hoping that it can help you to gain professional maturity as it does for me.
 
 # Carer path
 
+ - [Teach Yourself Programming in Ten Years](http://norvig.com/21-days.html)
  - [A Guide to Becoming a Full-Stack Developer in 2017](https://medium.com/coderbyte/a-guide-to-becoming-a-full-stack-developer-in-2017-5c3c08a1600c)
  - [Developers: How to Overcome Imposter Syndrome](https://medium.com/learn-love-code/developers-how-to-overcome-imposter-syndrome-48edee803cf4)
  - [Don't Call Yourself A Programmer, And Other Career Advice](http://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/)
