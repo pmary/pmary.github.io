@@ -7,6 +7,10 @@ comments: true
 
 I share with you my best readings about the tech industry and some thoughts about career path.
 
+# Tech stories  
+
+- [Distributed architecture concepts I learned while building a large payments system](http://blog.pragmaticengineer.com/distributed-architecture-concepts-i-have-learned-while-building-payments-systems/)  
+
 # State of the industry
 
  - [Stack Overflow Developer Survey 2018](https://insights.stackoverflow.com/survey/2018)
