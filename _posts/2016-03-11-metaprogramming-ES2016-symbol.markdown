@@ -2,7 +2,7 @@
 layout: post
 title:  "Metaprogramming with ES2016 #1 - Symbol"
 date:   2015-02-12 13:46:40
-categories: es2016 meteprogramming
+categories: es2016 metaprogramming
 comments: true
 ---
 
@@ -12,6 +12,7 @@ JavaScript was relatively weak when it comes to metaprogramming. Fortunately ES6
 If you are not familiar with the concept, let's first explain it.
 
 > Metaprogramming is the art of develop a computer programs treating programs as their data. It means that a program could be designed to read, generate, analyse or transform other programs, and even modify itself while running.  
+
 _"[Metaprogramming](https://en.wikipedia.org/wiki/Metaprogramming)" from Wikipedia - CC BY-SA_
 
 In other words, it's programming the programming of your program (code that writes code). Concretely, in JS, we often use it to dynamically apply behavior to objects, as seen below.
