@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Approache to MongoDB internationalisation (i18n) with Meteor"
-date:   2015-02-12 13:46:40
+title:  "Approach to MongoDB internationalisation (i18n) with Meteor"
+date:   2016-02-12 13:46:40
 categories: meteor i18n
 comments: true
 ---

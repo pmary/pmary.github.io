@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Data Analysis on Wine Data Sets with R"
-date:   2018-05-13 13:46:40
+date:   2018-05-15 13:46:40
 categories: datascience R
 comments: true
 ---

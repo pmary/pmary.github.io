@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Metaprogramming with ES2016 #1 - Symbol"
-date:   2015-02-12 13:46:40
-categories: es2016 metaprogramming
+title:  "Metaprogramming in JavaScipt - Symbol"
+date:   2016-03-11 13:46:40
+categories: javascript metaprogramming
 comments: true
 ---
 
