@@ -1,7 +1,7 @@
 ---
 layout: page
-title: The Developer Reading List
-permalink: /the-developer-reading-list/
+title: Resources
+permalink: /resources/
 comments: true
 ---
 
