@@ -80,7 +80,7 @@ Here, `b` is declared on the global scope (which is not valid in strict mode).
 ## Two overriding conditions
 
 There is two edge cases where the restricted production rule is not applied:  
-- The added semicolon would become one of the two semicolons in the header of a for statement: No automatic insertion between the parenthesis of a `for` statement.
+- The added semicolon would become one of the two semicolons in the header of a `for` statement: No automatic insertion between the parenthesis of a `for` statement.
 - The inserted semicolon would then be parsed as an empty statement.
 
 The later mean that the following code snippet will not change:
@@ -105,4 +105,4 @@ Let's be serious. If my semicolon-free code works with every JavaScript implemen
 
 # Conclusion
 Which style is better? The answer is a matter of personal preference, just be sure to make an informed choice. Remember the rules and you will have no fear of unknown syntactical traps or nonexistent bugs.  
-Personally, I recommend the semicolon-free style because it requires you to get a real understanding of the language they use. If you work on production grade, you want to understand how statements in JavaScript are terminated.
+Personally, I recommend the semicolon-free style because it requires you to get a real understanding of the language. If you work on production grade, you want to understand how statements in JavaScript are terminated.
