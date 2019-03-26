@@ -9,7 +9,7 @@ comments: true
 > Disclaimer : This post is not about the silly debate between pro and anti-semicolon. It aims to explain how the "Rules of Automatic Semicolon Insertion" (ASI) works. Regardless on your semicolon usage, you must know this rules to write JavaScript professionally and read any code regardless of how it's written.
 
 # The rules
-To sum up the [specification](http://es5.github.io/#x7.9.1), you can, for convenience, omit a semicolon in JavaScript since they are automatically inserted by the compiler. To understand where and why, take a look at the following cheat sheet:
+To sum up the <a href="http://es5.github.io/#x7.9.1" title="ASI specification" target="_blank">specification</a>, you can, for convenience, omit a semicolon in JavaScript since they are automatically inserted by the compiler. To understand where and why, take a look at the following cheat sheet:
 
 <img src="/assets/posts/2019-03-25-javascript_automatic_semicolon_insertion/ASI_cheat_sheet.jpg" alt="ASI cheat sheet" id="asi-fig" />
 
