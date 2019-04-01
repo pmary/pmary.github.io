@@ -36,13 +36,13 @@ I share with you some readings about the tech industry and career path.
 
 <ul>
     <li>
+        <a href="https://octoverse.github.com" title="The State of the Octoverse" target="_blank">The State of the Octoverse</a>
+    </li>
+    <li>
         <a href="https://insights.stackoverflow.com/survey/2018" title="Stack Overflow Developer Survey 2018" target="_blank">Stack Overflow Developer Survey 2018</a>
     </li>
     <li>
-        <a href="http://stateofjs.com" title="The State of JavaScript 2017" target="_blank">The State of JavaScript 2017</a>
-    </li>
-    <li>
-        <a href="http://lucasfcosta.com/2017/07/17/The-Ultimate-Guide-to-JavaScript-Fatigue.html" title="The Ultimate Guide to JavaScript Fatigue: Realities of our industry" target="_blank">The Ultimate Guide to JavaScript Fatigue: Realities of our industry</a>
+        <a href="http://stateofjs.com" title="The State of JavaScript 2018" target="_blank">The State of JavaScript 2018</a>
     </li>
     <li>
         <a href="https://www.hntrends.com/" title="Hacker News Hiring Trends" target="_blank">Hacker News Hiring Trends</a>
