@@ -5,7 +5,7 @@ permalink: /resources/
 comments: true
 ---
 
-I share with you my best readings about the tech industry and some thoughts about career path.
+I share with you some readings about the tech industry and career path.
 
 # Books
 
