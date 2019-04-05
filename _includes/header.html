@@ -1,6 +1,6 @@
-<header class="site-header">
+<header class="site-header {% if page.layout == 'post' %}site-header-post{% endif %}">
 
-  <div class="wrapper">
+  <div class="site-header-wrapper">
 
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
 

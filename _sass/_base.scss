@@ -199,3 +199,13 @@ pre {
         }
     }
 }
+
+/**
+ * Divider
+ */
+.divider {
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    max-width: 1032px;
+    margin: 24px auto;
+}
