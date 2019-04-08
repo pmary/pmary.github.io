@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Metaprogramming in JavaScipt - Symbol"
+title:  "Metaprogramming in JavaScript - Symbol"
 date:   2016-03-11 13:46:40
 categories: javascript metaprogramming
 comments: true

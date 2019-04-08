@@ -18,15 +18,15 @@ img {
 }
 </style>
 
-You may have seen “DevOps” used as a job title or to name a team but DevOps is neither a job or a group, it’s a set of practices to get more continuous capability in your pipeline. The idea is to allow Developers, Testers and Ops to better work together by breaking the silo between these three teams. It organize the way they work together toward the desired outcome. The focus is on automation in order to increase the velocity of the pipeline.  
+You may have seen "DevOps" used as a job title or to name a team but DevOps is neither a job or a group, it's a set of practices to get more continuous capability in your pipeline. The idea is to allow Developers, Testers and Ops to better work together by breaking the silo between these three teams. It organize the way they work together toward the desired outcome. The focus is on automation in order to increase the velocity of the pipeline.  
 
 <img src="/assets/posts/2019-03-17-devops-and-continuous-delivery/product_pipeline.jpg" alt="Product Pipeline">
 
-The Product Pipeline is how you come from an idea to a released product. As you increase it’s velocity you can release faster, learn faster and ultimately, improve your product faster. We can increase its velocity by acting on the steps from the "Code" to "Product release", setting up **Continuous Integration** (CI) and **Continuous Delivery** (CD).  
+The Product Pipeline is how you come from an idea to a released product. As you increase it's velocity you can release faster, learn faster and ultimately, improve your product faster. We can increase its velocity by acting on the steps from the "Code" to "Product release", setting up **Continuous Integration** (CI) and **Continuous Delivery** (CD).  
 
-# It’s All About the Delivery Pipeline
+# It's All About the Delivery Pipeline
 
-CI and CD allow us to build the **delivery pipeline**. Whatever its name, every software company has one. These are the steps to get the application from code to production, whilst ensuring it’s quality. Again, the more efficient the pipeline, the faster the delivery to the customer. It evolved a lot over the years, managed by different methodologies like waterfall, agile, kaban… and now DevOps.  
+CI and CD allow us to build the **delivery pipeline**. Whatever its name, every software company has one. These are the steps to get the application from code to production, whilst ensuring it's quality. Again, the more efficient the pipeline, the faster the delivery to the customer. It evolved a lot over the years, managed by different methodologies like waterfall, agile, kaban… and now DevOps.  
 
 <img src="/assets/posts/2019-03-17-devops-and-continuous-delivery/delivery_pipeline.jpg" alt="Delivery Pipeline" id="delivery-pipeline-fig">
 
@@ -38,7 +38,7 @@ Tests are run from the fastest to the slowest : Unit Test, Integration Test, Sys
 
 Basically, the Ops job is to create the required resources to run the software on and then keeping that software running. It includes updating it and the packages of the operating systems that support it.  
 
-Pre-DevOps, update a software in production was something like that: Get the binary from the product team, connect to the server and upload it, follow the 42 manual steps and pray to do it all right. Then, repeat the operation on every servers. As you can imagine, that’s boring, extremely error-prone and anxiety-provoking.  
+Pre-DevOps, update a software in production was something like that: Get the binary from the product team, connect to the server and upload it, follow the 42 manual steps and pray to do it all right. Then, repeat the operation on every servers. As you can imagine, that's boring, extremely error-prone and anxiety-provoking.  
 The evolution of Ops with DevOps is to create a more standardized and automated infrastructure to do this and being able to update the software constantly.  
 
 To enable it, Ops team will create an infrastructure so the product teams can upgrade their product and make sure it's working by themselves. It generally make economic sense, to work with a serverless infrastructure. Instead of setting up physical servers, they're using a third party provider, like an Amazon Web Service, Google Cloud Platform or Microsoft Azure (or an internal Ops group), to run their software on.  
@@ -52,7 +52,7 @@ Unit and integration tests are usually write by developer, especially when adopt
 
 # Impact on the Tester Job
 
-Tests are very important. At the software level, it’s the only way that we get to an actual continuous delivery capability or even really any kind of substantial continuous integration capability. But what's done by testers now that developers write at least unit and integration tests?  
+Tests are very important. At the software level, it's the only way that we get to an actual continuous delivery capability or even really any kind of substantial continuous integration capability. But what's done by testers now that developers write at least unit and integration tests?  
 
 Not all company do this but there is something called progressive delivery which is increasingly popular. The idea is that we have some infrastructure (usually called a Feature Flag) allowing us to selectively turn on a new features to only a subset of our customers.  
 This is the role of the test team to both create the infrastructure as well as manage the deployment of the features.  
@@ -62,10 +62,10 @@ System tests are drawn from the Black-box idea. We test if a given input result 
 There are also specialized types of tests like load, performance or  security tests.
 Another prerogative is the regression suite: makes sure that everything works at least the same as it did before.  
 
-The old way of testing was quality assurance or “test last”. The idea is that test happens at the very end of the development cycle. We make sure everything's okay before we push into production. It's a more siloed and less continuous approach.  
-On the opposite, there is now quality assistance or “test always” which is more consistent with the general idea of DevOps. The testers are embedded with the team or interacting with it thought coaching. It makes sense given the type of software we're working on today, and toward the delivery pipeline.  
+The old way of testing was quality assurance or "test last". The idea is that test happens at the very end of the development cycle. We make sure everything's okay before we push into production. It's a more siloed and less continuous approach.  
+On the opposite, there is now quality assistance or "test always" which is more consistent with the general idea of DevOps. The testers are embedded with the team or interacting with it thought coaching. It makes sense given the type of software we're working on today, and toward the delivery pipeline.  
 
 # Conclusion
-Formalize a delivery pipeline allow the application of the DevOps practices. It’s an interdisciplinary approach impacting the developer, tester and ops jobs and progress towards a more continuous capability.  
+Formalize a delivery pipeline allow the application of the DevOps practices. It's an interdisciplinary approach impacting the developer, tester and ops jobs and progress towards a more continuous capability.  
 
 Don't hesitate to share your particular pipeline in the comments!  
