@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Comparing Golang and Node.js, 10 year later"
+title:  "Comparing Golang and Node.js, 10 years later"
 date:   2019-04-02 22:01:20
 categories: javascript go
 comments: true
@@ -21,7 +21,7 @@ i {
 }
 </style>
 
-I've seen a lot of comparaison between Golang and Node.js along with debates about which one is the best. In this post I would like to explain why they have been created, how do they perform, scale and their usage, 10 year after they both came into existence.  
+I've seen a lot of comparaison between Golang and Node.js along with debates about which one is the best. In this post I would like to explain why they have been created, how do they perform, scale and their usage, 10 years after they both came into existence.  
 
 # The Origin Story
 First, note that Go is a programming language while Node.js is a JavaScript run-time environment. While both are used for server-side development, the isomorphic nature of JavaScript make the comparison somewhat difficult, especially when talking about popularity.  
