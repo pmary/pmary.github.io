@@ -209,3 +209,21 @@ pre {
     max-width: 1032px;
     margin: 24px auto;
 }
+
+/**
+ * Icon
+ */
+.icon {
+    &.icon-external-link {
+        background: url(/assets/icons/external-link-alt-solid.svg);
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        background-size: 25px 25px;
+
+        position: relative;
+        top: 2px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

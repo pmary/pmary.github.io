@@ -9,11 +9,25 @@ layout: default
     <ul class="post-list">
       {% for post in site.posts %}
         <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <span class="post-meta">
+            {{ post.date | date: "%b %-d, %Y" }}
+            {% if post.external_url %}
+            | {{ post.external_site }}
+            {% endif %}
+          </span>
 
-          <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h2>
+          {% if post.external_url %}
+            <h2>
+                <a class="post-link post-link-external" href="{{ post.external_url | prepend: site.baseurl }}" target="_blank">
+                  {{ post.title }}
+                  <span class="icon icon-external-link"></span>
+                </a>
+            </h2>
+          {% else %}
+            <h2>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+          {% endif %}
         </li>
       {% endfor %}
     </ul>

@@ -248,6 +248,12 @@
 
     > li {
         margin-bottom: $spacing-unit;
+        line-height: 30px;
+
+        h2 {
+            margin-block-start: 0;
+            margin-bottom: 0px;
+        }
     }
 }
 
@@ -259,7 +265,7 @@
 
 .post-link {
     color: rgba(0,0,0,.84);
-    display: block;
+    display: inline-block;
     font-size: 24px;
     font-weight: 500;
 
@@ -271,6 +277,10 @@
     &:visited {
         color: rgba(0,0,0,.84);
     }
+
+    /*&.post-link-external {
+        color: $green-color;
+    }*/
 }
 
 
