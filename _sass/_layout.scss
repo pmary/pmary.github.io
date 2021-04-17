@@ -124,8 +124,18 @@
  * Site footer
  */
 .site-footer {
+    background-color: #101012;
+    color: #adabac;
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+
+    a:hover {
+        color: #adabac;
+    }
+
+    .divider {
+        border-bottom: 1px solid rgba(90,90,90,0.3);
+    }
 }
 
 .footer-heading {
@@ -271,6 +281,7 @@
 
     &:hover {
         text-decoration: none;
+        color: #5a5a5a;
     }
 
     &,
@@ -342,14 +353,10 @@
  * Newsletter block
  */
 .newsletter-block {
-    background-color: #fafafa;
-    padding-left: 60px;
-    padding-right: 60px;
     padding-bottom: 20px;
     padding-top: 20px;
     text-align: center;
     line-height: 28px;
-    color: $grey-color;
     font-size: 18px;
     font-weight: 100;
 
@@ -363,15 +370,15 @@
 
     p {
         margin-bottom: 0px;
+        font-style: italic;
     }
 
     h2 {
-        color: $text-color;
         font-family: $post-font-family;
-        font-size: 41px;
+        font-size: 29px;
         font-weight: 500;
         line-height: 48px;
-        margin-bottom: 16px;
+        margin-bottom: 0px;
 
         @media screen and (max-width: 767px) {
             font-size: 28px;
@@ -395,45 +402,44 @@
         color: rgba(0,0,0,.76);
         fill: rgba(0,0,0,.76);
         border: 0;
-        border-bottom: 1px solid rgba(0,0,0,.15);
         -webkit-border-radius: 0;
         border-radius: 0;
-        padding: 0 5px;
-        height: 35px;
+        padding: 8px 10px;
+        height: 37px;
         outline: 0;
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        background-color: transparent;
+        background-color: #fff;
         --x-height-multiplier: 0.342!important;
         --baseline-multiplier: 0.22!important;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 28px;
         transform: translateY(.12px);
         font-weight: 300;
     }
 
     button {
-        margin-left: 20px;
+        margin-left: 15px;
         height: 37px;
         line-height: 37px;
         padding: 0 18px;
         background: rgba(0,0,0,.84);
-        border-color: rgba(0,0,0,.84);
-        color: rgba(255,255,255,.97);
-        font-size: 15px;
-        border-color: rgba(0, 0, 0, 0.84);
+        border-color: #adabac;
+        color: $brand-color;
+        font-size: 12px;
         border-style: solid;
         border-width: 1px;
         cursor: pointer;
-        border-radius: 4px;
+        text-transform: uppercase;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
 
         &:hover {
-            background: #000;
-            border-color: #000;
-            color: rgba(255,255,255,.97);
+            color: #d4d3d3;
         }
 
         &:focus {

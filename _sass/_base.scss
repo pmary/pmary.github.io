@@ -92,13 +92,17 @@ a {
     color: $brand-color;
     text-decoration: none;
 
+    text-decoration: none;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+
     /*&:visited {
         color: darken($brand-color, 15%);
     }*/
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
     }
 }
 

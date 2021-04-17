@@ -1,6 +1,12 @@
 <footer class="site-footer">
 
+  {% include newsletter_block.html %}
+
+  <div class="divider"></div>
+  
   <div class="wrapper">
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
     <h2 class="footer-heading">{{ site.title }}</h2>
 
