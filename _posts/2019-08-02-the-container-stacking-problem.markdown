@@ -5,6 +5,8 @@ date:   2019-08-02 13:46:40
 categories: javascript stack
 comments: true
 ---
+*Difficulty Level: **Easy***
+
 At seaport terminals, containers are stacked up, waiting to be loaded onto their ships When we load a ship, if the correct containers are on the top of the stack, they are easy to pick and to load. But if the wanted container is underneath some other, move them aside to reach it would cause extra operation cost and waste time.  
 The schedule of the ships is known and we assume that no ship will be late. There are ship A to ship Z and their containers are labeled after them.  
 
@@ -64,5 +66,5 @@ while(conts.length){
     }
 }
 
-console.log(stacks.length);
+console.log(stacks);
 ```
