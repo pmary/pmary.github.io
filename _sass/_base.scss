@@ -129,9 +129,9 @@ blockquote {
 /**
  * Code formatting
  */
-pre,
-code {
+code.language-plaintext.highlighter-rouge {
     border: 1px solid $grey-color-light;
+    background-color: #eee;
 }
 
 code {
