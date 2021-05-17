@@ -28,6 +28,8 @@ for (fruit of fruits) {
         uniqueFruits.push(fruit);
     }
 }
+
+console.log(uniqueFruits); // ["banana", "cherry", "strawberry"]
 ```
 
 Same logic with a forEach:  
@@ -39,6 +41,8 @@ fruits.forEach((fruit) => {
         uniqueFruits.push(fruit);
     }
 });
+
+console.log(uniqueFruits); // ["banana", "cherry", "strawberry"]
 ```
 
 ## 2. Use object `{ }` to prevent duplicate
@@ -53,6 +57,8 @@ fruits.forEach((fruit) => {
 const uniqueFruits = Object.keys(fruitsObj).map((v) => {
     return fruitsObj[v];
 });
+
+console.log(uniqueFruits); // ["banana", "cherry", "strawberry"]
 ```
 
 ## 3. Use `filter` and `indexOf`
@@ -61,7 +67,9 @@ const uniqueFruits = Object.keys(fruitsObj).map((v) => {
 ```javascript
 const uniqueFruits = fruits.filter((value, index, self) => {
     return self.indexOf(value) === index;
-})
+});
+
+console.log(uniqueFruits); // ["banana", "cherry", "strawberry"]
 ```
 
 ## 4. Use `Set` (ES6) and the spread syntax
@@ -71,4 +79,6 @@ In other words, we can use the spread syntax to insert all elements from a Set t
 
 ```javascript
 const uniqueFruits = [...new Set(fruits)];
+
+console.log(uniqueFruits); // ["banana", "cherry", "strawberry"]
 ```
