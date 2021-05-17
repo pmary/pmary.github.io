@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Ways to extract unique elements from a list in JavaScript"
-date:   2019-10-21 13:46:40
+title:  "The Best Way to Remove Duplicate From a List in JavaScript"
+date:   2019-11-17 13:46:40
 categories: javascript array reduce
 comments: true
 ---
@@ -13,10 +13,7 @@ const fruits = ['banana', 'banana', 'cherry', 'cherry', 'strawberry', 'strawberr
 ```
 
 There is two occurences of every element. We want to reduce the list to get only the unique names of the fruits. In other words, we want to remove duplicates.  
-There is 3 ways to do it:  
-- Use a `for` loop
-- Use the reduce method
-- 
+In JavaScript, we can think of 4 typical ways we could solve this problem.  
 
 ## 1. `includes` and a `for` loop
 [`includes`](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/includes) is a method of `Array` which returns a boolean whether an array includes a certain value among its entries.  
@@ -82,3 +79,12 @@ const uniqueFruits = [...new Set(fruits)];
 
 console.log(uniqueFruits); // ["banana", "cherry", "strawberry"]
 ```
+
+Alternatively, if we can replace the use of the spread syntax and convert `Set` to an Array using `Array.from`:  
+```javascript
+const uniqueFruits = Array.from(new Set(fruits));
+
+console.log(uniqueFruits); // ["banana", "cherry", "strawberry"]
+```
+## Conclusion
+Once you understood `Set` and the spread syntax, this is, in my opinion, the simplest approach because `Set` will automatically remove duplicates for us. From various benchmark I found on the web, it also seems to be the most efficient solution.  
