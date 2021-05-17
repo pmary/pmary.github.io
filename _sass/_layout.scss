@@ -30,13 +30,14 @@
 }
 
 .site-title {
-    font-family: $post-font-family;
+    font-family: $post-title-font-family;
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    border-bottom: 2px solid #cd9023;
 
     &,
     &:visited {
