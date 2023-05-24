@@ -6,20 +6,20 @@
   
   <div class="wrapper">
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
+    <!-- <h2 class="footer-heading">{{ site.title }}</h2> -->
 
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><b>Subscribe</b></li>
+          <li class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></li>
+          <!-- <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li> -->
         </ul>
       </div>
 
       <div class="footer-col  footer-col-2">
         <ul class="social-media-list">
+          <li><b>Follow</b></li>
           {% if site.github_username %}
           <li>
             <a href="https://github.com/{{ site.github_username }}">
@@ -48,6 +48,24 @@
             </a>
           </li>
           {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          <li>
+            <b>Langues</b>
+          </li>
+          <li>
+            <a href="/fr/home">
+              FR
+            </a>
+          </li>
+          <li>
+            <a href="/en/home">
+              EN
+            </a>
+          </li>
         </ul>
       </div>
 
