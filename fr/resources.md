@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Resources
-permalink: /resources/
 comments: true
+language: fr
 ---
 
-I share with you some readings about the tech industry and career path.
+Je vous partage ici quelques lectures intéréssantes à propos de l'industrie de l'IT et des choix de carrière.
 
-# Books
+# Livres
 
 <ul>
     <li>
@@ -24,7 +24,7 @@ I share with you some readings about the tech industry and career path.
     </li>
 </ul>
 
-# Tech stories  
+# Tech stories
 
 <ul>
     <li>
@@ -32,7 +32,7 @@ I share with you some readings about the tech industry and career path.
     </li>
 </ul>
 
-# State of the industry
+# L'industrie de l'IT
 
 <ul>
     <li>
@@ -49,7 +49,7 @@ I share with you some readings about the tech industry and career path.
     </li>
 </ul>
 
-# Carer path
+# Carrière
 
 <ul>
     <li>
@@ -66,7 +66,7 @@ I share with you some readings about the tech industry and career path.
     </li>
 </ul>
 
-# Project Management
+# Gestion de projet
 <ul>
     <li>
         <a href="https://michaelochurch.wordpress.com/2015/06/06/why-agile-and-especially-scrum-are-terrible" title="Why 'Agile' and especially Scrum are terrible" target="_blank">Why "Agile" and especially Scrum are terrible</a>

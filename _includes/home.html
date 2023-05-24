@@ -1,0 +1,38 @@
+{% assign translations = site.data.translations %}
+
+<div class="page-wrapper">
+  <div class="home">
+
+    <h1 class="page-heading">
+      {{ translations.posts[page.language] }}
+    </h1>
+
+    <ul class="post-list">
+      {% assign siteposts = site.posts | where: 'language', page.language %}
+      {% for post in siteposts %}
+        <li>
+          <span class="post-meta">
+            {{ post.date | date: "%b %-d, %Y" }}
+            {% if post.external_url %}
+            | {{ post.external_site }}
+            {% endif %}
+          </span>
+
+          {% if post.external_url %}
+            <h2>
+                <a class="post-link post-link-external" href="{{ post.external_url | prepend: site.baseurl }}" target="_blank">
+                  {{ post.title }}
+                  <span class="icon icon-external-link"></span>
+                </a>
+            </h2>
+          {% else %}
+            <h2>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+</div>

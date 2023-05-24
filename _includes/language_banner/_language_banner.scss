@@ -1,0 +1,32 @@
+.languages-banner {
+  background-color: $background-color-dark;
+  color: $text-color-light;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+
+  a {
+    &:hover {
+      color: #adabac;
+    }
+  }
+
+  p {
+    margin-bottom: 0px;
+  }
+
+  button {
+    margin-left: 15px;
+    background-color: $background-color-dark;
+    border: 1px solid $text-color-light;
+    color: $brand-color;
+    cursor: pointer;
+    height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    width: 24px;
+
+    &:hover {
+      color: #d4d3d3;
+    }
+  }
+}

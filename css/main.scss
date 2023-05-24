@@ -18,7 +18,9 @@ $post-title-font-family: 'Lora', serif;
 $spacing-unit:     30px;
 
 $text-color:       rgba(0,0,0,.84);
+$text-color-light: #adabac;
 $background-color: #fff;
+$background-color-dark: #101012;
 $brand-color:      #cd9023;
 
 $grey-color:       #828282;
@@ -53,5 +55,6 @@ $on-laptop:        760px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "../_includes/language_banner/language_banner"
 ;

@@ -7,6 +7,20 @@ url: "https://pierremary.com" # the base hostname & protocol for your site
 twitter_username: _PierreMary
 github_username:  pmary
 
+defaults:
+- scope:
+    path: '_posts/en'
+    type: 'posts'
+  values:
+    permalink: 'en/news/:title'
+    language: en
+- scope:
+    path: '_posts/fr'
+    type: 'posts'
+  values:
+    permalink: 'fr/articles/:title'
+    language: fr
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
