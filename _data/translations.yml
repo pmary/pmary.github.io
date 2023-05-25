@@ -7,3 +7,32 @@ about:
 ressources:
   en: Ressource
   fr: Ressource
+newsletter:
+  title:
+    en: Never miss a post
+    fr: Ne ratez aucun article
+  subtitle:
+    en: Sign up for the newsletter and get the lattest articles in your inbox
+    fr: Abonnez-vous à la newsletter pour recevoir les derniers articles
+  email:
+    en: Your email address
+    fr: Votre email
+  cta:
+    en: Subscribe
+    fr: S'abonner
+footer:
+  subscribe:
+    title: 
+      en: Subscribe
+      fr: S'abonner
+    rss:
+      en: subscribe
+      fr: s'abonner
+  follow:
+    title:
+      en: Follow
+      fr: Suivre
+  languages:
+    title:
+      en: Languages
+      fr: Langues

@@ -11,15 +11,15 @@
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
-          <li><b>Subscribe</b></li>
-          <li class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></li>
+          <li><b>{{ translations.footer.subscribe.title[page.language] }}</b></li>
+          <li class="rss-subscribe">{{ translations.footer.subscribe.rss[page.language] }} <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></li>
           <!-- <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li> -->
         </ul>
       </div>
 
       <div class="footer-col  footer-col-2">
         <ul class="social-media-list">
-          <li><b>Follow</b></li>
+          <li><b>{{ translations.footer.follow.title[page.language] }}</b></li>
           {% if site.github_username %}
           <li>
             <a href="https://github.com/{{ site.github_username }}">
@@ -54,7 +54,7 @@
       <div class="footer-col  footer-col-2">
         <ul class="social-media-list">
           <li>
-            <b>Langues</b>
+            <b>{{ translations.footer.languages.title[page.language] }}</b>
           </li>
           <li>
             <a href="/fr/home">
