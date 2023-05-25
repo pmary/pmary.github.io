@@ -12,11 +12,10 @@ Prenons le tableau suivant:
 const fruits = ['banana', 'banana', 'cherry', 'cherry', 'strawberry', 'strawberry'];
 ```
 
-There is two occurences of every element. We want to reduce the list to get only the unique names of the fruits. In other words, we want to remove duplicates.  
-In JavaScript, we can think of 4 typical ways we could solve this problem.  
+Il contient deux occurences de chaque élément. Pour supprimer tous les doublons en JavaScript, il y a 4 manières de procéder.
 
 ## 1. `includes` and a `for` loop
-[`includes`](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/includes) is a method of `Array` which returns a boolean whether an array includes a certain value among its entries.  
+[`includes`](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/includes) est une méthode de l'objet global `Array` qui retourne un boolean indiquant si la valeur passée en argument se trouve ou non dans le tableau.  
 
 ```javascript
 const uniqueFruits = [];
@@ -29,7 +28,7 @@ for (fruit of fruits) {
 console.log(uniqueFruits); // ["banana", "cherry", "strawberry"]
 ```
 
-Same logic with a forEach:  
+On peut appliquer la même logique avec un `forEach`:  
 
 ```javascript
 const uniqueFruits = [];
@@ -42,8 +41,8 @@ fruits.forEach((fruit) => {
 console.log(uniqueFruits); // ["banana", "cherry", "strawberry"]
 ```
 
-## 2. Use object `{ }` to prevent duplicate
-Like any disctionary-like data type, keys of an object in JavaScript are unique. We can take advantage of this by adding our fruits as keys and value of a new object and then, iterate throughts the keys and add the values to a new array:  
+## 2. Utilisation de `{ }` pour prévenir les doublons
+En JavaScript, les clefs d'un objet sont uniques. Nous pouvons en tirer parti en ajoutant nos valeurs comme clefs d'un nouvel objet puis en itérant sur les clefs pour les ajouter dans un nouveau tableau:
 
 ```javascript
 let fruitsObj = {};
@@ -58,8 +57,8 @@ const uniqueFruits = Object.keys(fruitsObj).map((v) => {
 console.log(uniqueFruits); // ["banana", "cherry", "strawberry"]
 ```
 
-## 3. Use `filter` and `indexOf`
-[`filter`](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) is a method of `Array` which returns a new array with all elements that pass the test implemented by the callback function:  
+## 3. Utilisation de `filter` et `indexOf`
+[`filter`](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) est une méthode de l'objet global `Array` qui retourne un nouveau tableau contenant tous les éléments qui remplissent la condition implémentée dans la fonction de callback:  
 
 ```javascript
 const uniqueFruits = fruits.filter((value, index, self) => {
@@ -69,10 +68,10 @@ const uniqueFruits = fruits.filter((value, index, self) => {
 console.log(uniqueFruits); // ["banana", "cherry", "strawberry"]
 ```
 
-## 4. Use `Set` (ES6) and the spread syntax
-On one hand, the [`Set`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) objects are collections of unique values. Every time we add a value to a Set, if the value has already be added, nothing will happened. Also, Sets are iterable
-On the other hand, the [spread syntax (`...`)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax), when used in an `Array` allows an iterable such as a `Set` to be expanded in places where zero or more elements are expected.  
-In other words, we can use the spread syntax to insert all elements from a Set to an array.  
+## 4. Utilisation de `Set` (ES6) et de la syntaxe de décomposition (spread syntax)
+D'un côté, un objet [`Set`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) est une collection de valeurs uniques. A chaque fois que nous ajoutons une valeur a un `Set`, si il la contenait déjà, elle n'est pas ajoutée de nouveau. Les objets `Set` sont également itérables.
+D'un autre côté, la [syntaxe de décomposition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax), quand elle est utilisée dans un `Array`, permet a un itérable tel qu'un objet `Set` d'être étendu là ou zero ou plus d'éléments sont attendus.  
+En d'autres termes, on peut utiliser cette syntaxe pour insérer tous les éléments d'un Set dans un tableau.
 
 ```javascript
 const uniqueFruits = [...new Set(fruits)];
@@ -80,11 +79,11 @@ const uniqueFruits = [...new Set(fruits)];
 console.log(uniqueFruits); // ["banana", "cherry", "strawberry"]
 ```
 
-Alternatively, if we can replace the use of the spread syntax and convert `Set` to an Array using `Array.from`:  
+Alternativement, nous pouvons remplacer l'usage de la syntaxe de décomposition en utilisant `Array.from` pour convertir un `Set`en `Array`:  
 ```javascript
 const uniqueFruits = Array.from(new Set(fruits));
 
 console.log(uniqueFruits); // ["banana", "cherry", "strawberry"]
 ```
 ## Conclusion
-Once you understood `Set` and the spread syntax, this is, in my opinion, the simplest approach because `Set` will automatically remove duplicates for us. From various benchmark I found on the web, it also seems to be the most efficient solution.  
+Une fois que l'on a compris ce qu'est un `Set` et la syntaxe de décomposition, il s'agit de l'approche la plus simple pour prévenir les doublons dans un tabeau. Des divers tests de performance que j'ai trouvé sur le web, il s'agit égallement de la solution la plus efficace.  
