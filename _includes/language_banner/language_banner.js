@@ -3,6 +3,8 @@
     This function is used to pick the language most likely preferred by the user.
     By default, the banner is hidden. The function makes it visible when needed.
   */(function () {
+    const supportedLanguages = ['en','fr'];
+
     const hideGoogleTranslate = function(){
       const head = document.getElementsByTagName('head')[0];
       let tag = document.createElement('meta');
@@ -12,17 +14,23 @@
     }
 
     const redirectToRightSubpath = function(preferenceLanguage) {
-      const currentUrl = window.location.href;
-      const pageLanguage = currentUrl.split("/")[3];
-      if (!pageLanguage) {
-        const newURL =  "/" +
-          preferenceLanguage +
-          "/home";
-        location.href = newURL;
+      let currentUrlSegments = window.location.href.split("/");
+      const pageLanguage = currentUrlSegments[3];
+      if (
+        preferenceLanguage &&
+        pageLanguage && 
+        pageLanguage !== preferenceLanguage &&
+        supportedLanguages.includes(pageLanguage)
+      ) {
+        currentUrlSegments[3] = preferenceLanguage;
+        const newUrl = currentUrlSegments.join('/');
+        console.log('preferenceLanguage', preferenceLanguage);
+        console.log('pageLanguage', pageLanguage);
+        console.log('newUrl', newUrl);
+        location.href = newUrl;
       }
     }
 
-    const supportedLanguages = ['en','fr'];
     const pageLanguage = document.documentElement.lang;
     const agentLanguage = window.navigator.language.slice(0, 2);
     //const agentLanguage = 'fr';
