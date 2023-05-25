@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "The Best Way to Remove Duplicate From a List in JavaScript"
+title:  "La meilleure technique pour supprimer des doublons dans une liste en JavaScript"
 date:   2019-11-17 13:46:40
 categories: javascript array reduce
 comments: true
 ---
 
-Consider the following array:  
+Prenons le tableau suivant:  
 
 ```javascript
 const fruits = ['banana', 'banana', 'cherry', 'cherry', 'strawberry', 'strawberry'];

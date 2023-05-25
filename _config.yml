@@ -12,13 +12,13 @@ defaults:
     path: '_posts/en'
     type: 'posts'
   values:
-    permalink: 'en/news/:title'
+    permalink: 'en/posts/:title'
     language: en
 - scope:
     path: '_posts/fr'
     type: 'posts'
   values:
-    permalink: 'fr/articles/:title'
+    permalink: 'fr/posts/:title'
     language: fr
 
 # Build settings
