@@ -4,6 +4,13 @@
   padding: 10px 0px 10px 0px;
   text-align: center;
 
+  &-post {
+    position: fixed;
+    top: 58px;
+    width: 100%;
+    z-index: 500;
+  }
+
   a {
     &:hover {
       color: #adabac;

@@ -1,4 +1,4 @@
-<aside id="languages-banner" class="languages-banner" role="dialog" hidden="true">
+<aside id="languages-banner" class="languages-banner {% if page.layout == 'post' %}languages-banner-post{% endif %}" role="dialog" hidden="true">
     <div class="languages-page-header__language-content padding-y-xs" lang="fr">
       <p class="languages-page-header__p">
         Contenu disponible en <a href="/fr/home" onclick="setLanguagesPreferenceCloseBannerAndRedirect(event, 'fr')" ontransitionend="event.stopPropagation()">Français</a>.

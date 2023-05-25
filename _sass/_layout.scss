@@ -206,7 +206,7 @@
  */
 .page-content {
     font-family: $base-font-family;
-    padding: $spacing-unit 0;
+    padding: calc($spacing-unit + 10px) 0;
     margin-bottom: $spacing-unit;
 
     h2 {
