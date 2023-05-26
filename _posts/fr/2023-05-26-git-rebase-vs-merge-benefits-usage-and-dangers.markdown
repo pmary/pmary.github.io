@@ -20,6 +20,8 @@ gitGraph
        branch killer-feature order: 1
        commit id:"E"
        commit id:"F"
+       checkout main
+       commit id:"D"
 </div>
 
 ## Utilisation de `git merge`
