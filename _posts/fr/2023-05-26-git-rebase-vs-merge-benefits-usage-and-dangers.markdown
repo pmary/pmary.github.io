@@ -6,7 +6,7 @@ categories: javascript array reduce
 comments: true
 ---
 
-Git rebase est un outil puissant pour intégrer les changements d'une branche dans une autre, ce qui permet d'obtenir un historique de commits linéaire tout en réduisant le nombre de conflits de fusion par rapport à une simple fusion avec `git merge`.
+Git rebase est un outil puissant pour intégrer les changements d'une branche dans une autre, ce qui permet d'obtenir un historique de commits linéaire tout en réduisant le nombre de conflits de fusion par rapport à une simple fusion avec `git merge`.  
 
 # Maintenir un historique de commits propre
 `git rebase` vous aide à maintenir un historique de commits propre et linéaire. En réappliquant vos modifications sur une branche cible, vous pouvez incorporer votre travail sous la forme d'une série de commits séquentiels et logiques. Cela facilite la revue, la compréhension et la collaboration avec les autres membres de l'équipe.
@@ -41,7 +41,7 @@ gitGraph
        merge killer-feature id:"G"
 </div>
 
-Les modifications de la branche `killer-feature` asont fusionnées dans `main` sous la forme d'un nouveau commit, créant un commit de fusion. L'historique des commits montrera à la fois les commits individuels de la branche de fonctionnalité et le commit de fusion. Bien que cela reflète l'historique complet, il en résulte un historique des commits encombré et moins lisible, surtout si la branche comporte de fréquents commits ou qu'il y a plusieurs contributeurs.
+Les modifications de la branche `killer-feature` asont fusionnées dans `main` sous la forme d'un nouveau commit, créant un commit de fusion. L'historique des commits montrera à la fois les commits individuels de la branche de fonctionnalité et le commit de fusion. Bien que cela reflète l'historique complet, il en résulte un historique des commits encombré et moins lisible, surtout si la branche comporte de fréquents commits ou qu'il y a plusieurs contributeurs.  
 
 ## Utilisation de `git rebase`
 Les étapes seraient les suivantes :  
@@ -78,11 +78,11 @@ Avec `git rebase`, les modifications de la branche `killer-feature` sont rejoué
 Cette approche offre une visualisation plus claire et plus fluide du développement de la fonctionnalité, ce qui facilite la compréhension et la revue des modifications.  
 
 # Réduction des conflits de fusion
-Le rebase contribue également à réduire le nombre de conflits de fusion pouvant survenir lors de l'intégration des changements d'une branche dans une autre. En rejouant vos commits sur la branche cible mise à jour, vous appliquez vos modifications à la version la plus récente de la base de code. Cela réduit les risques de conflits, car vous les résolvez au fur et à mesure, plutôt que d'avoir à les traiter tous en une seule fois lors d'un commit de merge.
+Le rebase contribue également à réduire le nombre de conflits de fusion pouvant survenir lors de l'intégration des changements d'une branche dans une autre. En rejouant vos commits sur la branche cible mise à jour, vous appliquez vos modifications à la version la plus récente de la base de code. Cela réduit les risques de conflits, car vous les résolvez au fur et à mesure, plutôt que d'avoir à les traiter tous en une seule fois lors d'un commit de merge.  
 
 # Dangers
 Il est très important de comprendre que git rebase doit être utilisé uniquement pour les branches qui n'ont pas encore été partagées avec d'autres. Si vous avez déjà poussé votre branche et que d'autres se sont basés sur votre travail, il est généralement préférable d'éviter de rebase pour ne pas perturber leur travail. La raison en est que lors du rebase, l'historique des commits est modifié de manière irréversible. Cela peut entraîner divers problèmes pour les autres, car les commits qu'ils ont en local n'existeront plus dans le repo distant, ce qui entraînera une incompatibilité de l'historique des branches.
-En résumé : ne pas utiliser le rebase sur des branches publiques. Utilisez le rebase uniquement sur des branches sur lesquelles vous êtes le seul à travailler.
+En résumé : ne pas utiliser le rebase sur des branches publiques. Utilisez le rebase uniquement sur des branches sur lesquelles vous êtes le seul à travailler.  
 
 # Conclusion
 En résumé, `git rebase` permet de maintenir un historique de commits propre en incorporant les changements d'une branche dans une autre de manière plus linéaire et séquentielle. Cela évite la création de commits de fusion inutiles, ce qui se traduit par un historique de commits plus organisé et plus lisible. Cela peut être particulièrement bénéfique lors du travail sur des branches de fonctionnalité ou de la collaboration avec d'autres membres de l'équipe, car cela permet des revues de code plus faciles, la sélection de commits spécifiques et le suivi du développement de fonctionnalités individuelles.

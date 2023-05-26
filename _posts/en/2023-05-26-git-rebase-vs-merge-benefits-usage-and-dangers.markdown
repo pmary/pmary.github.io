@@ -6,7 +6,7 @@ categories: javascript array reduce
 comments: true
 ---
 
-Git rebase is a powerfull tool to integrate changes from one branch into another, resulting in a linear commit history while reducing the number of merge conflit than with a simple git merge.
+Git rebase is a powerfull tool to integrate changes from one branch into another, resulting in a linear commit history while reducing the number of merge conflit than with a simple git merge.  
 
 # Maintaining a clean commit history
 `git rebase` helps you maintain a clean and linear commit history. By rebasing your changes onto a target branch, you can effectively incorporate your work as a series of sequential, logical commits. This makes it easier to review, understand, and collaborate with other team members.
@@ -41,7 +41,7 @@ gitGraph
        merge killer-feature id:"G"
 </div>
 
-The changes from `killer-feature` are merged into `main` as a new commit, creating a merge commit. The commit history will show both the individual commits from feature-branch and the merge commit. While this captures the complete history, it can sometimes result in a cluttered and less readable commit history, especially if the branch has frequent commits or multiple contributors.
+The changes from `killer-feature` are merged into `main` as a new commit, creating a merge commit. The commit history will show both the individual commits from feature-branch and the merge commit. While this captures the complete history, it can sometimes result in a cluttered and less readable commit history, especially if the branch has frequent commits or multiple contributors.  
 
 ## Using `git rebase`
 The steps would be:  
@@ -79,11 +79,11 @@ With `git rebase`, the changes from `killer-feature` are replayed on top of the 
 This approach provides a clearer and more streamlined view of the feature's development and makes it easier to understand and review the changes.  
 
 # Reducing merge conflicts
-Rebasing also helps in reducing the number of merge conflicts that can occur when integrating changes from one branch to another. By replaying your commits on top of the updated target branch, you're essentially applying your changes to the most recent version of the codebase. This reduces the likelihood of conflicts since you're resolving any conflicts as you go, instead of dealing with them all at once during a merge commit.
+Rebasing also helps in reducing the number of merge conflicts that can occur when integrating changes from one branch to another. By replaying your commits on top of the updated target branch, you're essentially applying your changes to the most recent version of the codebase. This reduces the likelihood of conflicts since you're resolving any conflicts as you go, instead of dealing with them all at once during a merge commit.  
 
 # Dangers
 It's very important to understand that `git rebase` should be used primarily for feature branches that haven't been shared with others yet. If you've already pushed your branch and others have based their work on it, it's generally better to avoid rebasing to prevent disrupting their work. The reason is that when you rebase, the commit history is changed irreversably. Meaining that it will result in a variety of problems for others since the commits they have locally will no longer exists on the remote which will have an incompatible branch history.  
-Bottom line: __no rebase on public branches. Only rebase branches on which only you is working on__.
+Bottom line: __no rebase on public branches. Only rebase branches on which only you is working on__.  
 
 # Summary
 In summary, `git rebase` helps maintain a clean commit history by incorporating the changes from one branch onto another in a more linear and sequential manner. It avoids the creation of unnecessary merge commits, resulting in a more organized and readable commit history. This can be particularly beneficial when working on feature branches or collaborating with other team members, as it allows for easier code reviews, cherry-picking specific commits, and tracking the development of individual features.  
