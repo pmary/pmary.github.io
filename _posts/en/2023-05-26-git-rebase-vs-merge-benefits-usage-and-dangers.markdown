@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Git rebase vs merge: Benefits, Usage & Dangers"
-date:   2019-11-17 13:46:40
+date:   2023-26-05 13:46:40
 categories: javascript array reduce
 comments: true
 ---
