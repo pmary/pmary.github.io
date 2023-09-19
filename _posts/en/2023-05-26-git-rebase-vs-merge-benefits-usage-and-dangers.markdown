@@ -12,7 +12,6 @@ Git rebase is a powerfull tool to integrate changes from one branch into another
 `git rebase` helps you maintain a clean and linear commit history. By rebasing your changes onto a target branch, you can effectively incorporate your work as a series of sequential, logical commits. This makes it easier to review, understand, and collaborate with other team members.
 
 Let's take an exemple to explain how `git rebase` is different than `git merge`: Imagine you're working on a feature branch called `killer-feature` based on the `main` branch. The `main` branch has received some updates while you were developing your feature. The history looks like this:  
-<div class="mermaid">
 ```mermaid
 gitGraph
   commit id:"A"
@@ -24,7 +23,6 @@ gitGraph
   checkout main
   commit id:"D"
 ```
-</div>
 
 ## Using `git merge`
 The steps would be:  
