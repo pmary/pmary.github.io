@@ -12,7 +12,7 @@ Git rebase est un outil puissant pour intégrer les changements d'une branche da
 `git rebase` vous aide à maintenir un historique de commits propre et linéaire. En réappliquant vos modifications sur une branche cible, vous pouvez incorporer votre travail sous la forme d'une série de commits séquentiels et logiques. Cela facilite la revue, la compréhension et la collaboration avec les autres membres de l'équipe.
 
 Prenons un exemple pour expliquer la différence entre `git rebase` et `git merge`: Imaginez que vous travaillez sur une branche de fonctionnalité appelée `killer-feature` basée sur la branche `main`. La branche `main` a reçu des mises à jour pendant que vous développiez votre fonctionnalité. L'historique ressemble à ceci :
-<div class="mermaid">
+```mermaid
 gitGraph
        commit id:"A"
        commit id:"B"
@@ -22,7 +22,7 @@ gitGraph
        commit id:"F"
        checkout main
        commit id:"D"
-</div>
+```
 
 ## Utilisation de `git merge`
 Les étapes seraient les suivantes :  
@@ -30,7 +30,7 @@ Les étapes seraient les suivantes :
 - Fusionner la feature branch dans `main`: `git merge killer-feature`
 
 Cela donnerait l'historique suivant :  
-<div class="mermaid">
+```mermaid
 gitGraph
        commit id:"A"
        commit id:"B"
@@ -41,7 +41,7 @@ gitGraph
        checkout main
        commit id:"D"
        merge killer-feature id:"G"
-</div>
+```
 
 Les modifications de la branche `killer-feature` asont fusionnées dans `main` sous la forme d'un nouveau commit, créant un commit de fusion. L'historique des commits montrera à la fois les commits individuels de la branche de fonctionnalité et le commit de fusion. Bien que cela reflète l'historique complet, il en résulte un historique des commits encombré et moins lisible, surtout si la branche comporte de fréquents commits ou qu'il y a plusieurs contributeurs.  
 
@@ -52,7 +52,7 @@ Les étapes seraient les suivantes :
 - Effectuer un rebase de la branche de fonctionnalité sur `main` : `git rebase origin/main`. Ajoutez le flag `-i` pour lancer une session interractive.
 - Résoudre les conflits : Pendant le rebase, Git peut s'arrêter et vous demander de résoudre les conflits qui surviennent. Utilisez votre éditeur de texte préféré pour ouvrir les fichiers en conflit, résolvez-les en modifiant le code, puis enregistrez les modifications.
 - Après avoir résolu les conflits pour chaque commit, utilisez `git add` pour marquer les fichiers résolus comme prêts à poursuivre le rebase. Ensuite, utilisez `git rebase --continue` pour continuer le rebase. À ce stade, l'historique ressemblerait à ceci :
-<div class="mermaid">
+```mermaid
 gitGraph
        commit id:"A"
        commit id:"B"
@@ -61,10 +61,10 @@ gitGraph
        branch killer-feature
        commit id:"E"
        commit id:"F"
-</div>
+```
 - Poussez vos modifications : Une fois le rebase terminé et que vous êtes satisfait des modifications, utilisez `git push --force` pour pousser votre branche à jour vers le repository distant. L'option `--force` est nécessaire car le rebase réécrit l'historique des commits.
 - Supprimez la feature branche devenue inutile : `git branch -d killer-feature`. Maintenant, l'historique ressemblerait à ceci :
-<div class="mermaid">
+```mermaid
 gitGraph
        commit id:"A"
        commit id:"B"
@@ -72,7 +72,7 @@ gitGraph
        commit id:"D"
        commit id:"E"
        commit id:"F"
-</div>
+```
 
 <br>
 

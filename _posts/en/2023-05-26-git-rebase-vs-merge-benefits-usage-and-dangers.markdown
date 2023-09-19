@@ -13,15 +13,17 @@ Git rebase is a powerfull tool to integrate changes from one branch into another
 
 Let's take an exemple to explain how `git rebase` is different than `git merge`: Imagine you're working on a feature branch called `killer-feature` based on the `main` branch. The `main` branch has received some updates while you were developing your feature. The history looks like this:  
 <div class="mermaid">
+```mermaid
 gitGraph
-       commit id:"A"
-       commit id:"B"
-       commit id:"C"
-       branch killer-feature order: 1
-       commit id:"E"
-       commit id:"F"
-       checkout main
-       commit id:"D"
+  commit id:"A"
+  commit id:"B"
+  commit id:"C"
+  branch killer-feature order: 1
+  commit id:"E"
+  commit id:"F"
+  checkout main
+  commit id:"D"
+```
 </div>
 
 ## Using `git merge`
@@ -30,7 +32,7 @@ The steps would be:
 - Merge the feature branch into `main`: `git merge killer-feature`
 
 It would results in the following history:  
-<div class="mermaid">
+```mermaid
 gitGraph
        commit id:"A"
        commit id:"B"
@@ -41,7 +43,7 @@ gitGraph
        checkout main
        commit id:"D"
        merge killer-feature id:"G"
-</div>
+```
 
 The changes from `killer-feature` are merged into `main` as a new commit, creating a merge commit. The commit history will show both the individual commits from feature-branch and the merge commit. While this captures the complete history, it can sometimes result in a cluttered and less readable commit history, especially if the branch has frequent commits or multiple contributors.  
 
@@ -52,7 +54,7 @@ The steps would be:
 - Rebase the feature branch onto `main`: `git rebase origin/main`. Add the flag `-i` to do it interactively.
 - Resolve conflicts: During the rebase, Git might pause and ask you to resolve any conflicts that arise. Use your preferred text editor to open the files with conflicts, resolve them by modifying the code, and then save the changes.
 - After resolving conflicts for each commit, use `git add` to mark the resolved files as ready to continue the rebase. Then use `git rebase --continue` to proceed with the rebase. At this point, the history would look like this
-<div class="mermaid">
+```mermaid
 gitGraph
        commit id:"A"
        commit id:"B"
@@ -61,10 +63,10 @@ gitGraph
        branch killer-feature
        commit id:"E"
        commit id:"F"
-</div>
+```
 - Push your changes: Once the rebase is complete, use `git push --force` to push your updated feature branch to the remote repository. The --force flag is necessary because the rebase rewrites the commit history. 
 - Remove the now unnecessary feature branch: `git branch -d killer-feature`. Now, the history would look like this:
-<div class="mermaid">
+```mermaid
 gitGraph
        commit id:"A"
        commit id:"B"
@@ -72,7 +74,7 @@ gitGraph
        commit id:"D"
        commit id:"E"
        commit id:"F"
-</div>
+```
 
 <br>
 

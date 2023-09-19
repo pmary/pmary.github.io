@@ -90,6 +90,16 @@
   <div id="amzn-assoc-ad-07d44366-5758-449f-ab72-13694c079cb1"></div>
   <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=07d44366-5758-449f-ab72-13694c079cb1"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
-  <script src="/assets/js/mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.4.0/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: "default",
+      });
+      window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+    });
+  </script>
   <script src="{{ site.baseurl }}/bundle.js"></script>
 </footer>
