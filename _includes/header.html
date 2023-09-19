@@ -4,7 +4,13 @@
 
   <div class="site-header-wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/{{ page.language }}/home">{{ site.title }}</a>
+    <a href="{{ site.baseurl }}/{{ page.language }}/home">
+      <img class="site-logo" src="{{ site.baseurl }}/assets/icons/logo.png" alt="Logo" class="logo">
+    </a>
+
+    <a class="site-title" href="{{ site.baseurl }}/{{ page.language }}/home">
+      {{ site.title }}
+    </a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
