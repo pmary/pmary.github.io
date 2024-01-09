@@ -33,3 +33,4 @@ A few suggestions:
 Sources:
 - [OMS : Long working hours increasing deaths from heart disease and stroke: WHO, ILO](https://www.who.int/news/item/17-05-2021-long-working-hours-increasing-deaths-from-heart-disease-and-stroke-who-ilo)
 - [Rest: Why You Get More Done When You Work Less, by Alex Soojung-Kim Pang](https://www.amazon.com/Rest-More-Done-When-Work/dp/0465074871)
+- [Wong, K., Chan, A. H. S., & Ngan, S. C. (2019, June 13). The Effect of Long Working Hours and Overtime on Occupational Health: A Meta-Analysis of Evidence from 1998 to 2018. International Journal of Environmental Research and Public Health. MDPI AG.](https://www.mdpi.com/1660-4601/16/12/2102)
