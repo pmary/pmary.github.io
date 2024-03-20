@@ -61,7 +61,7 @@ Snapshots:   0 total
 Time:        0.975 s
 ```
 
-Vous pouvez égallement lancer l'application avec la commande :
+En parallèle, vous pouvez égallement lancer l'application avec la commande :
 ```
 npm run start:dev
 ```
@@ -103,14 +103,14 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { ExhibitionsService } from './exhibitions.service';
 
 describe('ExhibitionsService', () => {
-  let service: ExhibitionsService;
+  let exhibitionsService: ExhibitionsService;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
       providers: [ExhibitionsService],
     }).compile();
 
-    service = module.get<ExhibitionsService>(ExhibitionsService);
+    exhibitionsService = module.get<ExhibitionsService>(ExhibitionsService);
   });
 
   it('should be defined', () => {
@@ -130,14 +130,14 @@ On y regroupe les tets liés au même objet, ici, le `ExhibitionsService`.
 Ensuite, nous avons le hook `beforeEach` :  
 ```ts
 describe('ExhibitionsService', () => {
-  let service: ExhibitionsService;
+  let exhibitionsService: ExhibitionsService;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
       providers: [ExhibitionsService],
     }).compile();
     
-    service = module.get<ExhibitionsService>(ExhibitionsService);
+    exhibitionsService = module.get<ExhibitionsService>(ExhibitionsService);
   });
 
   // ...
@@ -223,31 +223,31 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { ExhibitionsService } from './exhibitions.service';
 
 describe('ExhibitionsService', () => {
-  let service: ExhibitionsService;
+  let exhibitionsService: ExhibitionsService;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
       providers: [ExhibitionsService],
     }).compile();
 
-    service = module.get<ExhibitionsService>(ExhibitionsService);
+    exhibitionsService = module.get<ExhibitionsService>(ExhibitionsService);
   });
 
   describe('createExhibition', () => {
     it('should create an exhibition', () => {
       // Arrange
-      service.exhibitions = [];
+      exhibitionsService.exhibitions = [];
       const payload = {
         id: 1,
         name: 'Exposition 1',
       }
 
       // Act
-      const exhibition = service.createExhibition(payload);
+      const exhibition = exhibitionsService.createExhibition(payload);
 
       // Assert
       expect(exhibition).toBe(payload);
-      expect(service.exhibitions).toHaveLength(1);
+      expect(exhibitionsService.exhibitions).toHaveLength(1);
     });
   })
 });
@@ -261,3 +261,177 @@ Décomposons les étapes :
 Comme exercice pratique, vous pouvez écire les tests des méthodes suivantes avant de passer à la prochaine étape.
 
 ## Tester avec des mocks
+
+Dans l'exemple précédent, nous n'avons utilisé aucune dépendance (rien n'a été passé dans le constructeur), ce qui simplifit les tests mais n'est pas très réaliste. Nous allons maintenant ajouter des dépendances à nos services et controlleurs.  
+
+Pour l'exemple, nous allons ajouter deux services comme dépendance à `ExhibitionsService` : `HttpService` et `ConfigService`.  
+On commance par installer les modules en question avec la commande suivante :  
+```bash
+npm i @nestjs/axios --save
+```
+
+Afin d'utiliser le module HTTP dans notre service, nous devons le rendre disponible à l'injection de dépendence en l'important dans le module, `exhibitions.module.ts` :  
+
+```ts
+import { HttpModule } from '@nestjs/axios';
+import { Module } from '@nestjs/common';
+import { ExhibitionsService } from './exhibitions.service';
+
+@Module({
+  imports: [HttpModule],
+  providers: [ExhibitionsService]
+})
+export class ExhibitionsModule {}
+```
+
+Nous pouvons maintenant utiliser le `HttpModule` dans le service en le passant au constructeur.  
+
+Nous ajoutons égallement une méthode `getEventNameById` qui retourne une liste d'événements dans une ville.  
+
+```ts
+// exhibitions.service.ts
+
+import { 
+  Injectable,
+  InternalServerErrorException,
+ } from '@nestjs/common';
+import { HttpService } from '@nestjs/axios';
+
+type Exhibition = {
+  id: number
+  name: string
+}
+
+@Injectable()
+export class ExhibitionsService {
+  constructor(
+    private readonly httpService: HttpService,
+  ) {}
+
+  // ...
+
+  async getEventNameById(uuid: number) {
+    const { data } = await this.httpService.axiosRef({
+      url: `/api/explore/v2.1/catalog/datasets/evenements-publics-openagenda/records?limit=20&refine=uid%3A${uuid}`,
+      method: 'GET',
+    });
+
+    if (!data || !data.results || !data.results[0].originagenda_title) {
+      throw new InternalServerErrorException();
+    }
+
+    return data.results[0];
+  }
+}
+```
+
+Ajouter ces dépendances crée quelques difficultés pour nos tests unitaires. Leur périmètre est maintenant étendu au comportement de ces dépendances égallement. Celles-ci peuvent aussi être asynchrones (comme utiliser le service `HttpService` pour faire une requête HTTP), ce qui peut affecter la performance de nos tests unitaites. 
+
+La solution est d'utiliser des "test doubles". Dans nos tests unitaire, nous pouvons remplacer des dépendences spécifiques par des "doublures" de façon à ce qu'à l'execution du test il utilise la doublure au lieu de la vrais dépendence.  
+
+Voici tout d'abord quelques tests unitaires que nous allons ajouter à la médhode `getEventNameById()` :  
+1. Un id valide retourne les détails de l'événement
+2. Si la réponse de l'API n'est pas celle qui était attendue, alors on retourne une `InternalServerErrorException`
+
+Avant d'aller plus loins, si vous jouez vos tests exhistants, vous deviez voir une erreur du type `Nest can't resolve dependencies of the ExhibitionsService ` :  
+```bash
+ FAIL  src/exhibitions/exhibitions.service.spec.ts
+  ● ExhibitionsService › createExhibition › should create an exhibition
+
+    Nest can't resolve dependencies of the ExhibitionsService (?). Please make sure that the argument HttpService at index [0] is available in the RootTestModule context.
+
+    Potential solutions:
+    - Is RootTestModule a valid NestJS module?
+    - If HttpService is a provider, is it part of the current RootTestModule?
+    - If HttpService is exported from a separate @Module, is that module imported within RootTestModule?
+      @Module({
+        imports: [ /* the Module containing HttpService */ ]
+      })
+```
+
+Vous voyez cette erreur car Jest tente de jouer les tests mais il manque à l'instance de test une dépendance, le `HttpService`.  
+
+Nous devons donc fournir cette dépendance au module de test de façon à ce que lorsque les tests sont joués, la dépendance soit passée au module de test et puisse être utilisé au sein de `ExhibitionsService`.  
+
+C'est là l'un des plus grand bénéfice de l'injection de dépendance. Vous pouvez facilement échanger les dépendances avec une alternative plus appropriée dans le contexte d'un test. Par exemple, nous pourriez passer le vrais service HttpService qui effectura une vrais requête HTTP ou nous pourrions passer un "test double" de `HttpService` qui prétendra le faire.  
+
+A présent, nous allons commencer par implémenter les tests en utilisant la vrais dépendance, puis nous mettrons à jour pour mocker les requêtes HTTP.  
+
+Pour corriger l'erreur de dépendance manquante dans `exhibitions.service.spec.ts`, nous devons juste ajouter `HttpModule` comme import au module de test :  
+
+```ts
+import { HttpModule } from '@nestjs/axios';
+import { Test, TestingModule } from '@nestjs/testing';
+import { ExhibitionsService } from './exhibitions.service';
+
+describe('ExhibitionsService', () => {
+  let exhibitionsService: ExhibitionsService;
+
+  beforeEach(async () => {
+    const module: TestingModule = await Test.createTestingModule({
+      imports: [HttpModule],
+      providers: [ExhibitionsService],
+    }).compile();
+
+    exhibitionsService = module.get<ExhibitionsService>(ExhibitionsService);
+  });
+
+  // ...
+}
+```
+
+A présent vous ne devriez plus voir d'erreur dans votre terminal !
+
+Ajoutons maintenant nos tests pour la méthode `getEventNameById()` :  
+```ts
+import { HttpModule } from '@nestjs/axios';
+import { Test, TestingModule } from '@nestjs/testing';
+import { ExhibitionsService } from './exhibitions.service';
+import { InternalServerErrorException } from '@nestjs/common';
+
+describe('ExhibitionsService', () => {
+  let exhibitionsService: ExhibitionsService;
+
+  beforeEach(async () => {
+    const module: TestingModule = await Test.createTestingModule({
+      imports: [HttpModule],
+      providers: [ExhibitionsService],
+    }).compile();
+
+    exhibitionsService = module.get<ExhibitionsService>(ExhibitionsService);
+  });
+
+  // ..
+
+  describe('getEventNameById', () => {
+    it('valid event uuid to return event name', async () => {
+      const eventName = exhibitionsService.getEventNameById(53488830);
+
+      await expect(eventName).resolves.toBe('Nuit européenne des musées 2023 : Île-de-France');
+    });
+
+    it('invalid event uuid to throw error', async () => {
+      const eventName = exhibitionsService.getEventNameById(42);
+
+      await expect(eventName).rejects.toBeInstanceOf(InternalServerErrorException);
+    });
+  });
+  
+});
+```
+
+Dans ces tests, puisque `getEventNameById()` est une méthode asynchrone, nous utilisons les méthodes `resolves` et `rejects` de Jest pour les gérer.  
+
+Nos tests devraient maintenant passer correctement.  
+
+Puisque nous n'avons pas mocké la dépendance, la méthode `getEventNameById()` effectue de vrais appels HTTP, ce qui pose les problèmes suivants (qui s'appliquent égallement si on consommait une base de donnée à la place d'une API) :  
+- Faire des appels réseau dans vos tests peuvent les rendre plus lents
+- Vous n'avez pas la garantie que votre API vous retournera toujours le même résultat (vos tests sont donc dépendant d'une source de vérité tiers)
+- Les tests devraient se concentrer sur le comportement de la méthode, peut importe les dépendances
+
+A présent, voyons comment nous pouvons mocker notre service HTTP.  
+
+### Mocker le service `HttpService`
+
+Pour commencer, nous allons utiliser les fonctions de mock de Jest puis nous en expliquerons les limites et implémenterons une alternative plus puissante.  
+
