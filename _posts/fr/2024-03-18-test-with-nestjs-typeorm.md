@@ -433,5 +433,164 @@ A présent, voyons comment nous pouvons mocker notre service HTTP.
 
 ### Mocker le service `HttpService`
 
-Pour commencer, nous allons utiliser les fonctions de mock de Jest puis nous en expliquerons les limites et implémenterons une alternative plus puissante.  
+Pour implémenter un mock dans NestJS, je recommande d'utiliser le package [@golelup/ts-test](https://www.npmjs.com/package/@golevelup/ts-jest).  
 
+```bash
+npm install @golevelup/ts-jest
+```
+
+Utiliser la fonction `createMock` nous donnera toutes les propriétés et sous-propriétés de l'objet que nous souhaitons mocker. L'alternative serait de définir manuellement toutes les propriétés nécessaires dans un objet personalisé, ce qui serait très répétitif et difficil à maintenir.  
+
+Combiné aux capacité de mock de Jest, cette librairie est donc très puissante.  
+
+Notre objectif est d'arrêter d'utiliser le service HTTP pour faire nos requêtes à l'API et d'implémenter une version mocké à la place.  
+
+Au lieu d'utiliser le `HttPModule` comme import dans notre module de test, nous allons le replacer directement par la fonction utilitaire `createMock()` :  
+
+```ts
+import { createMock, DeepMocked } from '@golevelup/ts-jest';
+import { HttpService } from '@nestjs/axios';
+import { Test, TestingModule } from '@nestjs/testing';
+import { ExhibitionsService } from './exhibitions.service';
+import { InternalServerErrorException } from '@nestjs/common';
+
+describe('ExhibitionsService', () => {
+  let exhibitionsService: ExhibitionsService;
+  let httpService: DeepMocked<HttpService>;
+
+  beforeEach(async () => {
+    const module: TestingModule = await Test.createTestingModule({
+      providers: [
+        ExhibitionsService,
+        {
+          provide: HttpService,
+          useValue: createMock<HttpService>(),
+        }
+      ]
+    }).compile();
+
+    exhibitionsService = module.get<ExhibitionsService>(ExhibitionsService);
+    httpService = module.get(HttpService);
+  });
+
+  // ...
+});
+```
+
+Le type `DeepMocked<HttpService>` permet de s'assurer que la variable `httpService` a toutes les propriétés et sous-propriétés disponibles pour l'auto-complétion de notre IDE.  
+
+Quel impact ces changements ont-ils sur nos tests ?  
+
+Par exemple, notre test `valid event uuid to return event name` nous avions écrit ceci :  
+
+```ts
+it('valid event uuid to return event name', async () => {
+  const eventName = exhibitionsService.getEventNameById(53488830);
+
+  await expect(eventName).resolves.toBe('Nuit européenne des musées 2023 : Île-de-France');
+});
+```
+
+Nous appellons la méthode `getEventNameById`, qui utilise le `HttpService` pour faire un appel à l'API opendatasoft.  
+
+Nous venons de remplacer ce `HttpService` par un dummy que nous pouvons controler dans nos tests.  
+
+A présent, dans nos tests nous devrions avoir l'erreur suivante :  
+
+```bash
+ FAIL  src/exhibitions/exhibitions.service.spec.ts
+  ● ExhibitionsService › getEventNameById › valid event uuid to return event name
+
+    expect(received).resolves.toBe()
+
+    Received promise rejected instead of resolved
+    Rejected to value: [InternalServerErrorException: Internal Server Error]
+
+      46 |       const eventName = exhibitionsService.getEventNameById(53488830);
+      47 |
+    > 48 |       await expect(eventName).resolves.toBe('Nuit européenne des musées 2023 : Île-de-France');
+         |             ^
+      49 |     });
+      50 |
+      51 |     it('invalid event uuid to throw error', async () => {
+
+      at expect (../node_modules/expect/build/index.js:113:15)
+      at Object.<anonymous> (exhibitions/exhibitions.service.spec.ts:48:13)
+
+Test Suites: 1 failed, 1 passed, 2 total
+Tests:       1 failed, 3 passed, 4 total
+Snapshots:   0 total
+Time:        1.263 s, estimated 2 s
+```
+
+C'est parceque notre dummy function ne fait rien !  
+
+Dans le test, mettons à jour la dummy function pour "mocker" la réponse de l'API :  
+
+```ts
+import { createMock, DeepMocked } from '@golevelup/ts-jest';
+import { HttpService } from '@nestjs/axios';
+import { Test, TestingModule } from '@nestjs/testing';
+import { ExhibitionsService } from './exhibitions.service';
+import { InternalServerErrorException } from '@nestjs/common';
+
+describe('ExhibitionsService', () => {
+  let exhibitionsService: ExhibitionsService;
+  let httpService: DeepMocked<HttpService>;
+
+  beforeEach(async () => {
+    // ...
+  });
+
+  describe('getEventNameById', () => {
+    it('valid event uuid to return event name', async () => {
+      const result = 'Nuit européenne des musées 2023 : Île-de-France';
+      httpService.axiosRef.mockResolvedValueOnce({
+        data: {
+          results: [{ originagenda_title: result }]
+        },
+        headers: {},
+        config: { url: '' },
+        status: 200,
+        statusText: '',
+      });
+
+      const eventName = exhibitionsService.getEventNameById(53488830);
+
+      await expect(eventName).resolves.toBe(result);
+    });
+
+    // ...
+  });
+});
+```
+
+Nous implémentons un mock pour dire au test : "Quand tu joue ce test, assure toi que `httpService` returne une réponse Axios avec cet objet spécifique dans la propriété `data`.  
+
+Nos tests devraient maintenant passer.  
+
+Nous devons aussi mettre à jour le test `invalid event uuid to throw error` puisqu'il utilise aussi la méthode `getEventNameById` et donc `HttpService` :  
+
+```ts
+  // ...
+
+  it('invalid event uuid to throw error', async () => {
+      httpService.axiosRef.mockResolvedValueOnce({
+        data: {
+          results: [{ }]
+        },
+        headers: {},
+        config: { url: '' },
+        status: 200,
+        statusText: '',
+      });
+
+      const eventName = exhibitionsService.getEventNameById(42);
+
+      await expect(eventName).rejects.toBeInstanceOf(InternalServerErrorException);
+    });
+  
+  // ..
+```
+
+Une dernière optimisation que nous pouvons faire dans notre `ExhibitionService` est de 
