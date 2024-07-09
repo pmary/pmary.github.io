@@ -4464,27 +4464,27 @@ J.init().then(async i=>{
     J.onRemoveComplete = c=>{}
     ,
     o.setNotation({
-        // d4: {
-        //     count: 2
-        // },
-        // d6: {
-        //     count: 2
-        // },
-        // d8: {
-        //     count: 2
-        // },
-        // d10: {
-        //     count: 2
-        // },
-        // d12: {
-        //     count: 2
-        // },
+        d4: {
+            count: 0
+        },
+        d6: {
+            count: 0
+        },
+        d8: {
+            count: 0
+        },
+        d10: {
+            count: 0
+        },
+        d12: {
+            count: 0
+        },
         d20: {
             count: 1
-        }//,
-        // d100: {
-        //     count: 1
-        // }
+        },
+        d100: {
+            count: 0
+        }
     }),
     br(),
     yr()
@@ -4494,33 +4494,33 @@ function br() {
     const i = document.getElementById("toggleRoller")
       , e = document.querySelector(".adv-roller")
       , n = document.querySelector(".dice-picker");
-    me ? e.classList.add("pt-current") : n.classList.add("pt-current"),
-    i.addEventListener("click", o=>{
-        o.preventDefault(),
-        console.log("toggleRoller!"),
-        me ? (e.classList.add("pt-rotateCubeBottomOut"),
-        e.classList.remove("pt-rotateCubeBottomIn"),
-        n.classList.add("pt-current"),
-        n.classList.add("pt-rotateCubeBottomIn"),
-        n.classList.remove("pt-rotateCubeBottomOut"),
-        me = !1,
-        setTimeout(()=>e.classList.remove("pt-current"), 600)) : (e.classList.add("pt-current"),
-        e.classList.add("pt-rotateCubeBottomIn"),
-        e.classList.remove("pt-rotateCubeBottomOut"),
-        n.classList.add("pt-rotateCubeBottomOut"),
-        n.classList.remove("pt-rotateCubeBottomIn"),
-        me = !0,
-        setTimeout(()=>n.classList.remove("pt-current"), 600))
-    }
-    )
+    me ? e.classList.add("pt-current") : n.classList.add("pt-current")//,
+    // i.addEventListener("click", o=>{
+    //     o.preventDefault(),
+    //     console.log("toggleRoller!"),
+    //     me ? (e.classList.add("pt-rotateCubeBottomOut"),
+    //     e.classList.remove("pt-rotateCubeBottomIn"),
+    //     n.classList.add("pt-current"),
+    //     n.classList.add("pt-rotateCubeBottomIn"),
+    //     n.classList.remove("pt-rotateCubeBottomOut"),
+    //     me = !1,
+    //     setTimeout(()=>e.classList.remove("pt-current"), 600)) : (e.classList.add("pt-current"),
+    //     e.classList.add("pt-rotateCubeBottomIn"),
+    //     e.classList.remove("pt-rotateCubeBottomOut"),
+    //     n.classList.add("pt-rotateCubeBottomOut"),
+    //     n.classList.remove("pt-rotateCubeBottomIn"),
+    //     me = !0,
+    //     setTimeout(()=>n.classList.remove("pt-current"), 600))
+    // }
+    // )
 }
 function yr() {
-    document.getElementById("toggleVisibility").addEventListener("click", e=>{
-        e.preventDefault(),
-        console.log("toggle visibility!"),
-        J.isVisible ? (J.hide(),
-        console.log("Box is hidden")) : (J.show(),
-        console.log("Box is visible"))
-    }
-    )
+    // document.getElementById("toggleVisibility").addEventListener("click", e=>{
+    //     e.preventDefault(),
+    //     console.log("toggle visibility!"),
+    //     J.isVisible ? (J.hide(),
+    //     console.log("Box is hidden")) : (J.show(),
+    //     console.log("Box is visible"))
+    // }
+    // )
 }
