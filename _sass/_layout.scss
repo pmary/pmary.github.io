@@ -3,18 +3,40 @@
  */
 .site-header {
     font-family: $base-font-family;
-    min-height: 56px;
+    min-height: 65px;
+    background-color: var(--color-header-bg);
+    border-bottom: 1px solid var(--color-header-border);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 
     // Positioning context for the mobile navigation icon
-    position: relative;
+    position: fixed;
+    top: 0;
+    isolation: isolate;
+    width: 100%;
+}
+
+.site-header-main {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .site-header-wrapper {
-    max-width: 1032px;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    height: 64px;
+    width: 100%;
+    max-width: 1024px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+}
+
+.site-header-wrapper>div {
+    position: relative;
+    width: 100%;
 }
 
 .site-header-post {
@@ -28,12 +50,10 @@
     border-bottom: 1px solid var(--color-header-border);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    -webkit-box-shadow: 0 4px 12px 0 rgba(0,0,0,.05)!important;
-    box-shadow: 0 4px 12px 0 rgba(0,0,0,.05)!important;
 }
 
 .site-logo {
-    max-width: 50px;
+    max-width: 45px;
     float: left;
     margin-top: 5px;
     margin-right: 10px;
@@ -42,12 +62,11 @@
 .site-title {
     font-family: $post-title-font-family;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
-    border-bottom: 2px solid var(--color-accent);
     color: var(--color-text-primary);
     transition: color 0.3s ease;
 
@@ -92,10 +111,12 @@
         position: absolute;
         top: 9px;
         right: 30px;
-        background-color: var(--color-bg-primary);
+        background-color: var(--color-bg-responsive-nav-primary);
         border: 1px solid var(--color-border);
         border-radius: 5px;
         text-align: right;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
 
         .menu-icon {
             display: block;
@@ -109,10 +130,6 @@
             > svg {
                 width: 18px;
                 height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
             }
         }
 
@@ -227,6 +244,7 @@
 .page-content {
     font-family: $base-font-family;
     padding: 40px 0;
+    padding-top: 75px;
     margin-bottom: $spacing-unit;
 
     h2 {

@@ -19,13 +19,13 @@ $spacing-unit:     30px;
 
 $text-color:       rgba(0,0,0,.84);
 $text-color-light: #adabac;
-$background-color: #fff;
+$background-color: hsla(0,0%,100%,.8);
 $background-color-dark: #101012;
 $brand-color:      #cd9023;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark:  rgba(0,0,0,.08);
 $green-color:       #00a82d;
 
 // Width of the content area

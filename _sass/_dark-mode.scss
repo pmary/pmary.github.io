@@ -4,6 +4,7 @@
 :root {
   // Light theme colors (default)
   --color-bg-primary: #{$background-color};
+  --color-bg-responsive-nav-primary: hsl(0, 0%, 100%);
   --color-bg-secondary: #{$background-color-dark};
   --color-bg-tertiary: #f9f9f9;
   --color-text-primary: #{$text-color};
@@ -17,7 +18,7 @@
   
   // Header specific colors
   --color-header-bg: #{$background-color};
-  --color-header-border: #{$grey-color-light};
+  --color-header-border: #{$grey-color-dark};
   --color-nav-text: #{$grey-color};
   --color-nav-text-hover: #{$text-color};
   
@@ -35,6 +36,7 @@
 // Dark mode overrides
 [data-theme="dark"] {
   --color-bg-primary: #101012;
+  --color-bg-responsive-nav-primary: #101012;
   --color-bg-secondary: #1a1a1a;
   --color-bg-tertiary: #282828;
   --color-text-primary: #f9f9f9;
@@ -47,8 +49,8 @@
   --color-link-hover: #f9f9f9;
   
   // Header specific colors
-  --color-header-bg: rgba(16, 16, 18, 0.95);
-  --color-header-border: #3e3e3e;
+  --color-header-bg: hsla(0,0%,4%,.8);
+  --color-header-border: hsla(0,0%,100%,.08);
   --color-nav-text: #8b8b8b;
   --color-nav-text-hover: #f9f9f9;
   
