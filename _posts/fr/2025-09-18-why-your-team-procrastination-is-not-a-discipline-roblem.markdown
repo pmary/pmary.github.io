@@ -114,9 +114,7 @@ Le principe est simple : les affordances environnementaux déclenchent des compo
 
 Les organisations rapportent des retours variables selon la portée de mise en œuvre et le contexte industriel :
 
-La mise en œuvre du time-boxing de TestRail dans 12 entreprises a montré une réduction de 40% du temps de résolution des défauts avec un ROI de 204% et 2,4 millions de dollars de gains annuels moyens contre 180 000 dollars de coûts de mise en œuvre.¹³
-
-La division Aviation de General Electric a rapporté de multiples améliorations pendant la transformation lean, notamment la réduction du temps de service de 25 à 13 heures et 2 millions de dollars d'économies annuelles grâce aux efforts d'optimisation.¹⁴ Bien que plusieurs facteurs aient contribué, les processus de travail structurés traitant la procrastination ont joué un rôle significatif.
+La division Aviation de General Electric a rapporté de multiples améliorations pendant la transformation lean, notamment la réduction du temps de service de 25 à 13 heures et 2 millions de dollars d'économies annuelles grâce aux efforts d'optimisation.¹³ Bien que plusieurs facteurs aient contribué, les processus de travail structurés traitant la procrastination ont joué un rôle significatif.
 
 ## Les limites
 
@@ -157,5 +155,4 @@ La question n'est pas de savoir si vos collaborateurs sont suffisement disciplin
 10. [Wooster Community Hospital, MEDITECH Expanse optimization report (2023)](https://info.meditech.com/wooster-community-hospital-health-system-frees-up-nurses-charting-time-by-almost-1600-hours-annually-in-expanse). "FUN Time" initiative included multiple workflow improvements beyond procrastination interventions.
 11. Bernstein & Turban, "[The impact of the 'open' workspace on human collaboration](https://www.researchgate.net/publication/326130488_The_impact_of_the_'open'_workspace_on_human_collaboration)", *Philosophical Transactions of the Royal Society B* 373, no. 1753 (2018).
 12. Herman Miller Leesman Survey results, [Harry's case study (2022)](https://www.hermanmiller.com/content/dam/hermanmiller/documents/case_studies/cs_hrr_full_uk.pdf). Movement from 3,000 to 26,000 sq ft coincided with other organizational changes.
-13. TestRail enterprise implementation report (2023). 14-month study across 12 companies, average 180 employees each.
-14. [General Electric investor reports (2019-2021)](https://www.ge.com/sites/default/files/GE_AR2021_AnnualReport.pdf). Lean transformation included multiple operational improvements beyond anti-procrastination measures.
+13. [General Electric investor reports (2019-2021)](https://www.ge.com/sites/default/files/GE_AR2021_AnnualReport.pdf). Lean transformation included multiple operational improvements beyond anti-procrastination measures.

@@ -115,9 +115,7 @@ The principle is simple: environmental cues trigger automatic behaviors that byp
 
 Organizations report varying returns depending on implementation scope and industry context:
 
-TestRail's time-boxing implementation across 12 companies showed 40% reduction in defect resolution time with 204% ROI, $2.4 million average annual gains against $180,000 implementation costs.¹³
-
-General Electric's Aviation division reported multiple improvements during lean transformation, including service time reduction from 25 to 13 hours and $2 million annual savings from optimization efforts.¹⁴ While multiple factors contributed, structured work processes addressing procrastination played a significant role.
+General Electric's Aviation division reported multiple improvements during lean transformation, including service time reduction from 25 to 13 hours and $2 million annual savings from optimization efforts.¹³ While multiple factors contributed, structured work processes addressing procrastination played a significant role.
 
 ## Boundaries and Limitations
 
@@ -162,5 +160,4 @@ The question isn't whether your people are disciplined enough. It's whether your
 10. [Wooster Community Hospital, MEDITECH Expanse optimization report (2023)](https://info.meditech.com/wooster-community-hospital-health-system-frees-up-nurses-charting-time-by-almost-1600-hours-annually-in-expanse). "FUN Time" initiative included multiple workflow improvements beyond procrastination interventions.
 11. Bernstein & Turban, "[The impact of the 'open' workspace on human collaboration](https://www.researchgate.net/publication/326130488_The_impact_of_the_'open'_workspace_on_human_collaboration)", *Philosophical Transactions of the Royal Society B* 373, no. 1753 (2018).
 12. Herman Miller Leesman Survey results, [Harry's case study (2022)](https://www.hermanmiller.com/content/dam/hermanmiller/documents/case_studies/cs_hrr_full_uk.pdf). Movement from 3,000 to 26,000 sq ft coincided with other organizational changes.
-13. TestRail enterprise implementation report (2023). 14-month study across 12 companies, average 180 employees each.
-14. [General Electric investor reports (2019-2021)](https://www.ge.com/sites/default/files/GE_AR2021_AnnualReport.pdf). Lean transformation included multiple operational improvements beyond anti-procrastination measures.
+13. [General Electric investor reports (2019-2021)](https://www.ge.com/sites/default/files/GE_AR2021_AnnualReport.pdf). Lean transformation included multiple operational improvements beyond anti-procrastination measures.
