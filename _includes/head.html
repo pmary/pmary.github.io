@@ -7,9 +7,13 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="icon" type="image/png" href="/assets/icons/favicon.png" />
+  <meta name="theme-color" content="#ffffff" />
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+  <!-- Theme Switcher Script (load early to prevent flash) -->
+  <script src="{{ "/assets/js/theme-switcher.js" | prepend: site.baseurl }}" defer></script>
 
   <!-- Lora & Roboto fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Roboto:400,500,700" rel="stylesheet">
