@@ -4,6 +4,7 @@ title:  "Why 75% of Leaders Fail at Comparative Advantage"
 date:   2025-08-10 08:00:40
 categories: management leadership
 comments: true
+image: '/assets/posts/2025-08-11-why-75-percent-of-leaders-fail-at-comparative-advantage/header-illustration.jpg'
 ---
 <img src="/assets/posts/2025-08-11-why-75-percent-of-leaders-fail-at-comparative-advantage/header-illustration.jpg" alt="Why 75% of Leaders Fail at Comparative Advantage illustration" alt="Why 75% of Leaders Fail at Comparative Advantage illustration" class="grid-fig" />
 

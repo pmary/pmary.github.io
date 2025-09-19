@@ -3,21 +3,23 @@
 ---
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
 // Our variables
-$base-font-family: 'Montserrat', sans-serif;
-$base-font-size:   1.1rem;
+$base-font-family: 'Lora', sans-serif;
+$base-font-size:   1.125rem;
 $small-font-size:  $base-font-size * 0.675;
 $base-line-height: 1.7;
 
-$post-font-family: 'Montserrat', serif;
+$header-font-family: 'Inter', sans-serif;
+
+$post-font-family: 'Lora', serif;
 $post-title-font-family: 'Lora', serif;
 
 $spacing-unit:     30px;
 
-$text-color:       rgba(0,0,0,.84);
+$text-color:       rgb(40, 40, 40);
 $text-color-light: #adabac;
 $background-color: hsla(0,0%,100%,.8);
 $background-color-dark: #101012;
