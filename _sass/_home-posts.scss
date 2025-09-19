@@ -6,6 +6,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-bottom: 3rem;
+  position: relative;
   
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -13,12 +14,41 @@
   }
 }
 
+// Add separator using a pseudo-element on the grid items
+.home-posts-grid .home-post-card {
+  position: relative;
+  
+  // Add vertical separator for odd items (left column)
+  &:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    right: calc(-1rem - 0.5px); // Half of gap minus half of border width
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: var(--color-border-light);
+    z-index: 1;
+  }
+  
+  // Hide separator for the last odd item if it's alone
+  &:nth-child(odd):last-child::before {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    // Hide all separators on mobile
+    &:nth-child(odd)::before {
+      display: none;
+    }
+  }
+}
+
 .home-post-card {
   background: var(--color-bg-primary);
-  overflow: hidden;
   transition: all 0.3s ease;
   text-decoration: none;
   color: inherit;
+  display: block;
 }
 
 .home-post-image {

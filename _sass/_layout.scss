@@ -2,6 +2,7 @@
  * Site header
  */
 .site-header {
+    z-index: 1;
     font-family: $header-font-family;
     min-height: 65px;
     background-color: var(--color-header-bg);

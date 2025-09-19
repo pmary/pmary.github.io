@@ -4,22 +4,13 @@ title:  "Why Your Team’s Procrastination Isn’t a Discipline Problem"
 date:   2025-08-10 08:00:40
 categories: management leadership
 comments: true
-image: '/assets/posts/2025-08-11-why-75-percent-of-leaders-fail-at-comparative-advantage/header-illustration.jpg'
+image: '/assets/posts/2025-09-18-why-your-team-procrastination-is-not-a-discipline-roblem/header-illustration.jpg'
 description: "New neuroscience research reveals procrastination stems from measurable brain differences and stress responses, not character flaws."
 ---
-<img src="/assets/posts/2025-08-11-why-75-percent-of-leaders-fail-at-comparative-advantage/header-illustration.jpg" alt="Why 75% of Leaders Fail at Comparative Advantage illustration" alt="Why 75% of Leaders Fail at Comparative Advantage illustration" class="grid-fig" />
+<img src="/assets/posts/2025-09-18-why-your-team-procrastination-is-not-a-discipline-roblem/header-illustration.jpg" alt="Why 75% of Leaders Fail at Comparative Advantage illustration" alt="Why 75% of Leaders Fail at Comparative Advantage illustration" class="grid-fig" />
 
 *New neuroscience research reveals procrastination stems from measurable brain differences and stress responses, not character flaws.*
 
-# Summary
-
-**Diagnose:** Use three questions in one-on-ones to identify whether procrastination stems from stress, paralysis, perfectionism, or temporal discounting. Each requires different interventions.
-
-**Design:** Implement environmental changes (protected focus time, visual workflows) that bypass the need for willpower, as these modifications can triple task initiation rates.
-
-**Measure:** Track 2-3 specific KPIs (cycle time, on-time completion rate) during a 6-12 week pilot to quantify improvement and ROI.
-
----
 
 It's 10 PM on a Thursday. Your star analyst is finally starting the board presentation due at 9 AM tomorrow. She's brilliant, dedicated, and this isn't the first time. Down the hall, your head of product has reorganized his desk twice, answered 47 emails, and attended three "optional" meetings, anything but the strategic roadmap that's been sitting on his desk for two weeks.
 
@@ -145,6 +136,15 @@ Start with one team. Pick your most deadline-challenged group. Spend one week di
 You'll discover what neuroscience already proves: when you stop moralizing procrastination and start addressing its biological roots, you don't just improve productivity. You build cultures where human limitations are acknowledged and systematically addressed, where performance improves not through criticism but through compassion and smart design.
 
 The question isn't whether your people are disciplined enough. It's whether your organization is sophisticated enough to channel inevitable human responses toward productivity. Companies achieving 30-92% improvements in task completion aren't using better discipline. They're using better science.
+
+
+# Summary
+
+**Diagnose:** Use three questions in one-on-ones to identify whether procrastination stems from stress, paralysis, perfectionism, or temporal discounting. Each requires different interventions.
+
+**Design:** Implement environmental changes (protected focus time, visual workflows) that bypass the need for willpower, as these modifications can triple task initiation rates.
+
+**Measure:** Track 2-3 specific KPIs (cycle time, on-time completion rate) during a 6-12 week pilot to quantify improvement and ROI.
 
 ---
 

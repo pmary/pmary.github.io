@@ -40,13 +40,12 @@
     </div>
 
     <!-- Remaining Posts List -->
-    {% assign remaining_posts = siteposts | offset: 4 %}
-    {% if remaining_posts.size > 0 %}
+    {% if siteposts.size > 4 %}
       <div class="home-posts-list">
         <h2 class="home-posts-list-title">More Posts</h2>
         
         <ul class="home-posts-simple">
-          {% for post in remaining_posts %}
+          {% for post in siteposts offset: 4 %}
             <li>
               {% if post.external_url %}
                 <a class="home-simple-post" href="{{ post.external_url }}" target="_blank">
