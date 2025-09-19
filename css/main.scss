@@ -53,6 +53,7 @@ $on-laptop:        760px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "dark-mode",
         "base",
         "layout",
         "syntax",

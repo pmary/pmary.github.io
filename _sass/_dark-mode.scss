@@ -1,0 +1,14 @@
+// Dark Mode Color Variables
+// Starting with basic body styling as proof of concept
+
+:root {
+  // Light theme colors (default)
+  --color-bg-primary: #{$background-color};
+  --color-text-primary: #{$text-color};
+}
+
+// Dark mode overrides
+[data-theme="dark"] {
+  --color-bg-primary: #101012;
+  --color-text-primary: #f9f9f9;
+}
