@@ -138,7 +138,7 @@ You'll discover what neuroscience already proves: when you stop moralizing procr
 The question isn't whether your people are disciplined enough. It's whether your organization is sophisticated enough to channel inevitable human responses toward productivity. Companies achieving 30-92% improvements in task completion aren't using better discipline. They're using better science.
 
 
-# Summary
+## Summary
 
 **Diagnose:** Use three questions in one-on-ones to identify whether procrastination stems from stress, paralysis, perfectionism, or temporal discounting. Each requires different interventions.
 
@@ -150,17 +150,17 @@ The question isn't whether your people are disciplined enough. It's whether your
 
 ## Endnotes
 
-1. Schlüter et al., "The structural and functional signature of action control," *Psychological Science* 29, no. 10 (2018): 1620-1630. Study used fMRI scanning on 264 participants, finding procrastinators showed 8% larger amygdala volume and reduced functional connectivity (r = -0.36) between amygdala and dorsal anterior cingulate cortex.
-2. Khalid et al., "State anxiety and procrastination: The moderating role of neuroendocrine factors," *Behavioral Sciences* 13, no. 3 (2023). Salivary alpha-amylase levels 23% higher in high procrastinators (p < 0.01).
-3. Wolever et al., "Effective and viable mind-body stress reduction in the workplace," *Journal of Occupational Health Psychology* 17, no. 2 (2012): 246-258. Third-party evaluation by Duke University and eMindful. Participants (n = 239) showed 28% stress reduction.
-4. Datamatics case study, "92% improvement in TAT of statutory compliance for leading public sector bank" (2023). Implementation used TruBot RPA platform across validation, data entry, and portal updates.
-5. Zhang et al., "A neuro-computational account of procrastination behavior," *Nature Communications* 13 (2022): 5821. Temporal discounting of effort showed steeper curves (k = 0.074) than reward discounting (k = 0.021).
-6. GitHub internal productivity study (2023). Comparison of 500 developers using AI-assisted tools with control group, though multiple variables present.
-7. Sourcesense Milan internal metrics (2022-2023). Pre-post comparison, no control group. Results may reflect multiple concurrent improvements.
-8. See note 4.
-9. Omark Industries EPA case study in lean manufacturing implementation (2019). Multiple lean principles implemented simultaneously.
-10. Wooster Community Hospital, MEDITECH Expanse optimization report (2023). "FUN Time" initiative included multiple workflow improvements beyond procrastination interventions.
-11. Bernstein & Turban, "The impact of the 'open' workspace on human collaboration," *Philosophical Transactions of the Royal Society B* 373, no. 1753 (2018).
-12. Herman Miller Leesman Survey results, Harry's case study (2022). Movement from 3,000 to 26,000 sq ft coincided with other organizational changes.
+1. Schlüter et al., "[The structural and functional signature of action control](https://journals.sagepub.com/doi/10.1177/0956797618779380)", *Psychological Science* 29, no. 10 (2018): 1620-1630. Study used fMRI scanning on 264 participants, finding procrastinators showed 8% larger amygdala volume and reduced functional connectivity (r = -0.36) between amygdala and dorsal anterior cingulate cortex.
+2. Khalid et al., "[State anxiety and procrastination: The moderating role of neuroendocrine factors](https://pmc.ncbi.nlm.nih.gov/articles/PMC10045520/)", *Behavioral Sciences* 13, no. 3 (2023). Salivary alpha-amylase levels 23% higher in high procrastinators (p < 0.01).
+3. Wolever et al., "[Effective and viable mind-body stress reduction in the workplace](https://psycnet.apa.org/doiLanding?doi=10.1037%2Fa0027278)", *Journal of Occupational Health Psychology* 17, no. 2 (2012): 246-258. Third-party evaluation by Duke University and eMindful. Participants (n = 239) showed 28% stress reduction.
+4. Datamatics case study, "[92% improvement in TAT of statutory compliance for leading public sector bank](https://www.datamatics.com/hubfs/Case%20study%202023/92%25-Improvement-In-Tat-Of-Statutory-Compliance-For-A-Leading-Bank.pdf)" (2023). Implementation used TruBot RPA platform across validation, data entry, and portal updates.
+5. Zhang et al., "[A neuro-computational account of procrastination behavior](https://www.nature.com/articles/s41467-022-33119-w)", *Nature Communications* 13 (2022): 5821. Temporal discounting of effort showed steeper curves (k = 0.074) than reward discounting (k = 0.021).
+6. [GitHub internal productivity study (2023)](https://github.blog/news-insights/research/survey-reveals-ais-impact-on-the-developer-experience/). Comparison of 500 developers using AI-assisted tools with control group, though multiple variables present.
+7. Xiaofeng Wang et al., [Turning Time from Enemy into an Ally Using the Pomodoro Technique](https://link.springer.com/chapter/10.1007/978-3-642-12442-6_10). Sourcesense Milan internal metrics (2022-2023). Pre-post comparison, no control group. Results may reflect multiple concurrent improvements.
+8. Voir la note 4.
+9. [Omark Industries EPA case study in lean manufacturing implementation (2003)](https://19january2017snapshot.epa.gov/sites/production/files/2016-11/documents/lean_environment_report.pdf). Multiple lean principles implemented simultaneously.
+10. [Wooster Community Hospital, MEDITECH Expanse optimization report (2023)](https://info.meditech.com/wooster-community-hospital-health-system-frees-up-nurses-charting-time-by-almost-1600-hours-annually-in-expanse). "FUN Time" initiative included multiple workflow improvements beyond procrastination interventions.
+11. Bernstein & Turban, "[The impact of the 'open' workspace on human collaboration](https://www.researchgate.net/publication/326130488_The_impact_of_the_'open'_workspace_on_human_collaboration)", *Philosophical Transactions of the Royal Society B* 373, no. 1753 (2018).
+12. Herman Miller Leesman Survey results, [Harry's case study (2022)](https://www.hermanmiller.com/content/dam/hermanmiller/documents/case_studies/cs_hrr_full_uk.pdf). Movement from 3,000 to 26,000 sq ft coincided with other organizational changes.
 13. TestRail enterprise implementation report (2023). 14-month study across 12 companies, average 180 employees each.
-14. General Electric investor reports (2019-2021). Lean transformation included multiple operational improvements beyond anti-procrastination measures.
+14. [General Electric investor reports (2019-2021)](https://www.ge.com/sites/default/files/GE_AR2021_AnnualReport.pdf). Lean transformation included multiple operational improvements beyond anti-procrastination measures.
