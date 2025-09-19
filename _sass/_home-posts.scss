@@ -1,0 +1,137 @@
+// Homepage Post Cards - Linear Style
+// Minimal changes for two-column layout with card design
+
+.home-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.home-post-card {
+  background: var(--color-bg-primary);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-post-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--color-bg-tertiary);
+  border-radius: 5px;
+  
+  @media (max-width: 768px) {
+    height: 200px;
+  }
+}
+
+.home-post-content {
+  padding-top: 20px;
+}
+
+.home-post-date {
+  font-size: 0.8rem;
+  color: var(--color-text-tertiary);
+  font-family: $header-font-family;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+
+.home .home-post-title {
+  font-size: 1.4rem;
+  font-weight: 450;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-primary);
+  font-family: $post-title-font-family;
+  letter-spacing: -0.012em;
+  text-wrap: pretty;
+}
+
+.home-post-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+// Remaining posts list (simple list style)
+.home-posts-list {
+  .home-posts-list-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--color-text-primary);
+    font-family: $header-font-family;
+  }
+}
+
+.home-posts-simple {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  li {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border-light);
+    
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.home-simple-post {
+  font-family: $header-font-family;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+  
+  &:hover {
+    text-decoration: none;
+    
+    .home-simple-post-title {
+      color: var(--color-link);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.home-simple-post-date {
+  font-size: 0.8rem;
+  color: var(--color-text-tertiary);
+  font-family: $header-font-family;
+  white-space: nowrap;
+  min-width: 100px;
+  
+  @media (max-width: 600px) {
+    min-width: auto;
+  }
+}
+
+.home .home-simple-post-title {
+  font-size: 1.4rem;
+  font-weight: 450;
+  color: var(--color-text-primary);
+  transition: color 0.3s ease;
+  margin: 0;
+}

@@ -15,7 +15,7 @@ $base-line-height: 1.7;
 $header-font-family: 'Inter', sans-serif;
 
 $post-font-family: 'Lora', serif;
-$post-title-font-family: 'Lora', serif;
+$post-title-font-family: 'Inter', serif;
 
 $spacing-unit:     30px;
 
@@ -58,6 +58,7 @@ $on-laptop:        760px;
         "dark-mode",
         "base",
         "layout",
+        "home-posts",
         "syntax",
         "mermaid",
         "theme-toggle",

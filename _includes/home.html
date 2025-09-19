@@ -1,4 +1,5 @@
 {% assign translations = site.data.translations %}
+{% assign siteposts = site.posts | where: 'language', page.language %}
 
 <div class="page-wrapper">
   <div class="home">
@@ -7,32 +8,64 @@
       {{ translations.posts[page.language] }}
     </h1>
 
-    <ul class="post-list">
-      {% assign siteposts = site.posts | where: 'language', page.language %}
-      {% for post in siteposts %}
-        <li>
-          <span class="post-meta">
-            {{ post.date | date: "%b %-d, %Y" }}
-            {% if post.external_url %}
-            | {{ post.external_site }}
-            {% endif %}
-          </span>
-
-          {% if post.external_url %}
-            <h2>
-                <a class="post-link post-link-external" href="{{ post.external_url | prepend: site.baseurl }}" target="_blank">
-                  {{ post.title }}
-                  <span class="icon icon-external-link"></span>
-                </a>
-            </h2>
-          {% else %}
-            <h2>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
+    <!-- Featured Posts Grid (first 4 posts) -->
+    <div class="home-posts-grid">
+      {% for post in siteposts limit: 4 %}
+        {% if post.external_url %}
+          <a class="home-post-card" href="{{ post.external_url }}" target="_blank">
+        {% else %}
+          <a class="home-post-card" href="{{ post.url | prepend: site.baseurl }}">
+        {% endif %}
+          {% if post.image %}
+            <img class="home-post-image" src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" loading="lazy">
           {% endif %}
-        </li>
+          
+          <div class="home-post-content">
+            <div class="home-post-date">
+              {{ post.date | date: "%b %-d, %Y" }}
+              {% if post.external_url %} • {{ post.external_site }}{% endif %}
+            </div>
+            
+            <h2 class="home-post-title">
+              {{ post.title }}
+              {% if post.external_url %}<span class="icon icon-external-link"></span>{% endif %}
+            </h2>
+            
+            {% if post.description %}
+              <p class="home-post-description">{{ post.description }}</p>
+            {% endif %}
+          </div>
+        </a>
       {% endfor %}
-    </ul>
+    </div>
+
+    <!-- Remaining Posts List -->
+    {% assign remaining_posts = siteposts | offset: 4 %}
+    {% if remaining_posts.size > 0 %}
+      <div class="home-posts-list">
+        <h2 class="home-posts-list-title">More Posts</h2>
+        
+        <ul class="home-posts-simple">
+          {% for post in remaining_posts %}
+            <li>
+              {% if post.external_url %}
+                <a class="home-simple-post" href="{{ post.external_url }}" target="_blank">
+              {% else %}
+                <a class="home-simple-post" href="{{ post.url | prepend: site.baseurl }}">
+              {% endif %}
+                <div class="home-simple-post-date">
+                  {{ post.date | date: "%b %-d, %Y" }}
+                </div>
+                <h3 class="home-simple-post-title">
+                  {{ post.title }}
+                  {% if post.external_url %}<span class="icon icon-external-link"></span>{% endif %}
+                </h3>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
 
   </div>
 </div>

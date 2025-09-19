@@ -5,6 +5,7 @@ date:   2025-08-10 08:00:40
 categories: management leadership
 comments: true
 image: '/assets/posts/2025-08-11-why-75-percent-of-leaders-fail-at-comparative-advantage/header-illustration.jpg'
+description: "When delegating everything you're not best at becomes a luxury you can't afford"
 ---
 <img src="/assets/posts/2025-08-11-why-75-percent-of-leaders-fail-at-comparative-advantage/header-illustration.jpg" alt="Why 75% of Leaders Fail at Comparative Advantage illustration" alt="Why 75% of Leaders Fail at Comparative Advantage illustration" class="grid-fig" />
 
