@@ -21,6 +21,7 @@ body {
     color: var(--color-text-primary);
     background-color: var(--color-bg-primary);
     -webkit-text-size-adjust: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 
@@ -88,20 +89,16 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: var(--color-link);
     text-decoration: none;
-
-    text-decoration: none;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
-
-    /*&:visited {
-        color: darken($brand-color, 15%);
-    }*/
+    transition: color 0.3s ease;
 
     &:hover {
-        color: $text-color;
+        color: var(--color-link-hover);
+    }
+
+    &:visited {
+        color: var(--color-link);
     }
 }
 
@@ -111,12 +108,13 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    color: var(--color-text-tertiary);
+    border-left: 4px solid var(--color-border);
     padding-left:calc($spacing-unit / 2);
     font-size: 18px;
     letter-spacing: -1px;
     font-style: italic;
+    transition: color 0.3s ease, border-color 0.3s ease;
 
     > :last-child {
         margin-bottom: 0;
@@ -129,23 +127,46 @@ blockquote {
  * Code formatting
  */
 code.language-plaintext.highlighter-rouge {
-    border: 1px solid $grey-color-light;
-    background-color: #eee;
+    border: 1px solid var(--color-code-border);
+    background-color: var(--color-code-bg);
 }
 
 code {
     padding: 1px 5px;
+    background-color: var(--color-code-bg);
+    color: var(--color-text-primary);
+    border-radius: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+// Code within syntax highlighter should keep its fixed colors
+.highlight code {
+    background-color: transparent;
+    color: #c9d1d9; // Fixed light color for dark background
+    transition: none;
 }
 
 pre {
     padding: 8px 12px;
     overflow-x: scroll;
+    background-color: var(--color-pre-bg);
+    border: 1px solid var(--color-code-border);
+    border-radius: 4px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 
     > code {
         border: 0;
         padding-right: 0;
         padding-left: 0;
+        background-color: transparent;
     }
+}
+
+// Pre blocks with syntax highlighting should keep their fixed styling
+.highlight pre {
+    background-color: #161b22; // Fixed dark background
+    border: 1px solid #30363d; // Fixed dark border
+    transition: none;
 }
 
 

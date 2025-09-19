@@ -1,14 +1,64 @@
 // Dark Mode Color Variables
-// Starting with basic body styling as proof of concept
+// Comprehensive color system for light and dark themes
 
 :root {
   // Light theme colors (default)
   --color-bg-primary: #{$background-color};
+  --color-bg-secondary: #{$background-color-dark};
+  --color-bg-tertiary: #f9f9f9;
   --color-text-primary: #{$text-color};
+  --color-text-secondary: #{$text-color-light};
+  --color-text-tertiary: #{$grey-color};
+  --color-border: #{$grey-color-light};
+  --color-border-light: #f0f0f0;
+  --color-accent: #{$brand-color};
+  --color-link: #{$brand-color};
+  --color-link-hover: #{$text-color};
+  
+  // Header specific colors
+  --color-header-bg: #{$background-color};
+  --color-header-border: #{$grey-color-light};
+  --color-nav-text: #{$grey-color};
+  --color-nav-text-hover: #{$text-color};
+  
+  // Footer specific colors
+  --color-footer-bg: #{$background-color-dark};
+  --color-footer-text: #{$text-color-light};
+  --color-footer-border: #{$grey-color-light};
+  
+  // Code block colors
+  --color-code-bg: #eee;
+  --color-code-border: #{$grey-color-light};
+  --color-pre-bg: #{$background-color};
 }
 
 // Dark mode overrides
 [data-theme="dark"] {
   --color-bg-primary: #101012;
+  --color-bg-secondary: #1a1a1a;
+  --color-bg-tertiary: #282828;
   --color-text-primary: #f9f9f9;
+  --color-text-secondary: #d6d6d6;
+  --color-text-tertiary: #8b8b8b;
+  --color-border: #3e3e3e;
+  --color-border-light: #2a2a2a;
+  --color-accent: #e8a547;
+  --color-link: #e8a547;
+  --color-link-hover: #f9f9f9;
+  
+  // Header specific colors
+  --color-header-bg: rgba(16, 16, 18, 0.95);
+  --color-header-border: #3e3e3e;
+  --color-nav-text: #8b8b8b;
+  --color-nav-text-hover: #f9f9f9;
+  
+  // Footer specific colors
+  --color-footer-bg: #1a1a1a;
+  --color-footer-text: #d6d6d6;
+  --color-footer-border: #3e3e3e;
+  
+  // Code block colors
+  --color-code-bg: #2d2d2d;
+  --color-code-border: #3e3e3e;
+  --color-pre-bg: #282828;
 }

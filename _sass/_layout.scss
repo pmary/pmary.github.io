@@ -24,7 +24,10 @@
     width: 100%;
     position: fixed;
     box-sizing: border-box;
-    background-color: rgba(255,255,255,.97);
+    background-color: var(--color-header-bg);
+    border-bottom: 1px solid var(--color-header-border);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     -webkit-box-shadow: 0 4px 12px 0 rgba(0,0,0,.05)!important;
     box-shadow: 0 4px 12px 0 rgba(0,0,0,.05)!important;
 }
@@ -44,14 +47,17 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
-    border-bottom: 2px solid #cd9023;
+    border-bottom: 2px solid var(--color-accent);
+    color: var(--color-text-primary);
+    transition: color 0.3s ease;
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: var(--color-text-primary);
     }
 
     &:hover {
+        color: var(--color-accent);
         text-decoration: none;
     }
 }
@@ -66,9 +72,10 @@
     }
 
     .page-link {
-        color: $grey-color;
+        color: var(--color-nav-text);
         font-size: 15px;
         line-height: $base-line-height;
+        transition: color 0.3s ease;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -76,7 +83,7 @@
         }
 
         &:hover {
-            color: $text-color;
+            color: var(--color-nav-text-hover);
             text-decoration: none;
         }
     }
@@ -85,8 +92,8 @@
         position: absolute;
         top: 9px;
         right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
+        background-color: var(--color-bg-primary);
+        border: 1px solid var(--color-border);
         border-radius: 5px;
         text-align: right;
 
@@ -132,17 +139,23 @@
  * Site footer
  */
 .site-footer {
-    background-color: $background-color-dark;
-    color: $text-color-light;
-    border-top: 1px solid $grey-color-light;
+    background-color: var(--color-footer-bg);
+    color: var(--color-footer-text);
+    border-top: 1px solid var(--color-footer-border);
     padding: $spacing-unit 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
 
-    a:hover {
-        color: $text-color-light;
+    a {
+        color: var(--color-footer-text);
+        transition: color 0.3s ease;
+        
+        &:hover {
+            color: var(--color-link);
+        }
     }
 
     .divider {
-        border-bottom: 1px solid rgba(90,90,90,0.3);
+        border-bottom: 1px solid var(--color-border);
     }
 }
 
