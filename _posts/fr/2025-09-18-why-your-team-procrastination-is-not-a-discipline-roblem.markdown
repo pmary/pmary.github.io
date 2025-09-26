@@ -135,7 +135,7 @@ Vous découvrirez ce que les neurosciences prouvent déjà : quand vous arrêtez
 La question n'est pas de savoir si vos collaborateurs sont suffisement disciplinés. C'est de savoir si votre organisation est assez sophistiquée pour canaliser des réponses humaines inévitables vers la productivité. Les entreprises qui obtiennent des améliorations de l'ordre de 30-92% dans le taux de complétion des tâches n'utilisent pas une meilleure discipline. Elles utilisent un meilleur socle scientifique.
 
 ## En résumé
-**Diagnostiquer :** Utilisez trois questions lors des entretiens individuels pour identifier si la procrastination provient du stress, de la paralysie, du perfectionnisme ou de l'escompte temporel — chaque type nécessite des interventions différentes.  
+**Diagnostiquer :** Utilisez trois questions lors des entretiens individuels pour identifier si la procrastination provient du stress, de la paralysie, du perfectionnisme ou de l'escompte temporel. Chaque type nécessite des interventions différentes.  
 
 **Concevoir :** Mettez en place des changements environnementaux (temps de concentration protégé, flux de travail visuels) qui contournent le besoin de volonté, car ces modifications peuvent tripler le taux d'initiation des tâches.  
 
