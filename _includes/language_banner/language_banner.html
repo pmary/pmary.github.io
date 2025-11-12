@@ -1,14 +1,14 @@
 <aside id="languages-banner" class="languages-banner {% if page.layout == 'post' %}languages-banner-post{% endif %}" role="dialog" hidden="true">
     <div class="languages-page-header__language-content padding-y-xs" lang="fr">
       <p class="languages-page-header__p">
-        Contenu disponible en <a href="/fr/home" onclick="setLanguagesPreferenceCloseBannerAndRedirect(event, 'fr')" ontransitionend="event.stopPropagation()">Français</a>.
-        <button onclick="setLanguagesPreferenceAndCloseBanner('fr')" title="Fermer" aria-label="Fermer" class="button button--ghost button--has-icon languages-page-header__button-close button--has-icon--is-white" ontransitionend="event.stopPropagation()">X</button>
+        Contenu disponible en <a href="#" onclick="switchLanguage(event, 'fr')" ontransitionend="event.stopPropagation()">Français</a>.
+        <button onclick="setLanguagesPreferenceAndCloseBanner('{{ page.language }}')" title="Fermer" aria-label="Fermer" class="button button--ghost button--has-icon languages-page-header__button-close button--has-icon--is-white" ontransitionend="event.stopPropagation()">X</button>
       </p>
     </div>
     <div class="languages-page-header__language-content padding-y-xs" lang="en">
       <p class="languages-page-header__p">
-        You can also read this in <a href="/" onclick="setLanguagesPreferenceCloseBannerAndRedirect(event, 'en')" ontransitionend="event.stopPropagation()">English</a>.
-        <button onclick="setLanguagesPreferenceAndCloseBanner('en')" title="Close" aria-label="Close" class="button button--ghost button--has-icon languages-page-header__button-close button--has-icon--is-white" ontransitionend="event.stopPropagation()">X</button>
+        You can also read this in <a href="#" onclick="switchLanguage(event, 'en')" ontransitionend="event.stopPropagation()">English</a>.
+        <button onclick="setLanguagesPreferenceAndCloseBanner('{{ page.language }}')" title="Close" aria-label="Close" class="button button--ghost button--has-icon languages-page-header__button-close button--has-icon--is-white" ontransitionend="event.stopPropagation()">X</button>
       </p>
     </div>
 </aside>

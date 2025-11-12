@@ -41,14 +41,6 @@
     if (supportedLanguages.includes(agentLanguage)) hideGoogleTranslate();
     const preferenceLanguage = localStorage.getItem('preferenceLanguage');
 
-    let languagesBannerViewCount = localStorage.getItem('languagesBannerViewCount');
-    if (languagesBannerViewCount === null) {
-      languagesBannerViewCount = 0;
-    }
-    else {
-      languagesBannerViewCount = parseInt(languagesBannerViewCount);
-    }
-    
     /* Hide banner texts in other languages */
     if (nodes) {
       for (let node of nodes) {
@@ -61,28 +53,13 @@
     /*
     Show the banner only if the page language is different from the agent language
     and the user has not set a language preference yet.
-    Also limit the number of times the banner is shown to the user.
     */
     if (
-      languagesBannerViewCount < 4 &&
-      (
-        pageLanguage != agentLanguage &&
-        !preferenceLanguage &&
-        supportedLanguages.includes(agentLanguage)
-      ) ||
-      (
-        preferenceLanguage && 
-        preferenceLanguage != pageLanguage && 
-        preferenceLanguage == agentLanguage &&
-        supportedLanguages.includes(agentLanguage)
-      )
+      pageLanguage != agentLanguage &&
+      !preferenceLanguage &&
+      supportedLanguages.includes(agentLanguage)
     ) {
-      languagesBannerViewCount++;
-      localStorage.setItem('languagesBannerViewCount', languagesBannerViewCount);
-
       if (banner) banner.removeAttribute('hidden');
-    } else {
-      //redirectToRightSubpath(preferenceLanguage);
     }
   })();
   /*
@@ -112,4 +89,49 @@
     const pageLanguage = lang;
     console.log('pageLanguage', pageLanguage);
     localStorage.setItem('preferenceLanguage', pageLanguage);
+  }
+
+  /* Switch language by swapping the language segment in the current URL */
+  function switchLanguage(e, targetLang) {
+    e.preventDefault();
+    const currentPath = window.location.pathname;
+    const supportedLanguages = ['en', 'fr'];
+
+    let newPath = currentPath;
+
+    // Try to swap language in path
+    for (let lang of supportedLanguages) {
+      if (currentPath.includes('/' + lang + '/')) {
+        newPath = currentPath.replace('/' + lang + '/', '/' + targetLang + '/');
+        break;
+      }
+    }
+
+    // If no language found in path, assume we're at root and go to home
+    if (newPath === currentPath) {
+      newPath = '/' + targetLang + '/home';
+    }
+
+    // Save preference and redirect
+    savePreferredLanguage(targetLang);
+    window.location.href = newPath;
+  }
+
+  /* Get alternate language URL for current page */
+  function getAlternateLanguageUrl(targetLang) {
+    const currentPath = window.location.pathname;
+    const supportedLanguages = ['en', 'fr'];
+
+    let newPath = currentPath;
+
+    // Try to swap language in path
+    for (let lang of supportedLanguages) {
+      if (currentPath.includes('/' + lang + '/')) {
+        newPath = currentPath.replace('/' + lang + '/', '/' + targetLang + '/');
+        return newPath;
+      }
+    }
+
+    // If no language found in path, go to home
+    return '/' + targetLang + '/home';
   }

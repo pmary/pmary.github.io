@@ -31,7 +31,20 @@
               {% endif %}
             {% endfor %}
 
-            <!-- 
+            <!-- Language Selector -->
+            <div class="language-selector">
+              {% if page.language == 'en' %}
+                <span class="language-selector-active">EN</span>
+                <span class="language-selector-separator">/</span>
+                <a class="language-selector-link" href="#" onclick="switchLanguage(event, 'fr')">FR</a>
+              {% else %}
+                <a class="language-selector-link" href="#" onclick="switchLanguage(event, 'en')">EN</a>
+                <span class="language-selector-separator">/</span>
+                <span class="language-selector-active">FR</span>
+              {% endif %}
+            </div>
+
+            <!--
             {% for page in site.pages %}
               {% if page.title %}
               <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
