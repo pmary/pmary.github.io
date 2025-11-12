@@ -59,21 +59,30 @@
     }
 
     /*
-    If the translations have been ignored fewer than 4 times, the banner can be shown.
-    If the page is in the agent's language, the banner can be shown.
-    If the banner was closed once by the user but the client language changed, the banner can be shown.
+    Show the banner only if the page language is different from the agent language
+    and the user has not set a language preference yet.
+    Also limit the number of times the banner is shown to the user.
     */
     if (
       languagesBannerViewCount < 4 &&
-      pageLanguage != agentLanguage &&
-      !preferenceLanguage
+      (
+        pageLanguage != agentLanguage &&
+        !preferenceLanguage &&
+        supportedLanguages.includes(agentLanguage)
+      ) ||
+      (
+        preferenceLanguage && 
+        preferenceLanguage != pageLanguage && 
+        preferenceLanguage == agentLanguage &&
+        supportedLanguages.includes(agentLanguage)
+      )
     ) {
       languagesBannerViewCount++;
       localStorage.setItem('languagesBannerViewCount', languagesBannerViewCount);
 
       if (banner) banner.removeAttribute('hidden');
     } else {
-      redirectToRightSubpath(preferenceLanguage);
+      //redirectToRightSubpath(preferenceLanguage);
     }
   })();
   /*
