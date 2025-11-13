@@ -1,0 +1,54 @@
+<div id="search-modal" class="search-modal" hidden>
+  <div class="search-modal-backdrop" onclick="closeSearch()"></div>
+
+  <div class="search-modal-container">
+    <div class="search-modal-header">
+      <div class="search-input-wrapper">
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="Search articles..."
+          autocomplete="off"
+          autofocus
+        />
+        <button id="search-clear" class="search-clear" onclick="clearSearch()" aria-label="Clear search" hidden>×</button>
+      </div>
+      <button class="search-close" onclick="closeSearch()" aria-label="Close search">×</button>
+    </div>
+
+    <div class="search-filters">
+      <label class="search-filter-language">
+        <input type="radio" name="language" value="current" checked />
+        <span class="filter-label" data-lang-label>
+          {% if page.language == 'en' %}English only{% else %}Français seulement{% endif %}
+        </span>
+      </label>
+      <label class="search-filter-language">
+        <input type="radio" name="language" value="all" />
+        <span class="filter-label">All languages</span>
+      </label>
+      <div id="search-result-count" class="search-result-count" hidden></div>
+    </div>
+
+    <div class="search-results-container">
+      <div id="search-results"></div>
+      <div id="search-empty" class="search-empty" hidden>
+        <p>No results found for "<span id="search-query-text"></span>"</p>
+        <p class="search-empty-hint">Try different keywords or search in all languages</p>
+      </div>
+      <div id="search-initial" class="search-initial">
+        <h4 class="search-initial-title">Recent Posts</h4>
+        <div id="search-recent-posts"></div>
+      </div>
+      <div id="search-loading" class="search-loading" hidden>
+        <div class="search-spinner"></div>
+        <p>Loading search index...</p>
+      </div>
+    </div>
+
+    <div class="search-footer">
+      <kbd>/</kbd> to open • <kbd>↑</kbd><kbd>↓</kbd> to navigate • <kbd>↵</kbd> to select • <kbd>esc</kbd> to close
+    </div>
+  </div>
+</div>
