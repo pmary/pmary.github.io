@@ -4,7 +4,7 @@ title:  "The AI Wrote the Code. My Job Was Knowing When It Was Wrong"
 date:   2026-02-08 08:00:40
 categories: engineering leadership
 comments: true
-image: '/assets/posts/2026-02-08-the-ai-wrote-the-code-my-job-was-knowing-when-it-was-wrong/header-illustration.jpg'
+image: '/assets/posts/2026-02-08-the-ai-wrote-the-code-my-job-was-knowing-when-it-was-wrong/header-illustration.png'
 description: "5 hours, 5,000 lines, zero lines written by me and the human decisions that made it actually work."
 ---
 <img src="/assets/posts/2026-02-08-the-ai-wrote-the-code-my-job-was-knowing-when-it-was-wrong/header-illustration.jpg" alt="The AI Wrote the Code. My Job Was Knowing When It Was Wrong" alt="The AI Wrote the Code. My Job Was Knowing When It Was Wrong" class="grid-fig" />
