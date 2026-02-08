@@ -96,7 +96,7 @@ And the cost? I ran this entirely on my Claude subscription. No per-token billin
 
 ## The Junior Developer Question
 
-I've described the AI as behaving like "a very fast junior developer with no code review process." That analogy deserves more than a passing mention, because I know what people are thinking when they read it.
+I described the AI as behaving like "a very fast junior developer with no code review process." That analogy deserves more than a passing mention, because I know what people are thinking when they read it.
 
 No, this doesn't mean junior developers are obsolete. It means the opposite.
 
@@ -104,17 +104,17 @@ What I observed in this project is that the AI produces output that *looks* like
 
 That's not what good junior developers do. Good junior developers *learn*. They carry forward the lesson from the last code review. They internalize the team's standards. They develop taste. The AI resets to zero every session. It's a brilliant executor with no institutional memory. Which, incidentally, is exactly why the CLAUDE.md file works so well: it's a substitute for the learning the AI can't do on its own.
 
-What this really changes is the path to seniority. When I started my career, I spent years writing boilerplate, debugging trivial issues, and building muscle memory for language syntax. That was the apprenticeship. If AI handles the boilerplate, the apprenticeship has to happen differently: through architecture decisions, system design, debugging the AI's mistakes, and developing the judgment to know when the AI is confidently wrong. The skill being automated isn't "coding." It's typing. The skills that matter are judgment, taste and systems thinking. Those are harder to develop, and they matter more than ever.
+What this really changes is the path to seniority. When I started my career, I spent years writing boilerplate, debugging trivial issues, and building muscle memory for language syntax. That was the apprenticeship. If AI handles the boilerplate, the apprenticeship has to happen differently: through architecture decisions, system design, debugging the AI's mistakes, and developing the judgment to know when the AI is confidently wrong. The skill being automated isn't "coding." It's typing. The skills that matter are judgment, design and systems thinking. Those are harder to develop, and they matter more than ever.
 
 ## What I'm Actually Changing
 
-I manage 11 engineers and I'm leading AI transformation for 75 more. This side project wasn't academic. It directly informed how I'm approaching AI adoption for my team.
+I manage 11 engineers and I'm co-leading AI transformation for 75 more. This side project wasn't academic. It directly informed how I'm approaching AI adoption for my team.
 
 First, I'm treating AI tool onboarding like I'd treat onboarding a new team member. That means establishing standards *before* giving it work: CLAUDE.md files in every repository, pre-commit hooks enforced from day one, clear definitions of done. We don't let new hires push untested code. We shouldn't let AI assistants do it either.
 
-Second, I'm investing in my engineers' ability to direct AI, not just use it. The hardest moments in this project weren't about prompting. They were about recognizing when the AI was solving the wrong problem. That requires deep domain knowledge. So I'm doubling down on architecture reviews, system design discussions, and technical mentoring. The better my team understands our systems, the more effectively they can steer the AI.
+Second, I'm investing in our engineers' ability to direct AI, not just use it. The hardest moments in this project weren't about prompting. They were about recognizing when the AI was solving the wrong problem. That requires deep domain knowledge. So I'm doubling down on architecture reviews, system design discussions, and technical mentoring. The better my team understands our systems, the more effectively they can steer the AI.
 
-Third, I'm being honest about what this means for how we allocate time. If a side project I built in 5 hours would have taken 2–4 weeks manually, the math applies to our production work too. Not linearly because production code has more constraints, more stakeholders, more edge cases. But the direction is clear: the ratio of thinking-to-typing is shifting dramatically, and teams that adapt their processes to that shift will outperform those that don't.
+Third, I'm being honest about what this means for how we allocate time. If a side project I built in 5 hours would have taken 2–4 weeks manually, the math applies to our production work too. Not linearly because production code has more constraints, more stakeholders, more edge cases. But the direction is clear: the ratio of thinking-to-typing has already shifted dramatically, and teams that adapt their processes to that shift will outperform those that don't.
 
 We're early in this. I don't know yet whether the productivity gains I saw on a solo side project translate cleanly to a team working on production systems with real users and real consequences. But I know the experiment is worth running and I'd rather run it with guardrails in place than discover we needed them after the fact.
 
