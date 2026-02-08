@@ -7,7 +7,7 @@ comments: true
 image: '/assets/posts/2026-02-08-the-ai-wrote-the-code-my-job-was-knowing-when-it-was-wrong/header-illustration.png'
 description: "5 hours, 5,000 lines, zero lines written by me and the human decisions that made it actually work."
 ---
-<img src="/assets/posts/2026-02-08-the-ai-wrote-the-code-my-job-was-knowing-when-it-was-wrong/header-illustration.jpg" alt="The AI Wrote the Code. My Job Was Knowing When It Was Wrong" alt="The AI Wrote the Code. My Job Was Knowing When It Was Wrong" class="grid-fig" />
+<img src="/assets/posts/2026-02-08-the-ai-wrote-the-code-my-job-was-knowing-when-it-was-wrong/header-illustration.png" alt="The AI Wrote the Code. My Job Was Knowing When It Was Wrong" alt="The AI Wrote the Code. My Job Was Knowing When It Was Wrong" class="grid-fig" />
 
 One evening, I was walking through the hallway at home when the idea hit me. I'd been reading a PDF on my reMarkable Paper Pro earlier that day, highlighting passages, scribbling notes in the margins. And it occurred to me, not for the first time, that those highlights were going nowhere. I use Readwise to aggregate highlights from everything else I read: Kindle books, web articles, even Claude artifacts. It's the backbone of my knowledge management system. But my reMarkable, the device I do my deepest reading on, had no Readwise integration. My best highlights were stuck in a digital drawer.
 *If only Readwise had a native integration*. And then it struck me: why not build it myself?
