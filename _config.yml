@@ -25,6 +25,8 @@ defaults:
 markdown: kramdown
 highlighter: rouge
 
+show_newsletter: false
+
 kramdown:
   input: GFM
   syntax_highlighter: rouge
