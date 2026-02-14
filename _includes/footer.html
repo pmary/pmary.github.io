@@ -1,6 +1,8 @@
 <footer class="site-footer">
 
-  {% include newsletter_block.html %}
+  {% if site.show_newsletter %}
+    {% include newsletter_block.html %}
+  {% endif %}
 
   <div class="divider"></div>
   
