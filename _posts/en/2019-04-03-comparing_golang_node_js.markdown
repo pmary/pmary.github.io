@@ -4,6 +4,7 @@ title:  "Comparing Golang and Node.js, 10 years later"
 date:   2019-04-02 22:01:20
 categories: javascript go
 comments: true
+archived: true
 ---
 
 <style type="text/css">

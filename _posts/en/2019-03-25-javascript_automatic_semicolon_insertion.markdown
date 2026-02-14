@@ -4,6 +4,7 @@ title:  "JavaScript Automatic Semicolon Insertion Explained"
 date:   2019-03-25 22:01:20
 categories: javascript
 comments: true
+archived: true
 ---
 
 > Disclaimer : This post is not about the silly debate between pro and anti-semicolon. It aims to explain how the "Rules of Automatic Semicolon Insertion" (ASI) works. Regardless on your semicolon usage, you must know this rules to write JavaScript professionally and read any code regardless of how it's written.

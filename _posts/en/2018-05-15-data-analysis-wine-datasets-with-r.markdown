@@ -4,6 +4,7 @@ title:  "Data Analysis on Wine Data Sets with R"
 date:   2018-05-15 13:46:40
 categories: datascience R
 comments: true
+archived: true
 ---
 
 <style type="text/css">

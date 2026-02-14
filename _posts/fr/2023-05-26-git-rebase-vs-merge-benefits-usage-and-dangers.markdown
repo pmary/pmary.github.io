@@ -4,6 +4,7 @@ title:  "Git rebase vs merge: Bénéfices, Usage & Dangers"
 date:   2023-05-26 13:46:40
 categories: javascript array reduce
 comments: true
+archived: true
 ---
 
 Git rebase est un outil puissant pour intégrer les changements d'une branche dans une autre, ce qui permet d'obtenir un historique de commits linéaire tout en réduisant le nombre de conflits de fusion par rapport à une simple fusion avec `git merge`.  

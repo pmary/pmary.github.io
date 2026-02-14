@@ -4,6 +4,7 @@ title:  "The Best Way to Remove Duplicate From a List in JavaScript"
 date:   2019-11-17 13:46:40
 categories: javascript array reduce
 comments: true
+archived: true
 ---
 
 Consider the following array:  

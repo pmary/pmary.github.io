@@ -4,6 +4,7 @@ title:  "Kata TDD - Le jeu de la vie en Kotlin, étape par étape"
 date:   2023-08-23 09:00:40
 categories: kata tdd
 comments: true
+archived: true
 ---
 
 <style>

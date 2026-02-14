@@ -4,6 +4,7 @@ title:  "Memoization in JavaScript"
 date:   2019-09-14 13:46:40
 categories: javascript memoization
 comments: true
+archived: true
 ---
 
 Memoization is an optimization technique and a specific type of caching. It's used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again. While related to lookup tables, since memoization often uses such tables in its implementation, memoization populates its cache of results transparently on the fly, as needed, rather than in advance. Memoization is a way to lower a function's time cost in exchange for space cost.  

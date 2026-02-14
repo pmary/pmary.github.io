@@ -4,6 +4,7 @@ title:  "The container stacking problem"
 date:   2019-08-02 13:46:40
 categories: javascript stack
 comments: true
+archived: true
 ---
 *Difficulty Level: **Easy***
 

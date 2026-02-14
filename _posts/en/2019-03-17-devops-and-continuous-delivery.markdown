@@ -4,6 +4,7 @@ title:  "What are DevOps and Continuous Delivery?"
 date:   2019-03-17 15:21:40
 categories: devops
 comments: true
+archived: true
 ---
 
 <style type="text/css">
