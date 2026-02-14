@@ -57,7 +57,7 @@
                 <a class="home-simple-post" href="{{ post.url | prepend: site.baseurl }}">
               {% endif %}
                 <div class="home-simple-post-date">
-                  {{ post.date | date: "%b %-d, %Y" }}
+                  {% include localized-date.html date=post.date language=page.language %}
                 </div>
                 <h3 class="home-simple-post-title">
                   {{ post.title }}

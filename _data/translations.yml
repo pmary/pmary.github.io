@@ -23,6 +23,43 @@ newsletter:
   cta:
     en: Subscribe
     fr: S'abonner
+months:
+  "Jan":
+    en: "Jan"
+    fr: "janv."
+  "Feb":
+    en: "Feb"
+    fr: "févr."
+  "Mar":
+    en: "Mar"
+    fr: "mars"
+  "Apr":
+    en: "Apr"
+    fr: "avr."
+  "May":
+    en: "May"
+    fr: "mai"
+  "Jun":
+    en: "Jun"
+    fr: "juin"
+  "Jul":
+    en: "Jul"
+    fr: "juil."
+  "Aug":
+    en: "Aug"
+    fr: "août"
+  "Sep":
+    en: "Sep"
+    fr: "sept."
+  "Oct":
+    en: "Oct"
+    fr: "oct."
+  "Nov":
+    en: "Nov"
+    fr: "nov."
+  "Dec":
+    en: "Dec"
+    fr: "déc."
 footer:
   subscribe:
     title: 

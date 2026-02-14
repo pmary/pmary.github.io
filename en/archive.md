@@ -9,5 +9,5 @@ permalink: /en/archive
 {% assign siteposts = site.posts | where: 'language', page.language %}
 
 {% for post in siteposts %}
-- **{{ post.date | date: "%b %-d, %Y" }}** — [{{ post.title }}]({{ post.url | prepend: site.baseurl }}){% if post.external_url %} <span class="icon icon-external-link"></span>{% endif %}
+- **{% include localized-date.html date=post.date language=page.language %}** — [{{ post.title }}]({{ post.url | prepend: site.baseurl }}){% if post.external_url %} <span class="icon icon-external-link"></span>{% endif %}
 {% endfor %}
