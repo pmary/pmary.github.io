@@ -1,0 +1,1 @@
+{% assign m = include.date | date: "%b" %}{% assign d = include.date | date: "%-d" %}{% assign y = include.date | date: "%Y" %}{% assign lang = include.language %}{% assign month = site.data.translations.months[m][lang] %}{% if lang == "fr" %}{{ d }} {{ month }} {{ y }}{% else %}{{ month }} {{ d }}, {{ y }}{% endif %}
