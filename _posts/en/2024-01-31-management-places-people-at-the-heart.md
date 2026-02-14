@@ -4,6 +4,7 @@ title:  "How Management Puts People at the Heart of the Organization"
 date:   2024-01-31 09:00:40
 categories: management
 comments: true
+archived: true
 ---
 
 This days, we hear many companies saying they prioritize humans, etc. But concretely, what does "putting people at the heart of the organization" mean? Why does it seems to be new, and what does it change in the manager's role?  

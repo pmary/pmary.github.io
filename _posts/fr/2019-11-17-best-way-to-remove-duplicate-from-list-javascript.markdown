@@ -4,6 +4,7 @@ title:  "La meilleure technique pour supprimer des doublons dans une liste en Ja
 date:   2019-11-17 13:46:40
 categories: javascript array reduce
 comments: true
+archived: true
 ---
 
 Prenons le tableau suivant:  

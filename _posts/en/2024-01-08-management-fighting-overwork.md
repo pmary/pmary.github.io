@@ -4,6 +4,7 @@ title:  "Management - Fighting overwork"
 date:   2024-01-08 09:00:40
 categories: management
 comments: true
+archived: true
 ---
 
 Showing managerial courage also means fighting against "overwork". Allowing your employees to exhaust themselves, or worse, promoting the culture of 'always overwhelmed,' simply harms the health of both the company and its workers. This is demonstrated by several rigorous studies that have concluded that exceeding 4 hours of intensive daily work will not significantly increase the value of the result, if at all, to justify the overtime.  

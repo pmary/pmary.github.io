@@ -4,6 +4,7 @@ title:  "Management - Lutter contre la suractivité"
 date:   2024-01-08 09:00:40
 categories: management
 comments: true
+archived: true
 ---
 
 Faire preuve de courage managérial c’est aussi lutter contre la “suractivité”. Laisser s’épuiser ses collaborateurs, ou pire, promouvoir la culture du “toujours débordé”, nuit tout simplement à la santé de l’entreprise et à celles des travailleurs. C’est ce que démontrent plusieurs études rigoureuses qui ont conclu que dépasser 4h de travail intensif quotidien n'augmentera pas la valeur du résultat ou si peu que ça ne justifie pas le temps supplémentaire.  

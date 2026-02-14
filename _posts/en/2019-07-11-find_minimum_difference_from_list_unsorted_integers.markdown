@@ -4,6 +4,7 @@ title:  "Find minimum difference from a list of unsorted integers"
 date:   2019-07-11 13:46:40
 categories: javascript Arrays Sorting
 comments: true
+archived: true
 ---
 
 Given an unsorted array of integers, find the minimum absolute difference between any pair.  

@@ -4,6 +4,7 @@ title:  "Metaprogramming in JavaScript - Symbol"
 date:   2016-03-11 13:46:40
 categories: javascript metaprogramming
 comments: true
+archived: true
 ---
 
 JavaScript was relatively weak when it comes to metaprogramming. Fortunately ES6 adds several new forms/features for it. So it's a good occasion to review the state of metaprogramming in 2016.

@@ -4,6 +4,7 @@ title:  "The Best Way to Replace All String Occurrences in JavaScript"
 date:   2019-10-21 13:46:40
 categories: javascript replace string
 comments: true
+archived: true
 ---
 
 When you work with strings, common use case is replacing all instances of a given substring. In this article we will explore the available methods, their drawbacks and introduce `replaceAll` as the new standard for such operations.  
