@@ -4,7 +4,6 @@ title:  "Comment le management met l'humain au coeur de l'organisation"
 date:   2024-01-31 09:00:40
 categories: management
 comments: true
-archived: true
 ---
 
 On entend pas mal d’entreprises qui disent privilégier l’humain etc. Mais concrètement, c’est quoi “remettre l’homme au cœur de l'organisation" ? Pourquoi il n’y était pas déjà et quel est qu'est-ce que ça change au rôle de manager ?  
