@@ -4,10 +4,10 @@ title:  "L'échelle brisée : L'IA ne tue pas les emplois en ingénierie. Elle t
 date:   2026-02-16 08:00:40
 categories: engineering leadership ai
 comments: true
-image: '/assets/posts/2026-02-16-the-broken-ladder-ai-is-killing-junior-careers/header-illustration.png'
+image: '/assets/posts/2026-02-16-the-broken-ladder-ai-is-killing-junior-careers/header-illustration.jpg'
 description: "Pourquoi les prédictions les plus bruyantes sur l'IA passent à côté de la vraie menace, et ce que les données montrent réellement sur l'avenir des talents techniques."
 ---
-<img src="/assets/posts/2026-02-16-the-broken-ladder-ai-is-killing-junior-careers/header-illustration.png" alt="L'échelle brisée : L'IA ne tue pas les emplois en engineering. Elle tue les carrières." class="grid-fig" />
+<img src="/assets/posts/2026-02-16-the-broken-ladder-ai-is-killing-junior-careers/header-illustration.jpg" alt="L'échelle brisée : L'IA ne tue pas les emplois en engineering. Elle tue les carrières." class="grid-fig" />
 
 ## L'affirmation qui a lancé mille et une tribunes enflammées
 
