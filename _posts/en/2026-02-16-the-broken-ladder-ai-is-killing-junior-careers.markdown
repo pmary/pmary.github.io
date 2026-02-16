@@ -117,7 +117,7 @@ The ladder is breaking. The question is whether you'll notice before your best p
 
 The answer isn't to stop using AI. It's to stop optimizing for the output you need today and start optimizing for the capability you'll need in five years.
 
-In Part 2, I'll show you how.
+In Part 2, I'll share my opinion on the how.
 
 ## Sources
 
