@@ -68,6 +68,9 @@ footer:
     rss:
       en: subscribe
       fr: s'abonner
+    sitemap:
+      en: Sitemap
+      fr: Plan du site
   follow:
     title:
       en: Follow
