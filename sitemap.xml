@@ -19,6 +19,8 @@ layout: null
     <xhtml:link rel="alternate" hreflang="fr" href="{{ alt_url | prepend: site.baseurl | prepend: site.url }}" />
         {%- endif -%}
       {%- else -%}
+        {%- assign alt_lang = nil -%}
+        {%- assign alt_url = nil -%}
         {%- if page.language == 'en' -%}
           {%- assign alt_lang = 'fr' -%}
           {%- assign alt_url = page.url | replace_first: '/en/', '/fr/' -%}
@@ -26,7 +28,7 @@ layout: null
           {%- assign alt_lang = 'en' -%}
           {%- assign alt_url = page.url | replace_first: '/fr/', '/en/' -%}
         {%- endif -%}
-        {%- if alt_url != page.url -%}
+        {%- if alt_lang and alt_url != page.url -%}
           {%- assign alt_page = site.pages | where: "url", alt_url -%}
           {%- if alt_page.size > 0 %}
     <xhtml:link rel="alternate" hreflang="{{ page.language }}" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
@@ -43,13 +45,16 @@ layout: null
   <url>
     <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-    {%- assign same_slug_posts = site.posts | where: "slug", post.slug -%}
-    {%- assign alt_posts = same_slug_posts | where_exp: "p", "p.language != post.language and p.archived != true" -%}
-    {%- if alt_posts.size > 0 -%}
-      {%- assign alt_post = alt_posts[0] %}
+    {%- assign current_slug = post.slug -%}
+    {%- assign current_lang = post.language -%}
+    {%- assign same_slug_posts = site.posts | where: "slug", current_slug -%}
+    {%- for alt in same_slug_posts -%}
+      {%- if alt.language != current_lang and alt.archived != true %}
     <xhtml:link rel="alternate" hreflang="{{ post.language }}" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" />
-    <xhtml:link rel="alternate" hreflang="{{ alt_post.language }}" href="{{ alt_post.url | prepend: site.baseurl | prepend: site.url }}" />
-    {%- endif %}
+    <xhtml:link rel="alternate" hreflang="{{ alt.language }}" href="{{ alt.url | prepend: site.baseurl | prepend: site.url }}" />
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor %}
   </url>
   {%- endunless -%}
 {%- endfor %}
