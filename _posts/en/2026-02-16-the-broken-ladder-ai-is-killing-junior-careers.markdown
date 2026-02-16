@@ -4,10 +4,10 @@ title:  "The Broken Ladder: AI Isn't Killing Engineering Jobs. It's Killing Engi
 date:   2026-02-08 08:00:40
 categories: engineering leadership ai
 comments: true
-image: '/assets/posts/2026-02-08-the-ai-wrote-the-code-my-job-was-knowing-when-it-was-wrong/header-illustration.png'
+image: '/assets/posts/2026-02-16-the-broken-ladder-ai-is-killing-junior-careers/header-illustration.png'
 description: "Why the loudest AI predictions miss the real threat, and what the data actually shows about the future of technical talent."
 ---
-<img src="/assets/posts/2026-02-08-the-ai-wrote-the-code-my-job-was-knowing-when-it-was-wrong/header-illustration.png" alt="The Broken Ladder: AI Isn't Killing Engineering Jobs. It's Killing Engineering Careers" class="grid-fig" />
+<img src="/assets/posts/2026-02-16-the-broken-ladder-ai-is-killing-junior-careers/header-illustration.png" alt="The Broken Ladder: AI Isn't Killing Engineering Jobs. It's Killing Engineering Careers" class="grid-fig" />
 
 ## The Claim That Launched a Thousand Hot Takes
 
