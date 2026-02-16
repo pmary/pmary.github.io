@@ -2,17 +2,55 @@
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for page in site.pages %}{% if page.layout and page.url != '/sitemap.xml' and page.url != '/feed.xml' and page.url != '/search-index.json' %}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{%- for page in site.pages -%}
+  {%- if page.layout and page.url != '/sitemap.xml' and page.url != '/feed.xml' and page.url != '/search-index.json' %}
   <url>
     <loc>{{ page.url | prepend: site.baseurl | prepend: site.url }}</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    {%- if page.language -%}
+      {%- if page.url == '/' -%}
+        {%- assign alt_url = '/fr/home.html' -%}
+        {%- assign alt_page = site.pages | where: "url", alt_url -%}
+        {%- if alt_page.size > 0 %}
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
+    <xhtml:link rel="alternate" hreflang="en" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
+    <xhtml:link rel="alternate" hreflang="fr" href="{{ alt_url | prepend: site.baseurl | prepend: site.url }}" />
+        {%- endif -%}
+      {%- else -%}
+        {%- if page.language == 'en' -%}
+          {%- assign alt_lang = 'fr' -%}
+          {%- assign alt_url = page.url | replace_first: '/en/', '/fr/' -%}
+        {%- elsif page.language == 'fr' -%}
+          {%- assign alt_lang = 'en' -%}
+          {%- assign alt_url = page.url | replace_first: '/fr/', '/en/' -%}
+        {%- endif -%}
+        {%- if alt_url != page.url -%}
+          {%- assign alt_page = site.pages | where: "url", alt_url -%}
+          {%- if alt_page.size > 0 %}
+    <xhtml:link rel="alternate" hreflang="{{ page.language }}" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
+    <xhtml:link rel="alternate" hreflang="{{ alt_lang }}" href="{{ alt_url | prepend: site.baseurl | prepend: site.url }}" />
+          {%- endif -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endif %}
   </url>
-  {% endif %}{% endfor %}
-  {% for post in site.posts %}{% unless post.archived %}
+  {%- endif -%}
+{%- endfor -%}
+{%- for post in site.posts -%}
+  {%- unless post.archived %}
   <url>
     <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+    {%- assign same_slug_posts = site.posts | where: "slug", post.slug -%}
+    {%- assign alt_posts = same_slug_posts | where_exp: "p", "p.language != post.language and p.archived != true" -%}
+    {%- if alt_posts.size > 0 -%}
+      {%- assign alt_post = alt_posts[0] %}
+    <xhtml:link rel="alternate" hreflang="{{ post.language }}" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" />
+    <xhtml:link rel="alternate" hreflang="{{ alt_post.language }}" href="{{ alt_post.url | prepend: site.baseurl | prepend: site.url }}" />
+    {%- endif %}
   </url>
-  {% endunless %}{% endfor %}
+  {%- endunless -%}
+{%- endfor %}
 </urlset>
