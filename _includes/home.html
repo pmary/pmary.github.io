@@ -1,5 +1,5 @@
 {% assign translations = site.data.translations %}
-{% assign siteposts = site.posts | where: 'language', page.language | where_exp: 'post', 'post.archived != true' %}
+{% assign siteposts = site.posts | where: 'language', page.language | where_exp: 'post', 'post.archived != true' | where_exp: 'post', 'post.draft != true' %}
 
 <div class="page-wrapper">
   <div class="home">
