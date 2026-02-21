@@ -9,21 +9,15 @@ description: "The playbook for engineering leaders who see the pipeline drying u
 ---
 <img src="/assets/posts/2026-02-16-the-broken-ladder-ai-is-killing-junior-careers/header-illustration.jpg" alt="The Broken Ladder, Part 2: How to Build a Retention Moat Before the Senior Talent Crisis Hits" class="grid-fig" />
 
-In [Part 1](https://pierremary.com/en/posts/the-broken-ladder-ai-is-killing-junior-careers), I argued that AI isn't killing engineering jobs. It's killing engineering careers. Entry-level hiring has collapsed. The learning-grade work that built junior engineers into seniors is being automated away. And companies are consuming their talent pipeline for short-term productivity gains.
+In [Part 1](https://pierremary.com/en/posts/the-broken-ladder-ai-is-killing-junior-careers), I argued that AI isn't killing engineering jobs — it's killing engineering careers. If you buy that diagnosis, the question becomes: what do you actually do about it?
 
-If you buy that diagnosis, the question becomes: what do you actually do about it?
+I've spent the past year answering that in practice. I run a platform engineering team of 11 and led AI deployment across a 75-engineer organization. When we rolled out Claude, we hit near-100% adoption in a week. Engineers loved it. Then our eNPS survey came back and complicated the picture.
 
-I've spent the past year answering that question in practice. I run a platform engineering team of 11 and led the deployment of AI tools across a 75-engineer organization. When we rolled out Claude, we hit near-100% adoption in a week. Engineers loved it. Then our eNPS survey came back, and the picture got more complicated.
-
-A significant number of respondents said the AI strategy felt blind — all acceleration, no direction. In one-on-ones, engineers told me they feared being asked to produce more with no upside for them. Some worried their entire domain was becoming obsolete. One senior engineer on my team put it more bluntly: colleagues were using AI to "produce more of the wrong thing."
-
-The tools weren't the problem. The absence of a strategy for the humans using them was.
-
-What follows is what I've learned from trying to fix that — what's working, what isn't, and what I think every engineering leader should be planning for.
+In one-on-ones, engineers told me they feared being asked to produce more with no upside for them. Some worried their entire domain was becoming obsolete. One senior engineer put it more bluntly: colleagues were using AI to "produce more of the wrong thing." The tools weren't the problem. The absence of a strategy for the humans using them was.
 
 ## The Problem in Three Sentences
 
-If you haven't read Part 1, here's the short version. Juniors aren't developing depth because AI handles the learning-grade work. Mid-levels are burning out — Upwork's 2024 study of 2,500 workers found that among the most productive AI users, 88% report burnout, and they're twice as likely to quit. And seniors are getting poached, because when everyone has the same AI tools, the scarce asset is the human who knows what to build and why. Replacing one costs 1-2x their annual salary, and Wharton's Matthew Bidwell found that external hires need roughly two years to match the performance of someone promoted from within.
+If you haven't read Part 1, here's the short version. Juniors aren't developing depth because AI handles the learning-grade work. Mid-levels are burning out under the pressure to "do more with AI" without clarity on what "more" means. And seniors are getting poached, because when everyone has the same tools, the scarce asset is the human who knows what to build and why.
 
 Three forces, compounding. And if you're not actively building against them, they're building against you.
 
@@ -45,11 +39,13 @@ So I started thinking about the ladder differently:
 
 This is already happening whether we design for it or not. The question is whether we treat it as a bug or a feature. If you measure juniors on bugs caught in AI-generated code, on code review quality, on their ability to articulate trade-offs — reviewing AI output becomes a powerful learning mechanism. If you measure them on tickets closed, it's just a treadmill.
 
-**Mid-level (E3): The Orchestrator.** Mid-levels become system integrators — the people who understand how components interact, who manage the context AI tools lack, and who translate business requirements into constraints AI can execute against. Less implementation code, more connective tissue: API contracts, failure handling across service boundaries, system-level optimization.
+**Mid-level (E3): The Orchestrator.** One of my mid-levels described his job shift as going from "building services" to "making sure five AI-generated services actually talk to each other." He wasn't exaggerating. Mid-levels become system integrators — the people who manage the context AI tools lack and translate business requirements into constraints AI can execute against. Less implementation code, more connective tissue: API contracts, failure handling across service boundaries, system-level optimization.
 
-Orchestration skill is what separates someone who uses AI productively from someone who generates plausible code that fails in production. It's also the skill hardest to develop when your day is spent reviewing AI output rather than building systems yourself — which is why deliberate development matters.
+This is also the level under the most pressure. Upwork's 2024 study of 2,500 workers found that among the most productive AI users, 88% report burnout, and they're twice as likely to quit. Mid-levels are often the most productive AI users on a team — and the most at risk of burning out if you don't actively manage their workload and growth.
 
 **Senior (E4-E5): The Strategist.** Seniors operate where AI adds the least value: organizational trade-offs, multi-year technical strategy, mentorship, cross-team influence. Their role doesn't change much, but their leverage increases dramatically. One senior who defines the right constraints for AI-augmented development multiplies the output of everyone below them.
+
+That leverage makes them targets. Replacing a senior costs 1–2x their annual salary in recruiting and ramp-up alone, and Wharton's Matthew Bidwell found that external hires need roughly two years to match the performance of someone promoted from within. When a senior leaves, you don't just lose output — you lose the person who was developing your next three mid-levels.
 
 The investment: protect senior time for mentorship and strategic work. Don't let the temptation to "have seniors use AI to do more individual work" undermine their highest-value contribution — developing the people around them. Jellyfish's productivity data shows why the distinction matters: senior developers gain 22% more speed from Copilot, while juniors gain only 4%. Same tool, radically different leverage, depending on the depth the person brings.
 
@@ -67,21 +63,19 @@ I'll be honest: this is the hardest sell. When I first proposed AI-free sprints 
 
 ### Principle 3: Measure Capability Growth, Not Just Output
 
-Here's a stat that should make every engineering leader uncomfortable: the 2025 DORA report found that despite 90% AI adoption across surveyed teams, AI correlated with a 1.5% *decrease* in delivery throughput and a 7.2% *reduction* in delivery stability. Output metrics said everything was fine. The systems were degrading underneath. DORA's response was to abandon its linear performance rankings entirely, replacing them with team archetypes that blend delivery performance with human factors.
+Here's a stat that should make every engineering leader uncomfortable: the 2025 DORA report found that despite 90% AI adoption across surveyed teams, AI correlated with a 1.5% *decrease* in delivery throughput and a 7.2% *reduction* in delivery stability. Output metrics said everything was fine. The systems were degrading underneath. DORA's response was to abandon its linear performance rankings entirely, replacing them with team archetypes that blend delivery performance with human factors. If the most influential engineering metrics framework in the world is moving away from pure output measurement, your organization should too.
 
-If the most influential engineering metrics framework in the world is moving away from pure output measurement, your organization should too.
-
-This is where most organizations fail. Their entire performance infrastructure measures output: sprint velocity, story points, deployment frequency, cycle time. None of it measures whether an engineer is developing the judgment they'll need in two years. And what you don't measure, you don't manage — and what you don't manage quietly atrophies.
+I learned this the hard way. For the first two months after our AI rollout, every dashboard looked great — PRs merged faster, cycle time dropped, deployment frequency climbed. Then we had a production incident that should have been caught in review. The engineer who'd approved the PR told me he'd been averaging 15 reviews a day and "the AI code all looks the same after a while." Our output metrics had been hiding a capability problem.
 
 Add capability metrics alongside output metrics:
 
-**Code review quality.** Track whether an engineer's reviews are catching meaningful issues versus rubber-stamping approvals. Improving scores signal deepening system understanding.
+**Code review quality.** Track whether reviews are catching meaningful issues versus rubber-stamping approvals. After that incident, this became the first metric I added to our team health dashboard.
 
 **Incident resolution depth.** When engineers respond to incidents, are they following runbooks or contributing root cause analysis? Track the complexity they can resolve independently over time.
 
-**Architecture decision participation.** Are mid-levels contributing to ADRs (Architecture Decision Records)? Are they raising trade-offs the team hadn't considered? This directly signals developing judgment.
+**Architecture decision participation.** Are mid-levels contributing to ADRs (Architecture Decision Records)? Are they raising trade-offs the team hadn't considered?
 
-**AI usage patterns.** Engineers who use AI primarily for generation ("write this for me") develop differently from those who use it for exploration ("explain this," "compare approaches," "what could go wrong here"). You don't need to surveil individual prompts — but you can build team norms that push toward exploratory use. On my team, when engineers started using AI to produce more of the wrong thing faster, that was the wake-up call. We needed to measure *how* people worked with AI, not just what they shipped.
+**AI usage patterns.** Engineers who use AI primarily for generation ("write this for me") develop differently from those who use it for exploration ("explain this," "compare approaches," "what could go wrong here"). You don't need to surveil individual prompts — but you can build team norms that push toward exploratory use. When my team was producing more of the wrong thing faster, we needed to measure *how* people worked with AI, not just what they shipped.
 
 ## Where to Start: A 90-Day Plan
 
@@ -89,7 +83,7 @@ If this feels like a lot, here's how I'd sequence it.
 
 **Days 1-30: Listen and audit.** Start with your people, not your process. Run an anonymous survey — not about AI satisfaction, but about growth. Ask: *Do you feel you're developing new skills? Do you understand the AI strategy? Do you see a career path here?*
 
-When we ran our eNPS survey, the results surprised us. Engineers weren't resistant to AI — they were worried the strategy was blind. That feedback reshaped everything that followed. If I'd skipped it and gone straight to process changes, I'd have been solving for the wrong problem.
+I almost skipped this and went straight to process changes. The eNPS survey I described earlier is what stopped me — without it, I'd have been solving for the wrong problem.
 
 Then map your team against your levels framework. For each person, answer two questions: Where are they today? Where would they be if AI didn't exist? The gap tells you how much AI has accelerated output versus development.
 
@@ -105,13 +99,11 @@ By day 90, you'll have data from your survey, learnings from your pilot, and one
 
 I want to end honestly rather than neatly.
 
-Everything I've described costs time and attention. The natural objection is "we can't afford to slow down when competitors ship faster with AI." But your competitors are shipping faster today by consuming their pipeline. They're optimizing for the quarter at the expense of the decade. Every senior you develop internally instead of hiring externally saves six figures in recruiting and ramp-up costs. Every mid-level you retain preserves months of institutional knowledge. The ROI compounds — and it compounds in the direction of the companies that invest early.
-
-But I don't have a decade of data to prove that. I have conviction, a handful of early signals, and the historical pattern from every previous technology wave where the companies that invested in their people outperformed the ones that optimized purely for output.
+The natural objection to everything I've described is "we can't afford to slow down when competitors ship faster with AI." I'd argue your competitors are shipping faster today by consuming their pipeline — optimizing for the quarter at the expense of the decade. But I don't have a decade of data to prove that. I have conviction, early signals, and the historical pattern from every previous technology wave where the companies that invested in their people outperformed the ones that optimized purely for output.
 
 Here's what I'm still watching: Will the three-way pair programming model hold up as AI tools get better, or will it need to evolve again in a year? How do you measure capability growth without turning it into surveillance? Can "deliberate friction" survive the pressure to ship faster in a downturn?
 
-I don't know the answers yet. I know the questions matter. And I know that the organizations asking them now — imperfectly, experimentally, honestly — will be in a fundamentally different position than the ones that wake up in 2029 wondering where all their senior engineers went.
+I don't know yet. But the organizations asking these questions now — imperfectly, experimentally — will be in a fundamentally different position than the ones that wake up in 2029 wondering where all their senior engineers went.
 
 The ladder is breaking. I'd rather be caught building a new one than waiting for someone else to figure it out.
 
