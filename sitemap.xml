@@ -41,7 +41,7 @@ layout: null
   {%- endif -%}
 {%- endfor -%}
 {%- for post in site.posts -%}
-  {%- unless post.archived %}
+  {%- unless post.archived or post.draft %}
   <url>
     <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
