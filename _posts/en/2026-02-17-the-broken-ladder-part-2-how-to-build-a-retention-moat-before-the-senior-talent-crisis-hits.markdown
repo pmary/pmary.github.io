@@ -31,9 +31,7 @@ He was right. The traditional engineering ladder assumed that juniors write code
 
 So I started thinking about the ladder differently:
 
-**Junior (E1-E2): The Validator.** I noticed a pattern in our juniors' PRs: they were shipping faster than ever, but their code review comments had gone from paragraphs to thumbs-up emojis. They weren't learning from the code anymore, they were forwarding it.
-
-The junior role hasn't disappeared. It's shifted. The primary job is no longer writing code from scratch: it's evaluating, testing, and understanding AI-generated code. Can they explain why this implementation works? Can they spot the edge case the AI missed? If you measure juniors on bugs caught in AI-generated code, on review quality, on their ability to articulate trade-offs, then, reviewing AI output becomes a powerful learning mechanism. If you measure them on tickets closed, it's just a treadmill.
+**Junior (E1-E2): The Validator.** The junior role hasn't disappeared. It's shifted. The primary job is no longer writing code from scratch: it's evaluating, testing, and understanding AI-generated code. Can they explain why this implementation works? Can they spot the edge case the AI missed? If you measure juniors on bugs caught in AI-generated code, on review quality, on their ability to articulate trade-offs, then, reviewing AI output becomes a powerful learning mechanism. If you measure them on tickets closed, it's just a treadmill.
 
 **Mid-level (E3): The Orchestrator.** One of my mid-levels described his job shift as going from "building services" to "making sure AI-generated services actually integrate with our current infrastructure and golden paths." He wasn't exaggerating. Mid-levels become system integrators: the people who manage the context AI tools lack and translate business requirements into constraints AI can execute against. Less implementation code, more connective tissue: API contracts, failure handling across service boundaries, system-level optimization.
 
@@ -43,7 +41,7 @@ This is also the level under the most pressure. Mid-levels are often the most pr
 
 Which is exactly what makes them targets. Replacing a senior costs 1–2x their annual salary in recruiting and ramp-up alone, and Wharton's Matthew Bidwell found that external hires need roughly two years to match the performance of someone promoted from within. When a senior leaves, you don't just lose output, you lose the person who was developing your next three mid-levels.
 
-The investment: protect senior time for mentorship and strategic work. Don't let the temptation to "have seniors use AI to do more individual work" undermine their highest-value contribution: developing the people around them. On my team, the biggest AI productivity gains came from seniors who used the tools to free up time for architecture reviews and one-on-ones. Not from seniors who used them to write more code themselves.
+The investment: protect senior time for mentorship and strategic work. Don't let the temptation to "have seniors use AI to do more individual work" undermine their highest-value contribution: developing the people around them. On my team, the biggest AI productivity gains came from seniors who used the tools to free up time for architecture reviews and knowledge sharing. Not from seniors who used them to write more code themselves.
 
 ### Principle 2: Restructure How Juniors Learn
 
@@ -63,17 +61,17 @@ The difference is concrete. A junior prompting "write a rate limiter for this AP
 
 Here's a stat that should make every engineering leader uncomfortable: the 2025 DORA report found that despite 90% AI adoption across surveyed teams, AI correlated with a 1.5% decrease in delivery throughput and a 7.2% reduction in delivery stability. Upwork's 2024 study tells the same story from the human side: Among the most productive AI users, 88% report burnout, and they're twice as likely to quit. Output metrics said everything was fine. The people and the systems were degrading underneath.
 
-I learned this the hard way. For the first two months after our AI rollout, every dashboard looked great. PRs merged faster, cycle time dropped, deployment frequency climbed. Then we had a production incident that should have been caught in review. The engineer who'd approved the PR told me he'd been averaging 15 reviews a day and "the AI code all looks the same after a while." Our output metrics had been hiding a capability problem.
+It's a scenario that's becoming all too common. In the first few weeks after adopting AI, every dashboard turns green. PRs get merged faster, development cycle time drops, deployment frequency climbs. And then a production incident hits. One that should have been caught in review. You find out the reviewer was averaging 15 PRs a day and that "AI-generated PRs all start to look the same." At that point, output metrics are masking a skills problem.
 
-After that incident, I stopped trusting output metrics on their own. Here's what I added:
+I stopped trusting output metrics on their own. Here's what I added:
 
-**Code review quality.** Track whether reviews are catching meaningful issues versus rubber-stamping approvals. We started tagging review comments as "nitpick," "bug," or "design concern". The ratio tells you whether reviews are substantive or performative.
+**Code review quality.** Track whether reviews are catching meaningful issues versus rubber-stamping approvals. By tagging review comments as "nitpick," "bug," or "design concern", the ratio will tells you whether reviews are substantive or performative.
 
-**Incident resolution depth.** When engineers respond to incidents, are they following runbooks or contributing root cause analysis? We started tracking whether the post-mortem included a root cause the engineer identified independently versus one escalated to a senior. The trend over quarters tells you more about growth than any sprint velocity chart.
+**Incident resolution depth.** When engineers respond to incidents, are they following runbooks or contributing root cause analysis? You can track whether the post-mortem included a root cause the engineer identified independently versus one escalated to a senior. The trend over quarters tells you more about growth than any sprint velocity chart.
 
 **Architecture decision participation.** Are mid-levels contributing to ADRs? Are they raising trade-offs the team hadn't considered? I started requiring at least one mid-level reviewer on every ADR. Not as a gate, but as a growth mechanism. The quality of their comments became one of my clearest signals for promotion readiness.
 
-**AI usage patterns.** Engineers who use AI primarily for generation ("write this for me") develop differently from those who use it for exploration ("explain this," "compare approaches," "what could go wrong here"). You don't need to surveil individual prompts but you can build team norms that push toward exploratory use. When my team was producing more of the wrong thing faster, we needed to measure *how* people worked with AI, not just what they shipped.
+**AI usage patterns.** Engineers who use AI primarily for generation ("write this for me") develop differently from those who use it for exploration ("explain this," "compare approaches," "what could go wrong here"). You don't need to surveil individual prompts but you can build team norms that push toward exploratory use. In some OpenAI teams, the engineers deliver the prompt with the PR, allowing the reviewer to measure *how* he worked with AI, not just what they shipped.
 
 ## Where to Start: A 90-Day Plan
 
