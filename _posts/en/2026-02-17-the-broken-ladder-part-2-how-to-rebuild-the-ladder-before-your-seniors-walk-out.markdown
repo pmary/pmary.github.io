@@ -194,7 +194,7 @@ Pick one representative squad. Not your strongest or weakest. And activate Princ
 
 - **Architecture clinic:** One sprint where juniors solve the problem first, then compare to AI output. Success criteria is comprehension, not velocity. Define three explicit outcomes that would justify scaling before the sprint starts.
 - **Three-way pairing:** Two 90-minute sessions per sprint, rotating seniors. Guardrail: the junior decides how to act on feedback.
-- **PR tag conventions:** Add both taxonomies — junior (*generated / assisted / explored*) and Orchestrator (*context bridge / interface alignment / contract definition*) to the pilot team's PR template.
+- **PR tag conventions:** Add both taxonomies: junior (*generated / assisted / explored*) and Orchestrator (*context bridge / interface alignment / contract definition*) to the pilot team's PR template.
 - **Integration audit:** One mid-level coherence review session with a specific audit question, producing a one-page report.
 
 Read the tag data from day one. If after two weeks the tags are generating real conversations in code reviews, you've secured political support before anyone asks about velocity. If they're getting filled in mechanically, adjust mid-sprint.
