@@ -6,6 +6,7 @@ categories: engineering leadership ai
 comments: true
 image: '/assets/posts/2026-02-17-the-broken-ladder-part-2-how-to-build-a-retention-moat-before-the-senior-talent-crisis-hits/header-illustration.jpg'
 description: "Le guide pratique pour les engineering leaders qui voient le vivier se tarir. Et veulent être prêts quand leurs concurrents ne le seront pas."
+draft: true
 ---
 <img src="/assets/posts/2026-02-17-the-broken-ladder-part-2-how-to-build-a-retention-moat-before-the-senior-talent-crisis-hits/header-illustration.jpg" alt="L'échelle brisée, partie 2 : Construire sa rétention avant que la pénurie de talents ne frappe" class="grid-fig" />
 

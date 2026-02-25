@@ -1,0 +1,246 @@
+---
+layout: post
+title:  "The Broken Ladder, Part 2: How to Rebuild the Ladder Before Your Seniors Walk Out"
+date:   2026-02-23 08:00:40
+categories: engineering leadership ai
+comments: true
+image: '/assets/posts/2026-02-17-the-broken-ladder-part-2-how-to-build-a-retention-moat-before-the-senior-talent-crisis-hits/header-illustration.jpg'
+description: "A retention playbook for engineering leaders who see the pipeline drying up. And want to be ready when competitors aren't."
+draft: true
+---
+<img src="/assets/posts/2026-02-17-the-broken-ladder-part-2-how-to-build-a-retention-moat-before-the-senior-talent-crisis-hits/header-illustration.jpg" alt="The Broken Ladder, Part 2: How to Rebuild the Ladder Before Your Seniors Walk Out" class="grid-fig" />
+
+A few weeks after we rolled out Claude across a 75+ engineer organization, one of my senior engineers told me what was actually happening on the ground. Colleagues were using AI to "produce more of the wrong thing." Faster.
+
+He wasn't being cynical. He was describing the gap between having powerful tools and having a strategy for the humans using them. In [Part 1](https://pierremary.com/en/posts/the-broken-ladder-ai-is-killing-junior-careers), I argued that AI isn't killing engineering jobs. It's killing engineering careers. Three forces are compounding: juniors aren't building depth, mid-levels are burning out, and seniors are getting poached. If you buy that diagnosis, the question becomes: what do you actually do about it?
+
+The first useful thing I did wasn't deploying a framework. It was asking my team what had actually changed for them. In one-on-ones and by the coffee machine, the picture got more specific. Juniors worried they weren't learning anything. Mid-levels felt squeezed between rising expectations and unclear career paths. Seniors were fielding recruiter calls weekly. Same AI rollout, three different crises.
+
+## Fixing the Ladder: What Actually Works
+
+The default response to "your people need development" is to buy everyone a Coursera license and call it a day. I've sat in the leadership meetings where this gets proposed with a straight face. It does not work.
+
+There's a broader version of the same mistake: treating tool deployment as strategy. It shows up as "we've rolled out Copilot" in the board deck and "I don't know what I'm supposed to be learning anymore" in one-on-ones. The gap between those two sentences is the entire problem. Engineers don't develop judgment from online courses or AI tools. They develop it from doing progressively harder work on real problems, with feedback from people who've done it before.
+
+The challenge is designing systems where AI accelerates that development instead of bypassing it. But let me address the obvious objection first: aren't seniors leaving for comp, not career growth?
+
+Often, yes. A 40% total compensation increase is a powerful pull, and no amount of architecture clinics will neutralize it. I'm not arguing that development replaces competitive pay. If your senior compensation is below market, fix that first. Nothing in this article will help you retain people you're underpaying. Compensation is table stakes.
+
+But table stakes don't differentiate. In a market where every well-funded company can match salary, comp becomes a bidding war you eventually lose Someone will always offer more. The question is what makes a senior turn down the recruiter call in the first place, or come back and say "I need you to match this" instead of quietly signing the offer. That's where development becomes the lever. LinkedIn's Glint surveys of over three million employees found that opportunities to learn and grow are the number-one factor people cite when defining an exceptional work environment. Above compensation, above flexibility. Gallup's research confirms the corollary and sharpens it: talented employees who stop growing are "the quickest to leave" because they have the most alternatives, and disengaged high performers leave at the same rate as disengaged low performers.
+
+Development also creates a retention advantage that comp can't: switching costs that aren't financial. A senior who's actively mentoring three mid-levels, shaping the team's technical direction, and seeing the pipeline they built produce promotable engineers has something they'd lose by leaving: A context of influence and impact that takes years to rebuild elsewhere. A senior who's just writing code faster with AI has nothing that can't be replicated at the next company with a bigger signing bonus.
+
+In an AI-disrupted environment, this is the dimension most at risk of breaking silently. Not because companies stop caring about development, but because AI-driven output creates the illusion that growth is still happening. And the one engineering leaders most consistently underinvest in.
+
+### Principle 1: Redefine What Each Level Actually Does
+
+A few months after our AI rollout, one of my engineers told me that his job had become "reviewing AI-generated pull requests all day." He wasn't complaining about the AI. He was telling me his role had changed underneath him and nobody had acknowledged it.
+
+He was right. The traditional engineering ladder assumed that juniors write code, mid-levels design components, and seniors architect systems. AI has compressed the bottom of that stack. A junior with a coding agent can produce mid-level output. The difference is in what they *understand* about it. And understanding is what makes them valuable in two years.
+
+So I started thinking about the ladder differently:
+
+**Junior (E1-E2): The Validator.** The junior role hasn't disappeared. It's shifted. The primary job is no longer writing code from scratch: it's evaluating, testing, and understanding AI-generated code. Can they explain why this implementation works? Can they spot the edge case the AI missed? If you measure juniors on bugs caught in AI-generated code, on review quality, on their ability to articulate trade-offs, then reviewing AI output becomes a powerful learning mechanism. If you measure them on tickets closed, it's just a treadmill.
+
+**Mid-level (E3): The Orchestrator.** One of my mid-levels described his job shift as going from "building services" to "making sure AI-generated services actually integrate with our current infrastructure and golden paths." He wasn't exaggerating. Mid-levels become system integrators: the people who manage the context AI tools lack and translate business requirements into constraints AI can execute against. Less implementation code, more connective tissue: API contracts, failure handling across service boundaries, system-level optimization.
+
+This is also the level under the most pressure. Mid-levels are often the most productive AI users on a team. But also the ones most likely to burn out if nobody's managing the gap between what they're shipping and what they're learning.
+
+**Senior (E4-E5): The Strategist.** Seniors operate where AI adds the least value: organizational trade-offs, multi-year technical strategy, mentorship, cross-team influence. Their role doesn't change much, but their leverage increases dramatically. A senior can spend two hours defining the API contract constraints for a new service. Three juniors can then use AI to generate implementations against those constraints in a day. Without those two hours of senior judgment, we'd have had three fast, incompatible services. That's the multiplier.
+
+Which is exactly what makes them targets. Replacing a senior costs 1.5–2x their annual salary in recruiting and ramp-up alone, and Wharton's Matthew Bidwell found that external hires need roughly two years to match the performance of someone promoted from within. When a senior leaves, you don't just lose output. You lose the person who was developing your next three mid-levels.
+
+The investment: protect senior time for mentorship and strategic work. Don't let the temptation to "have seniors use AI to do more individual work" undermine their highest-value contribution: developing the people around them. On my team, the biggest AI productivity gains came from seniors who used the tools to free up time for architecture reviews and knowledge sharing. Not from seniors who used them to write more code themselves.
+
+That directive is easy to write and hard to defend. The moment a release deadline tightens, "protect senior time" becomes the first thing that gets sacrificed. Saying it isn't enough. You need to make it structurally difficult to override.
+
+The most effective move I've found is to formalize mentorship as sprint capacity. Allocate 20% of a senior's bandwidth to coaching and architecture validation, tracked as real tickets in whatever tool your team uses. When it's a line item in sprint planning, it stops being discretionary. It becomes visible work that has to be consciously removed, not invisible work that quietly disappears.
+
+The second move is upstream: get your seniors in front of product managers early. Not to slow things down, but to demonstrate the multiplier math. When a PM sees that two hours of senior architecture work let three juniors deliver reliably instead of producing three incompatible services that need a week of rework, the framing shifts from "senior is mentoring instead of shipping" to "senior is the reason this shipped on time." That changes the political calculus.
+
+There are plenty of other ways to institutionalize this: sanctuarized architecture days with no meetings, senior-led design review rituals embedded in the team calendar, explicit mentorship KPIs in performance reviews. The specific tactic matters less than the principle: if the protection isn't structural, it won't survive the next quarterly pressure cycle.
+
+If you're reading this and thinking "my managers don't have time to implement any of this," hold that thought. The honest answer, which I'll detail in Principle 3, is that AI dashboards are already making roughly five hours per week of status-tracking and coordination work redundant. The question isn't whether your EMs have the capacity. It's whether they'll redirect that freed-up time toward capability development or let it get absorbed by more of the same.
+
+### Principle 2: Restructure How Engineers Build Depth
+
+Redefining levels only works if the pipeline feeding them still develops real skill. And that pipeline has two stages, not one. Juniors need to build foundational judgment. Mid-levels need to build system-wide thinking. AI disrupts both, and the fixes are different. Matt Beane's research, which I referenced in Part 1, identifies three requirements for skill development: challenge, complexity, and connection. AI disrupts all three. The fix isn't banning AI, it's engineering the conditions for learning even when AI is present.
+
+**Deliberate friction.** Designate specific projects or sprints where juniors work without AI assistance, or where they solve the problem first, then compare their solution to what AI produces. Think of it like surgical training: observation, then supervised practice, then independence. Each stage requires demonstrated competence before advancing. The manual work builds the mental model that makes the automated work effective.
+
+This will be the hardest sell. Engineers who've gotten fast with AI will see it as a productivity tax, being asked to dig a ditch with a spoon when there's a backhoe right there. They won't be wrong about the feeling. But UCLA psychologist Robert Bjork's research on "desirable difficulties" shows that learning conditions which slow apparent performance during training yield greater long-term retention and transfer. The conditions that make you feel productive fastest are often the ones that build the least durable skill. When I see juniors shipping PRs they can't meaningfully review, I'm looking at the cost of skipping that struggle.
+
+Naming matters: call these "AI-free sprints" and you've already lost the room. Call them "architecture clinics" or "system audit sessions" and the framing shifts from deprivation to expertise. But rebranding alone won't prevent the most predictable failure mode: shadow AI. You prevent it by changing what the exercise rewards. If the output being measured is "did you ship the feature," shadow AI is rational. If the output is "walk the team through your reasoning, explain the trade-offs, and debug this live," then AI-generated code you don't understand becomes a liability, not an advantage.
+
+But even the right incentives won't neutralize the deeper resistance, which isn't rational. It's emotional. AI has become a cognitive exoskeleton. Engineers who've been using it for months have internalized the speed as part of their professional identity. Asking them to work without it isn't just asking them to be slower. It's asking them to feel incompetent, to struggle with problems they used to solve in minutes, in front of colleagues who know they can do it faster. The fear isn't falling behind on delivery. It's looking stupid at standup.
+
+No amount of rebranding or metric redesign addresses this. What does: normalizing the struggle from the top down, so that slowness during friction exercises isn't a sign of weakness but a shared experience across the entire seniority spectrum.
+
+Two rituals make this concrete. The first is what I'd call an illusion post-mortem: a regular team session (once a month, maybe bi-weekly during a pilot) specifically dedicated to dissecting a moment where AI speed created a silent disaster. A bug that slipped through because the generated code was elegant but architecturally wrong. A service integration that passed review but failed in production because nobody understood the assumptions baked into the AI's output. The team analyzes the failure without blame, and the takeaway is always the same: without deliberate friction to force deeper understanding, the system breaks in ways that speed can't fix. These sessions work because the evidence is concrete and local. It's not a research paper about desirable difficulties, it's "this happened to us two sprints ago."
+
+The second ritual is more important, and harder: institutionalized vulnerability from your seniors. Before asking juniors to put down the exoskeleton, the most respected engineers on the team need to show that they struggle too. In a weekly team meeting, a senior takes five minutes to walk through a moment where AI led them astray: a hallucinatory dependency they chased for hours, a subtle architectural flaw they missed because the generated code looked clean, a problem they ultimately solved by closing the AI tool and working through it manually. When the best developer on the team publicly admits "I had to stop and think for two hours because the AI's answer was wrong in a way I almost didn't catch," the junior who's afraid of looking slow during an architecture clinic sees something critical: the struggle isn't a sign of inadequacy. It's a sign of expertise. This transforms deliberate friction from a managerial constraint imposed from above into a shared discipline of technical craftsmanship. Something the team practices together, from the most senior to the most junior.
+
+The senior vulnerability ritual also connects directly to Principle 1: it's one of the highest-leverage uses of the protected mentorship time we built earlier. Five minutes of public honesty from a Strategist does more for psychological safety than any number of process changes.
+
+Connect friction directly to career advancement. If the ability to audit AI output, catch architectural blind spots, and articulate design trade-offs is an explicit requirement for promotion from Validator (E1-E2) to Orchestrator (E3), then these sessions aren't a tax, they're the gateway. A junior who catches a security flaw or a subtle integration bug during an architecture clinic is demonstrating exactly the judgment that makes them promotable. Make that visible in standups and performance reviews. Engineers invest in friction when it's visibly the path to their next role, not when it's framed as a philosophical experiment about long-term learning.
+
+Time-box the first round: one sprint, one team, opt-in. Engineers who volunteer will be more invested in making it work, and their results will be more persuasive than anything you mandate. Frame the output as a comprehension check: after the sprint, can this engineer debug the system they built without reaching for AI? Can they explain why this approach was chosen over alternatives? If yes, you have proof the friction built something. If no, you've learned that too, and you've only spent two weeks.
+
+**AI-as-tutor, not AI-as-doer.** Train juniors to use AI in explain mode, not generate mode. The prompt isn't "fix this", it's "explain why this might fail under load." Not "write this for me", but "what are the trade-offs between these three approaches?"
+
+The difference is concrete. A junior prompting "write a rate limiter for this API" gets working code and learns nothing. The same junior prompting "I'm considering a token bucket versus a sliding window approach for rate limiting. What are the failure modes of each under bursty traffic?" gets trade-offs they have to evaluate. Same tool. Radically different development outcome. The same tool that shortcuts learning can deepen it, depending entirely on how it's used.
+
+The challenge is that "use AI to learn, not to skip learning" is advice, not a system. Left as a suggestion in a retro, it has a half-life of about one sprint. The engineers who nod along on Tuesday are prompting "just write it" by Thursday, not out of laziness but because they're under delivery pressure and the habit path is shorter. You need a structural nudge, not a norm.
+
+What worked in some teams: make the tutor mode visible in the artifact. For exemple, add a lightweight convention to PR descriptions. A one-line "AI usage" field with three options: *generated* (AI wrote the bulk of the implementation), *assisted* (AI helped explore or debug, human wrote the code), or *explored* (AI was used to compare approaches or explain trade-offs, no generated code in the PR). It's self-reported and imperfect. That's fine. The goal isn't surveillance, it's making the *mode* of AI use a thing the team talks about, the same way you'd discuss whether a solution was spiked or properly designed. When a tech lead sees a string of "generated" tags on a junior's PRs, that's a one-on-one conversation, not a policy violation. And when a junior tags "explored" and the PR description includes the trade-offs they evaluated, that's a promotion signal worth naming in a review.
+
+The second move is to build tutor-mode prompting into your existing rituals rather than creating new ones. In code reviews, ask "what alternatives did you consider?". A question that's always been good practice but now has a specific mechanism behind it. If the engineer used AI to explore three approaches and chose this one, they should be able to articulate why. If they can't, the review has surfaced a development gap, not a code gap. In retros, make "what did you learn from AI this sprint?" a standing question alongside "how did you use AI this sprint?" The first question rewards exploration; the second just tracks usage. You want both, but the learning question is the one that shifts behavior over time.
+
+**Three-way pair programming.** The classic pair model gains a third participant: the AI tool. The junior drives, the senior navigates, the AI generates. But the roles need to be more rigid than traditional pairing. Here's what a session looks like. The junior gets a task, say, building a rate-limiting middleware for an internal API. They start by sketching the approach: where it sits in the request lifecycle, what the failure modes are, how it interacts with the existing auth layer. The senior asks questions, not gives answers: "What happens when the token bucket is full and three services hit this endpoint simultaneously? How does this interact with our retry policy?" Only after the junior has a working mental model do they turn to the AI to generate an implementation against their stated constraints. The junior never prompts the AI without first stating what they expect it to produce and why. Then the real learning happens: the junior reads the output line by line, narrates what it does, flags where it deviates from their design, and identifies what the AI assumed that wasn't in the prompt. That last step, surfacing the AI's implicit assumptions, is where most of the skill transfer happens. It forces the junior to think about what they didn't specify, which is exactly the gap between generating code and understanding systems.
+
+The most common failure mode is the session collapsing into the senior dictating through the junior's keyboard: "no, prompt it to use this pattern instead". Which reproduces the old hierarchy with extra steps. The guardrail: the senior can ask questions and name concerns, but the junior decides how to act on them. The second failure is frequency. One session per quarter is a demo. One per week is unsustainable for senior bandwidth. A sustainable pace is two 90-minute sessions per sprint, rotating which senior participated, so the mentorship load is distributed across three or four seniors rather than concentrated on one. That cadence create continuity without draining the senior bench. And it connects directly to Principle 1: this is one of the concrete ways seniors convert protected mentorship time into pipeline development.
+
+**Building the Orchestrator.** The Orchestrator role defined in Principle 1 is critical, but without structural support it becomes a title without a development path. Mid-levels face a specific trap in AI-augmented environments: they're productive enough that nobody worries about them, and stretched enough that nobody invests in them.
+
+The core problem is visibility. An Orchestrator's daily work is a stream of micro-decisions that prevent system-level failures: translating business constraints into technical specifications, catching interface conflicts between AI-generated services, aligning what three juniors shipped independently into something that actually works together. None of this looks like "output." It looks like reviews, Slack threads, and debugging sessions. If you don't make it visible, the organization treats it as overhead. And the person doing it burns out, because they're carrying cognitive load that nobody acknowledges, let alone measures.
+
+Here's what a Tuesday looks like for an Orchestrator. A junior ships a PR tagged "generated": an AI-built authentication middleware. It works in isolation. The Orchestrator reviews it and spots that it uses a different session token format than the existing user service, will break the mobile client's retry logic, and assumes a database schema that the payments team is about to migrate away from. None of these are bugs in the traditional sense. All of them are integration failures that AI can't see because it doesn't have the organizational context. The Orchestrator spends two hours defining the constraints, the junior re-generates against them in thirty minutes. That two-hour investment just prevented a week of production debugging. But in the current system, it shows up as "one code review". Indistinguishable from a nitpick about variable naming.
+
+But visibility alone doesn't solve the deeper problem, which is emotional, not organizational. Most mid-levels became engineers because they loved building things. The Orchestrator role asks them to stop building and start integrating, to find their professional identity not in the code they write but in the disasters they prevent. That's a real loss, and no amount of PR tags will compensate for it if the organization doesn't name it honestly.
+
+The junior's identity crisis has a ritual (the vulnerability sessions). The Orchestrator's needs one with equivalent weight. Not a quick callout in standup, but a formal practice that reframes integration mastery as a *higher* form of engineering judgment. What I'd call a disaster autopsy: once a month, an Orchestrator takes the floor in a team engineering meeting to deconstruct a specific integration failure they caught. The session token mismatch that would have broken the mobile client, the caching strategy conflict they surfaced before two teams shipped incompatible implementations. They walk through what the AI-generated code got right in isolation, what it couldn't see without organizational context, and how they identified the gap. The format mirrors the illusion post-mortem that juniors participate in, but the Orchestrator is the protagonist, not the audience.
+
+This matters for more than morale. Make the disaster autopsy an explicit component of promotion from Orchestrator (E3) to Strategist (E4). The old promotion signal was "look what I built." The new one is "look what I prevented from collapsing, and here's the system thinking that let me see it coming." When mid-levels see that the path to senior requires demonstrating integration judgment and not just shipping features faster, then the Orchestrator role stops feeling like a consolation prize and starts feeling like a prerequisite for the next level.
+
+Three mechanisms make this work visible and sustainable.
+
+First, make integration work a first-class citizen in your PR workflow. Juniors tag their PRs *generated / assisted / explored*. Orchestrators tag their reviews with the type of integration work performed: *context bridge* (translated a business requirement into technical constraints for AI-generated code), *interface alignment* (resolved conflicts between services or aligned with existing infrastructure), or *contract definition* (defined or modified API contracts, failure handling, or service boundaries). Same lightweight convention, same PR template, different taxonomy. When a tech lead sees an Orchestrator averaging six "context bridge" reviews per sprint, that's visible evidence of the glue work holding the team together and a signal that this person's bandwidth needs protection, not more feature tickets.
+
+The most predictable failure mode: the tags become performative. An Orchestrator tags every review "context bridge" because it sounds better than "nitpick," and the signal degrades. The same defense that works for junior tags works here: make the tag a conversation starter, not a metric. When a tech lead sees "interface alignment" on a PR review, the follow-up is "walk me through what you caught". And the answer either demonstrates system thinking or it doesn't. The tag creates the occasion for the conversation. The conversation is what builds trust in the data.
+
+Second, cross-team integration audits. Once per sprint, mid-levels gather, without seniors, to validate architectural coherence across the AI-generated services and changes shipping across teams. This takes the integration work Orchestrators already do informally, often late and in crisis mode, and turns it into a scheduled artifact. The output is a one-page coherence report: what's aligned, what's diverging, what needs a design conversation before it ships. The most common failure is the session becoming a status update. Each mid-level reporting what their team shipped, nobody actually cross-referencing. Prevent this by giving the session a specific audit question each sprint: "Are our caching strategies compatible across services?" or "How do these three new endpoints interact with our rate limiting?" A focused question forces cross-team analysis. A generic "what's everyone working on?" produces a meeting.
+
+Third, make ADR review real work. Mid-levels should be required reviewers on every architecture decision record. Not as a gate, but as a growth mechanism. But "required reviewer" easily becomes ghost work, something done between meetings, untracked and unvalued. Apply the same logic from Principle 1: ADR review should be a real ticket with estimated complexity, tracked as sprint capacity. When a mid-level spends four hours identifying that two teams' caching strategies will conflict in production, that's not overhead, that's the Orchestrator role working as designed.
+
+Rotate mid-levels into the three-way pairing navigator seat periodically, with a senior observing rather than directing. This gives them a psychologically safe space to practice mentorship and architectural judgment. Skills they'll need at the next level. But don't treat occasional pairing as a substitute for the daily mechanisms above. The PR tags and integration audits are the Orchestrator's equivalent of the junior's deliberate friction: structural interventions that make invisible cognitive load visible, valued, and sustainable. Without them, mid-levels carry the weight of system coherence with none of the organizational credit. And that's the fastest path to the burnout we identified in Principle 1.
+
+### Principle 3: Measure Capability Growth, Not Just Output
+
+Here's a stat that should make every engineering leader uncomfortable: the 2024 DORA report found that as AI adoption increased across surveyed teams, it correlated with a 1.5% decrease in delivery throughput and a 7.2% reduction in delivery stability. By the 2025 report, AI's relationship with throughput had turned slightly positive, but the stability problem persisted. The DORA team's conclusion across both years is blunt: AI doesn't fix a team, it amplifies what's already there.
+
+Faros AI's telemetry study of over 10,000 developers across 1,255 teams shows why. On teams with high AI adoption, developers completed 21% more tasks and merged 98% more pull requests. But this created downstream bottlenecks that absorbed the gains: 91% more code review time, 154% larger PRs, and a 9% increase in bug rates. Strong review practices get stronger under this pressure. Weak ones collapse under the volume. 
+
+Upwork's 2025 study tells the same story from the human side: Among the most productive AI users, 88% report burnout, and they're twice as likely to quit. Output metrics said everything was fine. The people and the systems were degrading underneath.
+
+And there's a deeper layer: even the *felt* productivity may not be real. A 2025 METR study asked experienced open-source developers to estimate how much AI sped them up. They guessed 20%. When the researchers measured actual task completion, those same developers took 19% *longer* with AI than without it. The perception-reality gap wasn't small. It was inverted. That's one controlled study, not a verdict. But combined with the DORA and Faros data, it suggests that the central objection to everything in this article, "we can't afford to slow down", deserves real scrutiny. The dashboards may be measuring motion, not progress.
+
+It's a scenario that's becoming all too common. In the first few weeks after adopting AI, every dashboard turns green. PRs get merged faster, development cycle time drops, deployment frequency climbs. And then a production incident hits. One that should have been caught in review. You find out the reviewer was averaging 15 PRs a day and that "AI-generated PRs all start to look the same." At that point, output metrics are masking a skills problem.
+
+I stopped trusting output metrics on their own. But listing the five things I track instead would be the wrong move here. Because if you're a director reading this, a wall of new metrics triggers the same paralysis as a wall of new process. "We need to measure code review quality, incident resolution depth, ADR participation, rework rate, and AI usage patterns" is technically correct and operationally overwhelming. Nobody deploys five measurement systems simultaneously. Attempting it guarantees that none of them get done well.
+
+What works is a maturity model: start with what costs almost nothing, prove the signal, then layer depth as the organization builds the muscle.
+
+**Quarter 1: Adoption signals only.** You already have the PR tag conventions from Principle 2: the junior *generated / assisted / explored* tags and the Orchestrator *context bridge / interface alignment / contract definition* tags. These are your first capability metrics, and they cost nothing beyond what you've already deployed. No new tooling, no new meetings, no new dashboards. Just read the data you're already generating.
+
+What the tags tell you at scale: the ratio of "generated" to "explored" PRs across your junior cohort is a leading indicator of whether AI is accelerating learning or replacing it. If 80% of junior PRs are tagged "generated" after three months, your tutor-mode investment isn't landing. That's a coaching conversation, not a policy change. On the Orchestrator side, the distribution of "context bridge" vs. "interface alignment" tags shows you where integration load is concentrated. If one mid-level is absorbing six context bridges per sprint while others average two, that's a burnout signal and a capacity planning input. None of this requires a new system. It requires a tech lead who spends 30 minutes per sprint reading the tags that already exist.
+
+This phase also includes one addition that's nearly as lightweight: **rework rate.** The DORA team added this as a fifth core metric in 2024. It's the percentage of deployments that are unplanned but occur as a result of a production incident. Most CI/CD platforms already surface this data; you're just making it visible. In AI-augmented environments, a rising rework rate is the earliest signal that generation speed is outpacing review quality. Track it from day one because it's the canary: if rework rate stays flat while PR volume doubles, your review infrastructure is working. If it climbs, everything else in this article becomes urgent.
+
+**Quarter 2: Depth metrics.** Once the tags are generating reliable signal, and only then, add two measurements that require real analytical effort.
+
+First, **code review quality.** Add a classification dropdown to your PR template: "nitpick," "bug," "design concern," or "AI-specific" (for comments catching AI-generated anti-patterns, hallucinated dependencies, or context mismatches). Have tech leads classify a sample of 20 comments per sprint until the team internalizes the taxonomy. The nitpick-to-substantive ratio, tracked monthly per engineer, tells you whether reviews are real or performative. A team averaging 80% nitpicks is rubber-stamping. You'll know within one quarter.
+
+Second, **incident resolution depth.** Add a single field to your post-mortem template: "Root cause identified by" with the engineer's name and level. Over two quarters, you'll see whether juniors and mid-levels are contributing original analysis or consistently escalating to seniors. The trend tells you more about growth than any sprint velocity chart.
+
+Why not deploy these in Quarter 1? Because they require judgment to classify, someone to review the classifications, and a team that already trusts the measurement system enough to self-report honestly. The PR tags build that trust. Jumping to "we're going to score the quality of your code reviews" before the team has internalized the tag conventions is how you get gaming instead of signal.
+
+**Quarter 3: Strategic indicators.** By now you have behavioral data (tags), quality data (review classification, incident depth), and a system metric (rework rate). The final layer connects capability measurement to career progression.
+
+**Architecture decision participation.** Principle 2 established ADR review as protected sprint capacity for mid-levels. This is the measurement side of that investment: are they actually growing from it? Tag their ADR comments the same way you tag PR reviews. Did they raise a constraint nobody else caught, or did they rubber-stamp? The quality of their ADR comments became one of my clearest signals for promotion readiness. But only because the time to do serious review was already protected. This metric lands in Quarter 3 because it requires two prior conditions: mid-levels need the protected ADR time (Quarter 1 deployment) and the team needs established comfort with tag-based self-reporting (Quarter 1-2 habituation). Without both, you're measuring noise.
+
+**AI usage patterns at depth.** The PR tags give you generation-vs-exploration ratios. Now go deeper: make "How did you use AI this week?" a standing retro question, and track whether the answer evolves. As [The Pragmatic Engineer](https://newsletter.pragmaticengineer.com/p/how-codex-is-built) reported, some OpenAI teams go further, requiring engineers to deliver the prompt alongside the PR, allowing the reviewer to assess *how* they worked with AI, not just what they shipped. Start with the retro question. You can tighten it later if the signal warrants it. But by Quarter 3, you'll have enough tag data to know whether tightening is necessary.
+
+The maturity model works because each phase builds legitimacy for the next. Quarter 1 tags are low-friction and generate visible signal; that signal creates appetite for the Quarter 2 depth metrics; those metrics create the evidence base for Quarter 3's strategic indicators. An EM who tries to deploy all five simultaneously will get compliance on none. An EM who starts with "just tag your PRs" and lets the data make the case for deeper measurement will have a functioning capability system by quarter three. And a team that understands why it exists.
+
+**The EM's week, before and after.** None of these metrics self-maintain. Someone has to read the tag data, classify the review sample, track ADR participation by level, and coach the team on what the numbers mean. That someone is the engineering manager. And the role shift is real, not a free add-on.
+
+But here's what most leaders miss: it's a replacement, not an addition. In the pre-AI model, an EM's week included roughly five hours of status-tracking and coordination: standup facilitation, ticket grooming, status updates, manually assembling progress reports. AI dashboards now surface most of this automatically. Those five hours don't disappear. They shift.
+
+A typical EM week in this model: Monday, 30 minutes reviewing the sprint's PR tag distribution with the tech lead (replaces: Monday status meeting). Wednesday, 90 minutes facilitating a three-way pairing session (replaces: mid-week progress check that AI dashboards now handle). Thursday, one-on-one focused on "what did you learn this sprint?" instead of "what did you ship?" (replaces: status-focused one-on-one). Friday, 20 minutes scanning the rework rate trend and flagging anything to discuss in the next sprint planning (replaces: manual deployment tracking). The total time investment is roughly the same. The content is radically different. And so is what the team builds over the next two years.
+
+The managers who make this transition become the execution layer for Principles 1–3. The ones who don't become the bottleneck.
+
+## Where to Start: A 90-Day Plan
+
+If this feels like a lot, that's because it is. The cost of deferring is real. You just don't see it until the resignation email lands.
+
+### Before you start: Build your coalition
+
+The most common way these initiatives die isn't failure. It's indifference. Kotter, Prosci, and Harvard's research on organizational change all converge on the same point: transformation attempts without visible executive sponsorship get quietly deprioritized the moment they compete with quarterly targets. Before day one, spend two weeks doing political groundwork: identify one executive sponsor, brief one peer engineering leader, and prepare a one-page data brief. The DORA numbers, the Upwork burnout data, and the replacement cost math give you the business case. You're not asking for budget. You're asking for air cover when the pilot quarter's velocity dips and someone asks what went wrong.
+
+The replacement cost math is worth spelling out. The Levels.fyi 2025 median total compensation for a senior software engineer is $312K. At 1.5–2x replacement cost. Tecruiting fees, two to three months of vacancy, three to six months of ramp-up, and the team disruption that doesn't show up on any invoice. Each departure costs $450K–$600K. That's before Bidwell's finding that the external hire will underperform the internal promotion for two years. Now estimate the pilot cost: one team takes a 15–20% velocity dip for 30 days. That's roughly one engineer-month of deferred output, about $25K in fully loaded cost. If the pilot retains even one senior who was considering leaving, the ROI is 18–24x. You don't need a spreadsheet to make this case. You need one slide.
+
+### Days 1-30: Map Your Team Against the New Roles
+
+Answer one question for every engineer: are they functioning as a Validator, Orchestrator, or Strategist or still operating as a traditional developer who happens to use AI? For each person, assess their current operating mode against the Principle 1 definitions, then estimate the gap: where would they be if AI didn't exist? The distance between output level and understanding level tells you how much AI has masked a development deficit.
+
+Run a role clarity survey alongside the mapping. Ask: *Do you understand how your role has changed since we adopted AI? Do you feel you're developing new skills or just producing more? Do you see a path from where you are to the next level?* These surface whether the team recognizes the new progression or still sees growth as "write harder code faster." While mapping, pull baseline data from existing tools. A sample of PR review comments classified by type, incident postmortem contributions by level, ADR reviewers by level. Imperfect data is fine. Without it, your pilot's impact stays anecdotal.
+
+Close the loop: share the aggregate picture with the team before the pilot begins. Engineers who participated in a survey about growth will expect to hear what you found.
+
+### Days 31-60: Deploy the Learning Infrastructure
+
+Pick one representative squad. Not your strongest or weakest. And activate Principle 2:
+
+- **Architecture clinic:** One sprint where juniors solve the problem first, then compare to AI output. Success criteria is comprehension, not velocity. Define three explicit outcomes that would justify scaling before the sprint starts.
+- **Three-way pairing:** Two 90-minute sessions per sprint, rotating seniors. Guardrail: the junior decides how to act on feedback.
+- **PR tag conventions:** Add both taxonomies — junior (*generated / assisted / explored*) and Orchestrator (*context bridge / interface alignment / contract definition*) to the pilot team's PR template.
+- **Integration audit:** One mid-level coherence review session with a specific audit question, producing a one-page report.
+
+Read the tag data from day one. If after two weeks the tags are generating real conversations in code reviews, you've secured political support before anyone asks about velocity. If they're getting filled in mechanically, adjust mid-sprint.
+
+Expect a velocity dip. Pre-frame it: the team ships slower for 30 days to build the muscle that makes them structurally faster for the next 30 months. If the DORA data is right that AI-driven velocity doesn't translate to delivery improvement, the speed was partly an illusion.
+
+### Days 61-90: Lock In the First Capability Signals
+
+Make the Quarter 1 metrics permanent. Just the ones you've proven. Resist deploying everything at once.
+
+- **Harden PR tags into tooling.** Move both taxonomies from self-reported fields to required dropdowns, enforced like reviewer approvals. Optional fields die under deadline pressure. Required fields become aggregable data.
+- **Surface rework rate.** Make the hotfix-to-deployment ratio visible in your team health dashboard. This is your canary metric for whether review quality is keeping pace with generation speed.
+- **Formalize ADR review as sprint capacity.** ADR review becomes a real ticket with estimated complexity. Quality measurement (tagging ADR comments for substance) comes in Quarter 3. For now, protect the time.
+- **Update the promotion rubric.** Embed the Validator → Orchestrator → Strategist progression into promotion criteria. If the new roles don't govern careers, they stay provisional.
+
+Debrief with the pilot EM: what coordination work did they deprioritize? What felt sustainable? Then run the scaling conversation with your executive sponsor. Pilot tag data, one concrete anecdote, and a specific ask: two more teams next quarter, deploying the Quarter 2 depth metrics from Principle 3's maturity model. You're not scaling a program. You're running the next experiment with a deeper measurement layer.
+
+By day 90, you'll have role mapping data, a tested learning infrastructure, and Quarter 1 capability metrics in production. That's a maturity path, not a finished program: Quarter 2 adds review quality and incident depth tracking; Quarter 3 adds ADR measurement and deeper AI usage analysis; Quarter 4 makes the level definitions permanent. The conversation with leadership shifts from "we have an AI strategy" to "we have data on what AI strategy actually requires."
+
+## What I'm Still Figuring Out
+
+There are real tensions I haven't resolved. Can "deliberate friction" survive a quarter where leadership demands faster shipping? I think so, if you've built the coalition and pre-framed the velocity dip. But I haven't stress-tested it through a recession or a layoff round. Will some juniors leave for companies that don't impose learning constraints? Probably. The ones who stay become your future seniors. But you have to be honest that the trade-off exists.
+
+The natural response is to wait for more data before acting. I think that's backwards. Your competitors who are shipping faster today may be consuming their pipeline, optimizing for the quarter at the expense of the decade. I don't have a decade of data to prove that. I have conviction, early signals, and the historical pattern from every previous technology wave where the companies that invested in their people outperformed the ones that optimized purely for output.
+
+The organizations asking these questions now, imperfectly, experimentally, will be in a fundamentally different position than the ones that wake up in 2029 wondering where all their senior engineers went. The ladder is broken. But broken things can be rebuilt, if you start before the people who know how to fix it have already left.
+
+This is Part 2 of The Broken Ladder series. Read [Part 1: The Broken Ladder: AI Isn't Killing Engineering Jobs. It's Killing Engineering Careers](https://pierremary.com/en/posts/the-broken-ladder-ai-is-killing-junior-careers).
+
+## Sources
+
+- Upwork / Workplace Intelligence (2025). "From Burnout to Balance: AI-Enhanced Work Models." Survey of 2,500 workers across four countries.
+- Bidwell, M. (2011). "Paying More to Get Less: The Effects of External Hiring versus Internal Mobility." Wharton, Administrative Science Quarterly.
+- Bersin, J. Employee replacement cost analysis (1.5-2x annual salary). As cited in Qualtrics workforce research.
+- Beane, M. (2024). The Skill Code: How to Save Human Ability in an Age of Intelligent Machines. HarperCollins.
+- Bjork, R.A. (1994). "Making Things Hard on Yourself, But in a Good Way: Creating Desirable Difficulties to Enhance Learning." UCLA Bjork Learning and Forgetting Lab.
+- Google Cloud DORA Team (2024). "2024 Accelerate State of DevOps Report." AI adoption correlation with delivery throughput and stability.
+- Google Cloud DORA Team (2025). "State of AI-assisted Software Development 2025." AI as amplifier, seven AI capabilities model.
+- Faros AI (2025). "The AI Productivity Paradox." Telemetry analysis of 10,000+ developers across 1,255 teams. Individual output gains vs downstream bottlenecks.
+- METR (2025). "Measuring Impact of Early-2025 AI on Developer Productivity." Controlled study of experienced open-source developers.
+- Kotter, J. (1996). Leading Change. Harvard Business Review Press. Eight-step model for organizational transformation.
+- Prosci (2025). "Why Change Management Fails." ADKAR model and reinforcement mechanisms for sustained change.
+- Harvard DCE (2025). "7 Reasons Why Change Management Strategies Fail and How to Avoid Them." Executive sponsorship and coalition-building as critical success factors.
+- PMC / NIH (2023-2024). Robotic surgery graduated autonomy training models.
+- Orosz, G. (2025). "How Codex Is Built." The Pragmatic Engineer. Internal practices for AI-assisted development at OpenAI.
+- LinkedIn / Glint (2022). "Skills Advantage Report." Analysis of 3.4 million employee engagement surveys. Opportunities to learn and grow as #1 factor defining an exceptional work environment.
+- Gallup (2024). "Talent Walks: Why Your Best Employees Are Leaving." High-performer disengagement and turnover dynamics.
+- Gallup (2024). Q12 Meta-Analysis, 11th Edition. 183,806 business units, 736 studies. Engagement-turnover relationship across 64 million employees.
+- Levels.fyi (2025). "End of Year Pay Report." Senior software engineer median total compensation: $312K.
