@@ -200,10 +200,6 @@ graph LR
 
 [Disqus](https://disqus.com/) comments are loaded on posts with `comments: true` in front matter. Comments are disabled when running on localhost.
 
-## Deployment
-
-The site is hosted on **GitHub Pages**. Pushing to the main branch triggers an automatic build and deploy. The custom domain `pierremary.com` is configured via the `CNAME` file.
-
 ## Conventions
 
 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
