@@ -1,6 +1,6 @@
 # Engineering OS
 
-A multilingual (English/French) Jekyll blog hosted on GitHub Pages at [pierremary.com](https://pierremary.com).
+A multilingual (English/French) Jekyll blog.
 
 ## Prerequisites
 
@@ -39,7 +39,7 @@ The site will be available at `http://localhost:4000`.
 ├── feed.xml             # RSS feed template
 ├── sitemap.xml          # Sitemap template (with hreflang)
 ├── search-index.json    # Search index template for Lunr.js
-├── CNAME                # Custom domain (pierremary.com)
+├── CNAME                # Custom domain
 └── Gemfile              # Ruby dependencies
 ```
 
