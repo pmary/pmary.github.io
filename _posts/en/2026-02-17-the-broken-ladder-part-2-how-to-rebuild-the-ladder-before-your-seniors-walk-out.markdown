@@ -6,7 +6,6 @@ categories: engineering leadership ai
 comments: true
 image: '/assets/posts/2026-02-17-the-broken-ladder-part-2-how-to-build-a-retention-moat-before-the-senior-talent-crisis-hits/header-illustration.jpg'
 description: "A retention playbook for engineering leaders who see the pipeline drying up. And want to be ready when competitors aren't."
-draft: true
 ---
 <img src="/assets/posts/2026-02-17-the-broken-ladder-part-2-how-to-build-a-retention-moat-before-the-senior-talent-crisis-hits/header-illustration.jpg" alt="The Broken Ladder, Part 2: How to Rebuild the Ladder Before Your Seniors Walk Out" class="grid-fig" />
 
