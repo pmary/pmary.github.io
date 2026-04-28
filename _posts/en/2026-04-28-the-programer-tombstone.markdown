@@ -6,7 +6,6 @@ categories: engineering leadership ai
 comments: true
 image: '/assets/posts/2026-04-28-the-programer-tombstone/header-illustration.jpg'
 description: "Seven predictions have buried the programmer and been wrong every time. The eighth will probably be wrong too. That isn't the real problem."
-draft: true
 ---
 <img src="/assets/posts/2026-04-28-the-programer-tombstone/header-illustration.jpg" alt="The programmer's tombstone" class="grid-fig" />
 
