@@ -39,7 +39,7 @@ Read the sequence back-to-back and the striking thing is how little the language
 
 Every prediction was falsifiable, and the census data falsifies every one. US IT employment: 450,000 in 1970, 781,000 in 1980, 1.5 million in 1990, 3.4 million in 2000. In May 2024, 5.19 million Americans worked in Computer and Mathematical occupations, 1.65 million of them Software Developers. Through every wave that was supposed to end the profession, the direction was up.
 
-![Seven predictions of programmer obsolescence, 1982–2025. Red ticks mark predicted collapse; black line shows actual US computer workforce.](./workforce_vs_predictions.png)
+![Actual evolution of the US computer workforce.](/assets/posts/2026-04-28-the-programer-tombstone/workforce_vs_predictions.png)
 
 One caveat. US occupational codes were redefined in 2000, reclassifying millions of "programmers" as "software engineers" and producing an apparent decline in the narrow BLS Computer Programmers series. *Fortune*'s March 2025 headline about programmer employment hitting its lowest level since 1980 is technically true of that single code and almost entirely an artifact of reclassification. The work did not disappear. The label moved.
 
@@ -153,116 +153,76 @@ Bromberg's tombstone is still in the Computer History Museum. The name on it kee
 
 ### US workforce and population data
 
-Beckhusen, J. (2016). *Occupations in Information Technology*. American Community Survey Reports ACS-35, US Census Bureau.
-
-US Bureau of Labor Statistics. *Occupational Employment and Wages — May 2024*. [bls.gov/news.release/ocwage.htm](https://www.bls.gov/news.release/ocwage.htm)
-
-BLS OEWS 15-1252 Software Developers; 15-1251 Computer Programmers.
-
-BLS Occupational Outlook Handbook 2025-26, Software Developers.
-
-BLS Employment Projections 2024–2034.
-
-1970 Census Subject Reports PC(2)-7A; 1980 Census Supplementary Report PC80-S1-15 (1984); 1990 Census EEO File CP-S-1-1.
+- Beckhusen, J. (2016). *Occupations in Information Technology*. American Community Survey Reports ACS-35, US Census Bureau.
+- US Bureau of Labor Statistics. *Occupational Employment and Wages — May 2024*. [bls.gov/news.release/ocwage.htm](https://www.bls.gov/news.release/ocwage.htm)
+- BLS OEWS 15-1252 Software Developers; 15-1251 Computer Programmers.
+- BLS Occupational Outlook Handbook 2025-26, Software Developers.
+- BLS Employment Projections 2024–2034.
+- 1970 Census Subject Reports PC(2)-7A; 1980 Census Supplementary Report PC80-S1-15 (1984); 1990 Census EEO File CP-S-1-1.
 
 ### Historical predictions (primary)
 
-Martin, J. (1982). *Application Development Without Programmers*. Prentice-Hall.
-
-Yourdon, E. (1992). *Decline and Fall of the American Programmer*. Prentice-Hall.
-
-Yourdon, E. (1996). *Rise and Resurrection of the American Programmer*. Prentice-Hall.
-
-McCarthy, J. C. (November 11, 2002). *3.3 Million U.S. Services Jobs To Go Offshore*. Forrester Research.
-
-Gartner, *By 2024, 80% of Technology Products and Services Will Be Built by Professionals Outside of IT* (June 10, 2021).
-
-Huang, J. (February 12, 2024). World Government Summit Dubai.
-
-Zuckerberg on *Joe Rogan Experience* #2255 (January 10, 2025).
-
-Amodei, D. (March 10, 2025). Council on Foreign Relations.
-
-### COBOL tombstone
-
-Bromberg, H., Hopper, G. M., Jones, J. L., & Nelson, D. *The Story of the COBOL Tombstone*. Transcript of COBOL's 25th Anniversary Celebration at The Computer Museum, May 16, 1985. Computer History Museum.
+- Martin, J. (1982). *Application Development Without Programmers*. Prentice-Hall.
+- Yourdon, E. (1992). *Decline and Fall of the American Programmer*. Prentice-Hall.
+- Yourdon, E. (1996). *Rise and Resurrection of the American Programmer*. Prentice-Hall.
+- McCarthy, J. C. (November 11, 2002). *3.3 Million U.S. Services Jobs To Go Offshore*. Forrester Research.
+- Gartner, *By 2024, 80% of Technology Products and Services Will Be Built by Professionals Outside of IT* (June 10, 2021).
+- Huang, J. (February 12, 2024). World Government Summit Dubai.
+- Zuckerberg on *Joe Rogan Experience* #2255 (January 10, 2025).
+- Amodei, D. (March 10, 2025). Council on Foreign Relations.
 
 ### CASE, 4GLs, VB
 
-Iivari, J. (1996). "Why are CASE tools not used?" *CACM* 39(10):94–103.
-
-Kemerer, C. F. (1992). "How the learning curve affects CASE tool adoption." *IEEE Software* 9(3):23–28.
-
-Retool, *Something Pretty Right: A History of Visual Basic*.
-
-### Offshoring
-
-Drezner, D. W. (May/June 2004). "The Outsourcing Bogeyman." *Foreign Affairs*.
+- Iivari, J. (1996). "Why are CASE tools not used?" *CACM* 39(10):94–103.
+- Kemerer, C. F. (1992). "How the learning curve affects CASE tool adoption." *IEEE Software* 9(3):23–28.
+- Retool, *Something Pretty Right: A History of Visual Basic*.
 
 ### Current AI wave statements and reversals
 
-Nadella, S. (April 29, 2025) at Meta LlamaCon.
-
-Alphabet Q3 2024 earnings call (October 29, 2024).
-
-Klarna AI reversal (May 2025).
-
-Jassy, A. (June 17, 2025). Memo to Amazon employees.
+- Nadella, S. (April 29, 2025) at Meta LlamaCon.
+- Alphabet Q3 2024 earnings call (October 29, 2024).
+- Klarna AI reversal (May 2025).
+- Jassy, A. (June 17, 2025). Memo to Amazon employees.
 
 ### Empirical AI productivity and quality studies
 
-Becker, J., Rush, N., Barnes, E., & Rein, D. (July 10, 2025). "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity." METR. arXiv:2507.09089.
-
-METR follow-up (February 24, 2026).
-
-DORA 2024 report; DORA 2025 report.
-
-GitClear (January 2024). *Coding on Copilot*. GitClear (February 2025). *AI Copilot Code Quality: 2025 Data*.
-
-Stack Overflow Developer Survey 2024; 2025.
-
-Faros AI, *AI Productivity Paradox Report 2025*; *AI Engineering Report 2026*.
+- Becker, J., Rush, N., Barnes, E., & Rein, D. (July 10, 2025). "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity." METR. arXiv:2507.09089.
+- METR follow-up (February 24, 2026).
+- DORA 2024 report; DORA 2025 report.
+- GitClear (January 2024). *Coding on Copilot*. GitClear (February 2025). *AI Copilot Code Quality: 2025 Data*.
+- Stack Overflow Developer Survey 2024; 2025.
+- Faros AI, *AI Productivity Paradox Report 2025*; *AI Engineering Report 2026*.
 
 ### Labor-market AI exposure studies
 
-Eloundou, T., Manning, S., Mishkin, P., & Rock, D. (2024). "GPTs are GPTs: Labor Market Impact Potential of Large Language Models." *Science*. arXiv:2303.10130.
-
-Goldman Sachs (Briggs & Kodnani, March 2023). *The Potentially Large Effects of AI on Economic Growth*.
-
-McKinsey Global Institute (July 2023). *Generative AI and the Future of Work in America*.
-
-World Economic Forum (January 2025). *Future of Jobs Report 2025*.
-
-Yale Budget Lab (January 2026). *Labor Market AI Exposure: What Do We Know?*
+- Eloundou, T., Manning, S., Mishkin, P., & Rock, D. (2024). "GPTs are GPTs: Labor Market Impact Potential of Large Language Models." *Science*. arXiv:2303.10130.
+- Goldman Sachs (Briggs & Kodnani, March 2023). *The Potentially Large Effects of AI on Economic Growth*.
+- McKinsey Global Institute (July 2023). *Generative AI and the Future of Work in America*.
+- World Economic Forum (January 2025). *Future of Jobs Report 2025*.
+- Yale Budget Lab (January 2026). *Labor Market AI Exposure: What Do We Know?*
 
 ### Labor economics and class analysis of software work
 
-Ensmenger, N. (2010). *The Computer Boys Take Over*. MIT Press.
-
-Braverman, H. (1974). *Labor and Monopoly Capital*. Monthly Review Press.
-
-Benanav, A. (2020). *Automation and the Future of Work*. Verso.
-
-Pasquinelli, M. (2023). *The Eye of the Master*. Verso.
+- Ensmenger, N. (2010). *The Computer Boys Take Over*. MIT Press.
+- Braverman, H. (1974). *Labor and Monopoly Capital*. Monthly Review Press.
+- Benanav, A. (2020). *Automation and the Future of Work*. Verso.
+- Pasquinelli, M. (2023). *The Eye of the Master*. Verso.
 
 ### Counter-tradition — automation anxiety as bad forecasting
 
-Autor, D. (2015). "Why Are There Still So Many Jobs?" *Journal of Economic Perspectives* 29(3).
-
-Bessen, J. (2019). "Automation and Jobs: When Technology Boosts Employment." *Economic Policy*.
-
-Mokyr, J., Vickers, C., & Ziebarth, N. L. (2015). "The History of Technological Anxiety and the Future of Economic Growth." *Journal of Economic Perspectives* 29(3).
+- Autor, D. (2015). "Why Are There Still So Many Jobs?" *Journal of Economic Perspectives* 29(3).
+- Bessen, J. (2019). "Automation and Jobs: When Technology Boosts Employment." *Economic Policy*.
+- Mokyr, J., Vickers, C., & Ziebarth, N. L. (2015). "The History of Technological Anxiety and the Future of Economic Growth." *Journal of Economic Perspectives* 29(3).
 
 ### Structural explanations for coding focus in AI
 
-SWE-Bench Verified leaderboard, Princeton NLP / OpenAI.
+- SWE-Bench Verified leaderboard, Princeton NLP / OpenAI.
+- Anthropic funding announcement (2025).
+- GitHub Copilot subscriber statistics 2026.
+- AI coding assistants market share 2026.
 
-Anthropic funding announcement (2025).
+### Others
 
-GitHub Copilot subscriber statistics 2026.
-
-AI coding assistants market share 2026.
-
-### Radiology parallel
-
-Radiologist employment growth since Hinton's 2016 prediction — coverage in *The New Republic* and CNN (2026).
+- Radiologist employment growth since Hinton's 2016 prediction — coverage in *The New Republic* and CNN (2026).
+- Bromberg, H., Hopper, G. M., Jones, J. L., & Nelson, D. *The Story of the COBOL Tombstone*. Transcript of COBOL's 25th Anniversary Celebration at The Computer Museum, May 16, 1985. Computer History Museum.
+- Drezner, D. W. (May/June 2004). "The Outsourcing Bogeyman." *Foreign Affairs*.
