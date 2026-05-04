@@ -11,7 +11,7 @@ description: "Seven predictions have buried the programmer and been wrong every 
 
 # The programmer's tombstone
 
-Around 1960, Howard Bromberg drove away from his office at RCA in a fit of frustration with the committee designing COBOL. The specification work was moving too slowly, and a tense Friday-afternoon phone call with the committee's chairman, Charles Phillips, had just ended badly. On the way home he spotted a monument shop off a freeway exit, pulled in, and bought a marble tombstone. He had the mason engrave a single word: COBOL. Then he and his neighbors packed it in a crate on the sidewalk, and Bromberg mailed it to Phillips at the Pentagon, collect.
+Around 1960, Howard Bromberg drove away from his office at RCA (Radio Corporation of America) in a fit of frustration with the committee designing COBOL. The specification work was moving too slowly, and a tense Friday-afternoon phone call with the committee's chairman, Charles Phillips, had just ended badly. On the way home he spotted a monument shop off a freeway exit, pulled in, and bought a marble tombstone. He had the mason engrave a single word: COBOL. Then he and his neighbors packed it in a crate on the sidewalk, and Bromberg mailed it to Phillips at the Pentagon, collect.
 
 It was a joke. Sixty-six years later, the tombstone sits in the Computer History Museum. COBOL does not. Estimates of how much COBOL runs in production today vary widely, from around 250 billion lines (Open Mainframe Project) to over 800 billion (a 2024 Micro Focus survey of 1,100 engineers across 49 countries). Every serious count runs into the hundreds of billions. It ran the US unemployment claims systems that buckled in 2020. It runs most of global banking.
 
@@ -41,7 +41,7 @@ Every prediction was falsifiable, and the census data falsifies every one. US IT
 
 ![Actual evolution of the US computer workforce.](/assets/posts/2026-04-28-the-programer-tombstone/workforce_vs_predictions.png)
 
-One caveat. US occupational codes were redefined in 2000, reclassifying millions of "programmers" as "software engineers" and producing an apparent decline in the narrow BLS Computer Programmers series. *Fortune*'s March 2025 headline about programmer employment hitting its lowest level since 1980 is technically true of that single code and almost entirely an artifact of reclassification. The work did not disappear. The label moved.
+One caveat. US occupational codes were redefined in 2000, reclassifying millions of "programmers" as "software engineers" and producing an apparent decline in the narrow BLS Computer Programmers series. *Fortune*'s March 2025 headline about programmer employment hitting its lowest level since 1980 is technically true of that single code and almost entirely an artifact of reclassification. The work did not disappear, it evolved.
 
 What has actually happened in each wave is a shift in composition, not a drop in headcount. 4GLs created 4GL specialists. CASE failed outright and Yourdon himself reversed in 1996's *Rise and Resurrection of the American Programmer* after the adoption data came in. Visual Basic produced roughly 3.5 million amateur developers, and US IT employment grew 127% in the following decade, the largest decadal growth in the BLS series. Low-code grew to a real but modest ~$26.9 billion market by 2023, while US software developer employment went from 1.1 million in 2015 to 1.7 million in 2024, straight through the peak of the hype.
 
