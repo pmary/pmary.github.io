@@ -8,9 +8,9 @@
       {{ translations.posts[page.language] }}
     </h1>
 
-    <!-- Featured Posts Grid (first 4 posts) -->
+    <!-- Featured Posts Grid (first 6 posts) -->
     <div class="home-posts-grid">
-      {% for post in siteposts limit: 4 %}
+      {% for post in siteposts limit: 6 %}
         {% if post.external_url %}
           <a class="home-post-card" href="{{ post.external_url }}" target="_blank">
         {% else %}
@@ -44,12 +44,12 @@
     </div>
 
     <!-- Remaining Posts List -->
-    {% if siteposts.size > 4 %}
+    {% if siteposts.size > 6 %}
       <div class="home-posts-list">
         <h2 class="home-posts-list-title">More Posts</h2>
         
         <ul class="home-posts-simple">
-          {% for post in siteposts offset: 4 %}
+          {% for post in siteposts offset: 6 %}
             <li>
               {% if post.external_url %}
                 <a class="home-simple-post" href="{{ post.external_url }}" target="_blank">
