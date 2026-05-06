@@ -9,8 +9,6 @@ description: "Seven predictions have buried the programmer and been wrong every 
 ---
 <img src="/assets/posts/2026-04-28-the-programmer-tombstone/header-illustration.jpg" alt="The programmer's tombstone" class="grid-fig" />
 
-# The programmer's tombstone
-
 Around 1960, Howard Bromberg drove away from his office at RCA (Radio Corporation of America) in a fit of frustration with the committee designing COBOL. The specification work was moving too slowly, and a tense Friday-afternoon phone call with the committee's chairman, Charles Phillips, had just ended badly. On the way home he spotted a monument shop off a freeway exit, pulled in, and bought a marble tombstone. He had the mason engrave a single word: COBOL. Then he and his neighbors packed it in a crate, and Bromberg mailed it to Phillips at the Pentagon, collect.
 
 It was a joke. Sixty-six years later, the tombstone sits in the Computer History Museum. COBOL does not. Estimates of how much COBOL runs in production today vary widely, from around 250 billion lines (Open Mainframe Project) to over 800 billion (a 2024 Micro Focus survey of 1,100 engineers across 49 countries). Every serious count runs into the hundreds of billions. It ran the US unemployment claims systems that buckled in 2020. It runs most of global banking.
@@ -42,6 +40,7 @@ Every prediction was falsifiable, and the census data falsifies every one. US IT
 - 781,000 in 1980
 - 1.5 million in 1990
 - 3.4 million in 2000.  
+
 In May 2024, 5.19 million Americans worked in Computer and Mathematical occupations, 1.65 million of them Software Developers. Through every wave that was supposed to end the profession, the direction was up.
 
 ![Actual evolution of the US computer workforce.](/assets/posts/2026-04-28-the-programmer-tombstone/workforce_vs_predictions.png)

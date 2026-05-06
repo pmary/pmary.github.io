@@ -9,8 +9,6 @@ description: "Sept prédictions ont enterré le programmeur et se sont trompées
 ---
 <img src="/assets/posts/2026-04-28-the-programmer-tombstone/header-illustration.jpg" alt="La pierre tombale du programmeur" class="grid-fig" />
 
-# La pierre tombale du programmeur
-
 Vers 1960, Howard Bromberg quitta son bureau du RCA (Radio Corporation of America) dans un accès de frustration contre le comité qui concevait COBOL. Le travail de spécification avançait trop lentement, et un coup de fil tendu un vendredi après-midi avec le président du comité, Charles Phillips, venait de mal se terminer. Sur le chemin du retour, il aperçut une marbrerie funéraire à la sortie d'une autoroute, s'y arrêta, et acheta une pierre tombale en marbre. Il y fit graver un seul mot : COBOL. Puis, avec ses voisins, il l'emballa dans une caisse, et l'envoya à Phillips au Pentagone, en port dû.
 
 C'était une blague. Soixante-six ans plus tard, la pierre tombale est exposée au Computer History Museum. COBOL, lui, n'a pas été enterré. Les estimations du volume de COBOL en production aujourd'hui varient largement, d'environ 250 milliards de lignes (Open Mainframe Project) à plus de 800 milliards (une enquête Micro Focus de 2024 menée auprès de 1 100 ingénieurs dans 49 pays). Tous les comptages sérieux atteignent les centaines de milliards. C'est lui qui faisait tourner les systèmes d'allocations chômage américains qui ont craqué en 2020. C'est lui qui fait tourner l'essentiel de la banque mondiale.
