@@ -4,10 +4,10 @@ title:  "Who will maintain the code the AI wrote?"
 date:   2026-02-23 08:00:40
 categories: engineering leadership ai
 comments: true
-image: '/assets/posts/2026-05-22-who-will-maintain-the-code-the-ai-wrote.jpg'
+image: '/assets/posts/2026-05-22-who-will-maintain-the-code-the-ai-wrote/header-illustration.jpg'
 description: "The question sounds like a provocation, but it has a structural answer, and the answer is unsettling."
 ---
-<img src="/assets/posts/2026-05-22-who-will-maintain-the-code-the-ai-wrote.jpg" alt="Who will maintain the code the AI wrote?" class="grid-fig" />
+<img src="/assets/posts/2026-05-22-who-will-maintain-the-code-the-ai-wrote/header-illustration.jpg" alt="Who will maintain the code the AI wrote?" class="grid-fig" />
 
 # Who Will Maintain the Code the AI Wrote?
 
