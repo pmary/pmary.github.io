@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "Who will maintain the code the AI wrote?"
-date:   2026-09-10 08:00:00
+date:   2026-05-22 08:00:00
 categories: engineering leadership ai
 comments: true
-image: '/assets/posts/2026-09-10-who-will-maintain-the-code-the-ai-wrote/header-illustration.jpg'
+image: '/assets/posts/2026-05-22-who-will-maintain-the-code-the-ai-wrote/header-illustration.jpg'
 description: "The question sounds like a provocation, but it has a structural answer, and the answer is unsettling."
 ---
-<img src="/assets/posts/2026-09-10-who-will-maintain-the-code-the-ai-wrote/header-illustration.jpg" alt="Who will maintain the code the AI wrote?" class="grid-fig" />
+<img src="/assets/posts/2026-05-22-who-will-maintain-the-code-the-ai-wrote/header-illustration.jpg" alt="Who will maintain the code the AI wrote?" class="grid-fig" />
 
 When a developer generates a contribution with AI, something happens that didn't happen when they wrote the same code by hand. The code enters the repository, but the mental model that would let them debug it at 3 a.m. under load does not enter their head. The artifact is there. The comprehension is not. Multiply this across a team, a quarter, a codebase, and you have a new kind of debt: code that is owned on paper by people who cannot maintain it in practice.
 

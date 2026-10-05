@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "Qui maintiendra le code écrit par l'IA ?"
-date:   2026-09-10 08:00:00
+date:   2026-05-22 08:00:00
 categories: engineering leadership ai
 comments: true
-image: '/assets/posts/2026-09-10-who-will-maintain-the-code-the-ai-wrote/header-illustration.jpg'
+image: '/assets/posts/2026-05-22-who-will-maintain-the-code-the-ai-wrote/header-illustration.jpg'
 description: "La question ressemble à une provocation, mais elle a une réponse structurelle, et cette réponse est inquiétante."
 ---
-<img src="/assets/posts/2026-09-10-who-will-maintain-the-code-the-ai-wrote/header-illustration.jpg" alt="Qui maintiendra le code écrit par l'IA ?" class="grid-fig" />
+<img src="/assets/posts/2026-05-22-who-will-maintain-the-code-the-ai-wrote/header-illustration.jpg" alt="Qui maintiendra le code écrit par l'IA ?" class="grid-fig" />
 
 Quand un développeur génère une contribution par IA, il se produit quelque chose qui ne se produisait pas lorsqu'il l'écrivait à la main. Le code entre dans le dépôt, mais le modèle mental qui lui permettrait de le déboguer à 3 heures du matin en urgence n'entre pas dans sa tête. L'artefact est là. La compréhension, non. À l'échelle d'une équipe, d'un trimestre, d'une base de code, vous obtenez une dette d'un genre nouveau : du code que les propriétaires sont incapables de maintenir.
 
